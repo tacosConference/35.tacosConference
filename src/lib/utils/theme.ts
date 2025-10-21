@@ -24,3 +24,7 @@ export function getRandomColor(): string {
 export function getLogoPath(color: string): string {
   return `/media/logo/tacos_${color}.svg`;
 }
+
+export function getMinLogoPath(color: string): string {
+  return `/media/logo/tacos_${color}_min.svg`;
+}
