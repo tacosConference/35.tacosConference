@@ -2,9 +2,10 @@
 	import { resolve } from '$app/paths';
 	import { page } from '$app/state';
 	import { m } from '$lib/paraglide/messages.js';
+	import { getContext } from 'svelte';
 	import LanguageSwitcher from './LanguageSwitcher.svelte';
 	import Logo from './Logo.svelte';
-	export let color: string;
+	export let color: string = getContext<{ color: string }>('color').color;
 	let colorBgClass = `tacos-bg-${color}`;
 </script>
 
@@ -33,38 +34,38 @@
 				<li class="nav-item mx-1">
 					<a
 						class="nav-link"
-						class:active={page.url.pathname === '/what-is'}
+						class:active={page.url.pathname === '/what-is/'}
 						href={resolve('/what-is')}>{m.what_is()}</a
 					>
 				</li>
 				<li class="nav-item mx-1">
-					<a class="nav-link" class:active={page.url.pathname === '/about'} href={resolve('/about')}
+					<a class="nav-link" class:active={page.url.pathname === '/about/'} href={resolve('/about')}
 						>{m.about()}</a
-					>
-				</li>
-				<li class="nav-item mx-1">
-					<a class="nav-link" class:active={page.url.pathname === '/team'} href={resolve('/team')}
-						>{m.team()}</a
 					>
 				</li>
 				<li class="nav-item mx-1">
 					<a
 						class="nav-link"
-						class:active={page.url.pathname === '/sponsors'}
+						class:active={page.url.pathname === '/sponsors/'}
 						href={resolve('/sponsors')}>{m.sponsors()}</a
 					>
 				</li>
 				<li class="nav-item mx-1">
 					<a
 						class="nav-link"
-						class:active={page.url.pathname === '/timetable'}
+						class:active={page.url.pathname === '/timetable/'}
 						href={resolve('/timetable')}>{m.timetable()}</a
+					>
+				</li>
+				<li class="nav-item mx-1">
+					<a class="nav-link" class:active={page.url.pathname === '/friends/'} href={resolve('/friends')}
+						>{m.friends()}</a
 					>
 				</li>
 				<li class="nav-item mx-1">
 					<a
 						class="nav-link"
-						class:active={page.url.pathname == '/archive'}
+						class:active={page.url.pathname == '/archive/'}
 						href={resolve('/archive')}>{m.archive()}</a
 					>
 				</li>

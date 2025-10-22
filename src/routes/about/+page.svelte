@@ -8,7 +8,7 @@ import NextPageButton from '$lib/components/NextPageButton.svelte';
 <svelte:head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Die Fachschaft - TaCoS</title>
+	<title>Die Organisation - TaCoS</title>
 </svelte:head>
 
 <div id="main-container" class="container mt-5">
@@ -17,37 +17,46 @@ import NextPageButton from '$lib/components/NextPageButton.svelte';
 			<div class="card shadow-lg">
 				<div class="card-body p-5">
 					<Headline>
-						{m.about_title()}
+						{m.team_title()}
 					</Headline>
+					<p class="text-center mb-4">
+						{m.team_description()}
+					</p>
 					<p class="lead text-center mb-4">
-						{m.about_description_lead()}
+						{m.team_description_lower_lead()}
 					</p>
 					<p class="text-center mb-4">
-						{m.about_description()}
+						{m.team_organizers_description()}
 					</p>
-					<div class="text-center mb-4">
-						<ProgressiveImage
-							fullSrc="/media/fachschaft/Fachschaft-Foto.jpeg"
-							previewSrc="/media/fachschaft/Fachschaft-Foto-mini.webp"
-							alt="Foto Fachschaft"
-							class="img-fluid rounded"
-						/>
+					<div class="row justify-content-center mb-4">
+						<div class="col-md-6 text-center d-flex flex-column align-items-center">
+							<ProgressiveImage
+								previewSrc="/media/portraits/valentin-mini.webp"
+								fullSrc="/media/portraits/valentin.webp"
+								srcset="/media/portraits/valentin.webp 1000w, /media/portraits/valentin-500.webp 500w, /media/portraits/valentin-250.webp 250w"
+								alt="Portrait von Valentin"
+								aspectRatio="1/1"
+								class="rounded-circle img-fluid mb-2"
+								style="width: 200px; height: 200px; object-fit: cover;"
+								loading="lazy"
+							/>
+							<p class="mb-0">Valentin</p>
+						</div>
+						<div class="col-md-6 text-center d-flex flex-column align-items-center">
+							<ProgressiveImage
+								previewSrc="/media/portraits/aaron-mini.webp"
+								fullSrc="/media/portraits/aaron.webp"
+								srcset="/media/portraits/aaron.webp 1000w, /media/portraits/aaron-500.webp 500w, /media/portraits/aaron-250.webp 250w"
+								alt="Portrait von Aaron"
+								aspectRatio="1/1"
+								class="rounded-circle img-fluid mb-2"
+								style="width: 200px; height: 200px; object-fit: cover;"
+								loading="lazy"
+							/>
+							<p class="mb-0">Aaron</p>
+						</div>
 					</div>
-					<p class="text-center">
-						{m.about_link_to_coli_homepage()}
-					</p>
-					<p class="text-center mb-2">
-						<a
-							href="https://fachschaft.cl.uni-heidelberg.de"
-							class="text-decoration-none btn btn-outline-secondary btn-sm"
-						>
-							Fachschaft Computerlinguistik Heidelberg
-						</a>
-					</p>
-					<p class="lead text-center mb-4">
-						{m.about_description_2()}
-					</p>
-					<NextPageButton href="/team" text={m.go_to_team_button()} />
+					<NextPageButton href="/sponsors" text={m.go_to_sponsors_button()} />
 				</div>
 			</div>
 		</div>

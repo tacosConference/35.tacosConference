@@ -21,7 +21,7 @@ import NextPageButton from '$lib/components/NextPageButton.svelte';
 					<p class="lead text-center mb-4">
 						{m.timetable_description_lead()}
 					</p>
-					<NextPageButton href="/archive" text={m.go_to_archive_button()} />
+					<NextPageButton href="/friends" text={m.go_to_friends_button()} />
 				</div>
 			</div>
 		</div>

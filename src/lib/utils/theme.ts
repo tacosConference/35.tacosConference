@@ -22,9 +22,11 @@ export function getRandomColor(): string {
 }
 
 export function getLogoPath(color: string): string {
+  if (color === 'transparent') return `/media/logo/tacos.svg`;
   return `/media/logo/tacos_${color}.svg`;
 }
 
 export function getMinLogoPath(color: string): string {
-  return `/media/logo/tacos_${color}_min.svg`;
+  if (color === 'transparent') return `/media/logo/tacos_min.svg`;
+  return `/media/logo/tacos_${color}_min.svg`; 
 }

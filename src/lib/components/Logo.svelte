@@ -8,7 +8,7 @@
 
 	export let color: string;
 	$: logoPath = getLogoPath(color);
-	$: minLogoPath = getMinLogoPath(color);
+	let minLogoPath = getMinLogoPath("transparent");
 </script>
 
 <a class="navbar-brand fw-bold d-flex align-items-center" href={resolve('/')}>
