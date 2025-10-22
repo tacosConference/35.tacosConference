@@ -52,7 +52,7 @@ $tacos-colors: (
 :root {
 	@each $color-name, $color-variants in $tacos-colors {
 		@each $variant, $hex in $color-variants {
-			--tacos-#{$color-name}-#{$variant}: #{$hex};
+			--tacos-#{"" + $color-name}-#{$variant}: #{$hex};
 		}
 	}
 }
@@ -76,68 +76,68 @@ $tacos-colors: (
 
 // Mixins for button styles
 @mixin tacos-btn($color) {
-	background-color: var(--tacos-#{$color}-main);
-	border-color: var(--tacos-#{$color}-light) !important;
+	background-color: var(--tacos-#{"" + $color}-main);
+	border-color: var(--tacos-#{"" + $color}-light) !important;
 
 	&:hover {
-		background-color: var(--tacos-#{$color}-dark);
+		background-color: var(--tacos-#{"" + $color}-dark);
 	}
 
 	&:active {
-		background-color: var(--tacos-#{$color}-darkest) !important;
+		background-color: var(--tacos-#{"" + $color}-darkest) !important;
 	}
 
 	&:focus,
 	&:focus-visible {
-		box-shadow: 0 0 0 0.25rem var(--tacos-#{$color}-light);
-		background-color: var(--tacos-#{$color}-dark);
+		box-shadow: 0 0 0 0.25rem var(--tacos-#{"" + $color}-light);
+		background-color: var(--tacos-#{"" + $color}-dark);
 	}
 }
 
 @mixin tacos-btn-outline($color) {
 	background-color: transparent;
-	border-color: var(--tacos-#{$color}-main) !important;
-	color: var(--tacos-#{$color}-main);
+	border-color: var(--tacos-#{"" + $color}-main) !important;
+	color: var(--tacos-#{"" + $color}-main);
 
 	&:hover {
-		background-color: var(--tacos-#{$color}-main);
+		background-color: var(--tacos-#{"" + $color}-main);
 		color: white;
 	}
 
 	&:active {
-		background-color: var(--tacos-#{$color}-darkest) !important;
+		background-color: var(--tacos-#{"" + $color}-darkest) !important;
 		color: white;
 	}
 
 	&:focus,
 	&:focus-visible {
-		box-shadow: 0 0 0 0.25rem var(--tacos-#{$color}-light);
-		background-color: var(--tacos-#{$color}-dark);
+		box-shadow: 0 0 0 0.25rem var(--tacos-#{"" + $color}-light);
+		background-color: var(--tacos-#{"" + $color}-dark);
 		color: white;
 	}
 }
 
 @mixin tacos-input($color) {
-	background-color: var(--tacos-#{$color}-lighter);
-	border-color: var(--tacos-#{$color}-light);
-	color: var(--tacos-#{$color}-darkest);
+	background-color: var(--tacos-#{"" + $color}-lighter);
+	border-color: var(--tacos-#{"" + $color}-light);
+	color: var(--tacos-#{"" + $color}-darkest);
 	transition:
 		border-color 0.15s ease-in-out,
 		box-shadow 0.15s ease-in-out,
 		background-color 0.15s ease-in-out;
 
 	&:focus {
-		border-color: var(--tacos-#{$color}-main);
-		box-shadow: 0 0 0 0.25rem var(--tacos-#{$color}-light);
+		border-color: var(--tacos-#{"" + $color}-main);
+		box-shadow: 0 0 0 0.25rem var(--tacos-#{"" + $color}-light);
 		outline: 0;
 	}
 
 	&:hover:not(:focus) {
-		border-color: var(--tacos-#{$color}-dark);
+		border-color: var(--tacos-#{"" + $color}-dark);
 	}
 
 	&::placeholder {
-		color: var(--tacos-#{$color}-dark);
+		color: var(--tacos-#{"" + $color}-dark);
 		opacity: 0.7;
 	}
 }
@@ -145,59 +145,59 @@ $tacos-colors: (
 // Generate the CSS classes for each color
 @each $color-name, $color-variants in $tacos-colors {
 	// Background classes
-	.tacos-bg-#{$color-name} {
-		background-color: var(--tacos-#{$color-name}-main) !important;
+	.tacos-bg-#{"" + $color-name} {
+		background-color: var(--tacos-#{"" + $color-name}-main) !important;
 	}
 
 	// Button classes
-	.tacos-btn-#{$color-name} {
+	.tacos-btn-#{"" + $color-name} {
 		@include tacos-btn($color-name);
 	}
 
 	// Outline button classes
-	.tacos-btn-outline-#{$color-name} {
+	.tacos-btn-outline-#{"" + $color-name} {
 		@include tacos-btn-outline($color-name);
 	}
 
 	// Input field classes
-	.tacos-input-#{$color-name} {
+	.tacos-input-#{"" + $color-name} {
 		@include tacos-input($color-name);
 	}
 
 	// Checkbox and radio classes
-	.tacos-check-#{$color-name} {
+	.tacos-check-#{"" + $color-name} {
 		transition:
 			border-color 0.15s ease-in-out,
 			box-shadow 0.15s ease-in-out,
 			background-color 0.15s ease-in-out;
 		&:checked {
-			background-color: var(--tacos-#{$color-name}-main);
-			border-color: var(--tacos-#{$color-name}-main);
+			background-color: var(--tacos-#{"" + $color-name}-main);
+			border-color: var(--tacos-#{"" + $color-name}-main);
 		}
 		&:focus {
-			box-shadow: 0 0 0 0.25rem var(--tacos-#{$color-name}-light);
+			box-shadow: 0 0 0 0.25rem var(--tacos-#{"" + $color-name}-light);
 		}
 	}
 
 	// Form group styling
-	.tacos-form-group-#{$color-name} {
+	.tacos-form-group-#{"" + $color-name} {
 		margin-bottom: 1rem;
 
 		label {
-			color: var(--tacos-#{$color-name}-darkest);
+			color: var(--tacos-#{"" + $color-name}-darkest);
 		}
 
 		.form-text {
-			color: var(--tacos-#{$color-name}-dark);
+			color: var(--tacos-#{"" + $color-name}-dark);
 		}
 	}
 	
-	.tacos-link-#{$color-name} {
-        color: var(--tacos-#{$color-name}-main);
+	.tacos-link-#{"" + $color-name} {
+        color: var(--tacos-#{"" + $color-name}-main);
         text-decoration: none;
 
         &:hover {
-            color: var(--tacos-#{$color-name}-dark);
+            color: var(--tacos-#{"" + $color-name}-dark);
             text-decoration: underline;
         }
     }
