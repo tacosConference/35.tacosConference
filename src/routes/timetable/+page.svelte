@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Headline from '$lib/components/Headline.svelte';
-import NextPageButton from '$lib/components/NextPageButton.svelte';
+	import NextPageButton from '$lib/components/NextPageButton.svelte';
 	import { m } from '$lib/paraglide/messages.js';
 </script>
 

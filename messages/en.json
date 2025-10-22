@@ -9,6 +9,7 @@
 	"about": "About",
 	"what_is": "About TaCoS",
 	"archive": "Archive",
+	"contact": "Contact",
 	"go_to_what_is_button": "What is TaCoS?",
 	"go_to_about_button": "Who are we?",
 	"go_to_sponsors_button": "Who are the sponsors?",
@@ -17,7 +18,7 @@
 	"go_to_archive_button": "Haven't read enough? Go to the archive!",
 	"percent_done": "Website is {percent}% done",
 	"conference_description": "The Fachschaft Computerlinguistik Heidelberg is looking forward to welcoming you in 2026 for the 35th annual student-led conference on Computational Linguistics.",
-	"conference_description_2": "Save The Date! Our TaCoS will take place from Thursday, May 21st to Saturday, May 23rd, 2026.",
+	"conference_description_2": "SAVE THE DATE! Our TaCoS will take place from Thursday, May 21st to Saturday, May 23rd, 2026.",
 	"archive_title": "Archive",
 	"archive_description": "Here you'll find links to the websites of previous TaCoS conferences. Whether you're planning your own TaCoS, want to reminisce, or are looking for something specific, the pages from the past are preserved here. Enjoy browsing!",
 	"team_title": "Our Team",
@@ -40,5 +41,10 @@
 	"until_then_text": "Until then, go check out the websites of previous conferences:",
 	"conference_34_bochum": "34th conference in Bochum, 2025",
 	"conference_33_saarbrucken": "33rd conference in Saarbrücken, 2024",
-	"conference_32_dusseldorf": "32nd conference in Düsseldorf, 2023"
+	"conference_32_dusseldorf": "32nd conference in Düsseldorf, 2023",
+	"contact_title": "How to reach us",
+	"contact_lead": "Do you have questions, suggestions, or would you like to support us? Please feel free to contact us!",
+	"contact_mail_text": "You can best reach us by email at ",
+		"contact_mail_text_2": ". We look forward to your message!",
+	"newsletter_consent": "I would like to subscribe to the newsletter and be informed about news regarding TaCoS. I can unsubscribe at any time. The receipt of the newsletter must be confirmed in the corresponding confirmation email."
 }

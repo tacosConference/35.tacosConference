@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { hasContext, onMount, setContext } from 'svelte';
 	import '$lib/fonts.css';
-	import '../app.css';
+	import '../app.scss';
 	import HeaderBar from '$lib/components/HeaderBar.svelte';
 	import Transition from '$lib/components/Transition.svelte';
 	import ProgressiveImage from '$lib/components/ProgressiveImage.svelte';

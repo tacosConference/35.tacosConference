@@ -1,0 +1,291 @@
+@import './lib/fonts.css';
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+// Define color palettes as Sass maps
+$tacos-colors: (
+	transparent: (
+		main: #48484877,
+		dark: #cccccc88,
+		darkest: #3a3a3acc,
+		light: #ffffff88,
+		lighter: #ffffffdd
+	),
+	blue: (
+		main: #00a0d7,
+		dark: #0090c7,
+		darkest: #007aa0,
+		light: #ccecff,
+		lighter: #f0f9ff
+	),
+	teal: (
+		main: #009999,
+		dark: #008989,
+		darkest: #006060,
+		light: #ccffcc,
+		lighter: #f0fffa
+	),
+	purple: (
+		main: #5b2d90,
+		dark: #4b1d80,
+		darkest: #27006a,
+		light: #ccccff,
+		lighter: #f5f5ff
+	),
+	green: (
+		main: #008c3a,
+		dark: #007c2a,
+		darkest: #005805,
+		light: #ccff99,
+		lighter: #f0ffee
+	),
+	pink: (
+		main: #cc0368,
+		dark: #bc0358,
+		darkest: #9f033e,
+		light: #ffccff,
+		lighter: #fff0fc
+	)
+);
+
+// Generate CSS variables from the Sass maps
+:root {
+	@each $color-name, $color-variants in $tacos-colors {
+		@each $variant, $hex in $color-variants {
+			--tacos-#{$color-name}-#{$variant}: #{$hex};
+		}
+	}
+}
+
+// Global transition for smooth color changes
+* {
+	transition:
+		background-color 2s,
+		color 2s;
+}
+.tacos-btn-transparent {
+	transition:
+		background-color 2s,
+		color 2s !important;
+}
+
+// Form controls focus outline
+.form-control:focus {
+	outline: 0;
+}
+
+// Mixins for button styles
+@mixin tacos-btn($color) {
+	background-color: var(--tacos-#{$color}-main);
+	border-color: var(--tacos-#{$color}-light) !important;
+
+	&:hover {
+		background-color: var(--tacos-#{$color}-dark);
+	}
+
+	&:active {
+		background-color: var(--tacos-#{$color}-darkest) !important;
+	}
+
+	&:focus,
+	&:focus-visible {
+		box-shadow: 0 0 0 0.25rem var(--tacos-#{$color}-light);
+		background-color: var(--tacos-#{$color}-dark);
+	}
+}
+
+@mixin tacos-btn-outline($color) {
+	background-color: transparent;
+	border-color: var(--tacos-#{$color}-main) !important;
+	color: var(--tacos-#{$color}-main);
+
+	&:hover {
+		background-color: var(--tacos-#{$color}-main);
+		color: white;
+	}
+
+	&:active {
+		background-color: var(--tacos-#{$color}-darkest) !important;
+		color: white;
+	}
+
+	&:focus,
+	&:focus-visible {
+		box-shadow: 0 0 0 0.25rem var(--tacos-#{$color}-light);
+		background-color: var(--tacos-#{$color}-dark);
+		color: white;
+	}
+}
+
+@mixin tacos-input($color) {
+	background-color: var(--tacos-#{$color}-lighter);
+	border-color: var(--tacos-#{$color}-light);
+	color: var(--tacos-#{$color}-darkest);
+	transition:
+		border-color 0.15s ease-in-out,
+		box-shadow 0.15s ease-in-out,
+		background-color 0.15s ease-in-out;
+
+	&:focus {
+		border-color: var(--tacos-#{$color}-main);
+		box-shadow: 0 0 0 0.25rem var(--tacos-#{$color}-light);
+		outline: 0;
+	}
+
+	&:hover:not(:focus) {
+		border-color: var(--tacos-#{$color}-dark);
+	}
+
+	&::placeholder {
+		color: var(--tacos-#{$color}-dark);
+		opacity: 0.7;
+	}
+}
+
+// Generate the CSS classes for each color
+@each $color-name, $color-variants in $tacos-colors {
+	// Background classes
+	.tacos-bg-#{$color-name} {
+		background-color: var(--tacos-#{$color-name}-main) !important;
+	}
+
+	// Button classes
+	.tacos-btn-#{$color-name} {
+		@include tacos-btn($color-name);
+	}
+
+	// Outline button classes
+	.tacos-btn-outline-#{$color-name} {
+		@include tacos-btn-outline($color-name);
+	}
+
+	// Input field classes
+	.tacos-input-#{$color-name} {
+		@include tacos-input($color-name);
+	}
+
+	// Checkbox and radio classes
+	.tacos-check-#{$color-name} {
+		transition:
+			border-color 0.15s ease-in-out,
+			box-shadow 0.15s ease-in-out,
+			background-color 0.15s ease-in-out;
+		&:checked {
+			background-color: var(--tacos-#{$color-name}-main);
+			border-color: var(--tacos-#{$color-name}-main);
+		}
+		&:focus {
+			box-shadow: 0 0 0 0.25rem var(--tacos-#{$color-name}-light);
+		}
+	}
+
+	// Form group styling
+	.tacos-form-group-#{$color-name} {
+		margin-bottom: 1rem;
+
+		label {
+			color: var(--tacos-#{$color-name}-darkest);
+		}
+
+		.form-text {
+			color: var(--tacos-#{$color-name}-dark);
+		}
+	}
+	
+	.tacos-link-#{$color-name} {
+        color: var(--tacos-#{$color-name}-main);
+        text-decoration: none;
+
+        &:hover {
+            color: var(--tacos-#{$color-name}-dark);
+            text-decoration: underline;
+        }
+    }
+	
+}
+
+body {
+	margin: 0;
+	font-family: 'Nunito', sans-serif;
+	background-attachment: fixed;
+	min-height: 100%;
+	background-size: 150% 150%;
+	animation: gradientMove 30s ease-in-out infinite;
+}
+
+@keyframes gradientMove {
+	0% {
+		background-position: 60% 50%;
+	}
+	25% {
+		background-position: 50% 60%;
+	}
+	50% {
+		background-position: 40% 50%;
+	}
+	75% {
+		background-position: 50% 40%;
+	}
+	100% {
+		background-position: 60% 50%;
+	}
+}
+
+.btn {
+	position: relative;
+	z-index: 0;
+
+	&:hover::before {
+		content: '';
+		position: absolute;
+		inset: -2px;
+		padding: 2px;
+		border-radius: inherit;
+		background: linear-gradient(105deg, red, orange, yellow, red);
+		background-size: 400% 400%;
+		animation: rainbowMove 6s linear infinite;
+		mask:
+			linear-gradient(#fff 0 0) content-box,
+			linear-gradient(#fff 0 0);
+		-webkit-mask-composite: xor;
+		mask-composite: exclude;
+		z-index: -1;
+	}
+}
+
+@keyframes rainbowMove {
+	0% {
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 400% 50%;
+	}
+}
+
+#main-container {
+	padding-bottom: 40px;
+}
+
+.text-justify {
+	text-align: justify;
+	white-space: pre-line;
+}
+
+.arrow-hover {
+	display: inline-block;
+	transition: 0.3s ease;
+}
+
+*:hover > .arrow-hover {
+	transform: translateX(12px);
+}
+
+.w-min-50 {
+	min-width: 50%;
+}
+
+.card {
+	backdrop-filter: blur(16px) saturate(180%);
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 12px;
+}

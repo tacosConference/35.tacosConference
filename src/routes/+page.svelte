@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Headline from '$lib/components/Headline.svelte';
 	import Logo from '$lib/components/Logo.svelte';
+	import NewsletterForm from '$lib/components/NewsletterForm.svelte';
 	import NextPageButton from '$lib/components/NextPageButton.svelte';
 	import { m } from '$lib/paraglide/messages.js';
 	import { getContext } from 'svelte';
@@ -30,9 +31,15 @@
 						{m.conference_description()}
 					</p>
 
-					<p class="lead text-center mb-4">
+					<p class="lead text-center mb-4 alert alert-warning" role="alert">
 						{m.conference_description_2()}
 					</p>
+
+					<div class="card" style="background-color: transparent; backdrop-filter: none">
+						<div class="card-body">
+							<NewsletterForm />
+						</div>
+					</div>
 
 					<NextPageButton href="/what-is" text={m.go_to_what_is_button()} />
 				</div>

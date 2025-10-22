@@ -9,6 +9,7 @@
 	"about": "Über uns",
 	"what_is": "Über TaCoS",
 	"archive": "Archiv",
+	"contact": "Kontakt",
 	"go_to_what_is_button": "Was ist die TaCoS?",
 	"go_to_about_button": "Wer sind wir?",
 	"go_to_sponsors_button": "Wer sind die Sponsoren?",
@@ -17,7 +18,7 @@
 	"go_to_archive_button": "Noch nicht genug gelesen? Zum Archiv!",
 	"percent_done": "Seite ist {percent}% fertig",
 	"conference_description": "Die Fachschaft Computerlinguistik Heidelberg freut sich darauf, euch 2026 zur 35. jährlichen studentischen Konferenz für Computerlinguistik begrüßen zu dürfen.",
-	"conference_description_2": "Save The Date! Unsere TaCoS wird vom Donnerstag den 21. Mai bis Samstag den 23. Mai 2026 stattfinden.",
+	"conference_description_2": "SAVE THE DATE! Unsere TaCoS wird vom Donnerstag den 21. Mai bis Samstag den 23. Mai 2026 stattfinden.",
 	"archive_title": "Archiv",
 	"archive_description": "Hier findest du Links zu den Websites der vorherigen TaCoS-Konferenzen. Egal ob Du gerade Deine eigene TaCoS planst, in Erinnerungen schwelgen willst oder etwas nachschauen möchtest. Die Seiten von früher sind hier erhalten. Viel Spaß beim Stöbern!",
 	"team_title": "Unser Team",
@@ -40,5 +41,10 @@
 	"until_then_text": "Bis dahin schaut euch sich die Websites vorheriger Konferenzen an:",
 	"conference_34_bochum": "34. Konferenz in Bochum, 2025",
 	"conference_33_saarbrucken": "33. Konferenz in Saarbrücken, 2024",
-	"conference_32_dusseldorf": "32. Konferenz in Düsseldorf, 2023"
+	"conference_32_dusseldorf": "32. Konferenz in Düsseldorf, 2023",
+	"contact_title": "So erreichst du uns",
+	"contact_lead": "Hast du Fragen, Anregungen oder möchtest uns unterstützen? Dann melde dich gerne bei uns!",
+	"contact_mail_text": "Du kannst uns am besten per E-Mail erreichen unter ",
+  "contact_mail_text_2": ". Wir freuen uns auf deine Nachricht!",
+	"newsletter_consent": "Ich möchte den Newsletter abonnieren und über Neuigkeiten zur TaCoS informiert werden. Ich kann mich jederzeit wieder abmelden. Der Empfang des Newsletters muss in der entsprechenden Bestätigungs-E-Mail bestätigt werden."
 }
