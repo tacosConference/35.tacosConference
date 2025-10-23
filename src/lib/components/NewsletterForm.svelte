@@ -36,22 +36,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="row g-2 mb-3">
-		<div class="form-check">
-			<input
-				type="checkbox"
-				class="form-check-input {checkClassName}"
-				id="consent"
-				name="contact[consent]"
-				required
-			/>
-			<label class="form-check-label" for="consent">
-				{m ? m.newsletter_consent() : 'I agree to receive the newsletter'}
-			</label>
-		</div>
-	</div>
 	<div class="row g-2">
-			<input aria-hidden="true" autocomplete="off" name="h[url]" style="display: none" />
-			<button class="btn btn-primary {colorClassName}"> Subscribe </button>
-		</div>
+		<input aria-hidden="true" autocomplete="off" name="h[url]" style="display: none" />
+		<button class="btn btn-primary {colorClassName}"> Subscribe </button>
+	</div>
 </form>
