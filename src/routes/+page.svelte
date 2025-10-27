@@ -31,10 +31,6 @@
 						{m.conference_description()}
 					</p>
 
-					<p class="lead text-center mb-4 alert alert-warning" role="alert">
-						{m.conference_description_2()}
-					</p>
-
 					<div class="card" style="background-color: transparent; backdrop-filter: none">
 						<div class="card-body">
 							<NewsletterForm />
