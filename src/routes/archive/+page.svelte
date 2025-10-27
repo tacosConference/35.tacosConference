@@ -16,7 +16,7 @@ import LinkButton from '$lib/components/LinkButton.svelte';
 			<div class="card shadow-lg">
 				<div class="card-body p-5">
 					<Headline>
-						{m.archive_title()}
+						{m.archive()}
 					</Headline>
 
 					<p class="text-center mb-4">
