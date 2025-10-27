@@ -17,7 +17,7 @@ import NextPageButton from '$lib/components/NextPageButton.svelte';
 			<div class="card shadow-lg">
 				<div class="card-body p-5">
 					<Headline>
-						{m.team_title()}
+						{m.team()}
 					</Headline>
 					<p class="text-center mb-4">
 						{m.team_description()}

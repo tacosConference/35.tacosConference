@@ -40,7 +40,7 @@
 				</li>
 				<li class="nav-item mx-1">
 					<a class="nav-link" class:active={page.url.pathname === '/about/'} href={resolve('/about')}
-						>{m.about()}</a
+						>{m.team()}</a
 					>
 				</li>
 				<li class="nav-item mx-1">
