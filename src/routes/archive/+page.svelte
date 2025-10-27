@@ -24,14 +24,8 @@ import LinkButton from '$lib/components/LinkButton.svelte';
 					</p>
 
 					<div class="d-grid gap-2">
-						<LinkButton href="https://tacosconference.github.io/34.tacosConference/" outline={true}
-							>{m.conference_34_bochum()}</LinkButton
-						>
-						<LinkButton href="https://tacosconference.github.io/33.tacosConference/" outline={true}
-							>{m.conference_33_saarbrucken()}</LinkButton
-						>
-						<LinkButton href="https://tacosconference.github.io/32.tacosConference/" outline={true}
-							>{m.conference_32_dusseldorf()}</LinkButton
+						<LinkButton href="https://linguistik.computer" outline={true}
+							>{m.archive_link_title()}</LinkButton
 						>
 					</div>
 				</div>
