@@ -16,7 +16,7 @@
 			<div class="card shadow-lg">
 				<div class="card-body p-5">
 					<Headline>
-						{m.timetable_title()}
+						{m.timetable()}
 					</Headline>
 					<p class="lead text-center mb-4">
 						{m.timetable_description_lead()}
