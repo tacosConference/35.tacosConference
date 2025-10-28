@@ -1,23 +1,8 @@
 <script lang="ts">
 	import Headline from '$lib/components/Headline.svelte';
-	import NextPageButton from '$lib/components/NextPageButton.svelte';
+	import PrivacyLink from '$lib/components/PrivacyLink.svelte';
 	import { m } from '$lib/paraglide/messages.js';
-	import { getContext, onMount } from 'svelte';
 
-	let color = getContext<{ color: string }>('color').color;
-	let tacosLinkClass = `tacos-link-${color}`;
-	let emailContainer: HTMLElement;
-
-	// Create email link dynamically on component mount
-	onMount(() => {
-		if (emailContainer) {
-			const username = 'tacos';
-			const domain = 'cl.uni-heidelberg.de';
-			const emailAddress = username + '@' + domain;
-
-			emailContainer.innerHTML = `<a href="mailto:${emailAddress}" class="text-decoration-none fw-bold ${tacosLinkClass}">${emailAddress}</a>`;
-		}
-	});
 </script>
 
 <svelte:head>
@@ -40,7 +25,7 @@
 					<p class="lead text-center mb-4">
 						{m.contact_mail_text()}
 						<!-- Email placeholder that will be populated by JavaScript -->
-						<span bind:this={emailContainer}>[...]</span>
+						<PrivacyLink isMail={true} href=tacos@cl.uni-heidelberg.de />
 						{m.contact_mail_text_2()}
 					</p>
 				</div>

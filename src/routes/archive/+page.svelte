@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Headline from '$lib/components/Headline.svelte';
-import LinkButton from '$lib/components/LinkButton.svelte';
+	import LinkButton from '$lib/components/LinkButton.svelte';
 	import { m } from '$lib/paraglide/messages.js';
 </script>
 
@@ -24,8 +24,11 @@ import LinkButton from '$lib/components/LinkButton.svelte';
 					</p>
 
 					<div class="d-grid gap-2">
-						<LinkButton href="https://linguistik.computer" outline={true}
-							>{m.archive_link_title()}</LinkButton
+						<LinkButton
+							href="https://linguistik.computer"
+							outline={true}
+							iconClass="bi bi-box-arrow-up-right"
+							iconPosition="right">{m.archive_link_title()}</LinkButton
 						>
 					</div>
 				</div>
