@@ -21,6 +21,9 @@
 					<p class="lead text-center mb-4">
 						{m.timetable_description_lead()}
 					</p>
+					<p class="mb-4">
+						{m.timetable_description()}
+					</p>
 					<NextPageButton href="/participate" text={m.go_to_participate_button()} />
 				</div>
 			</div>
