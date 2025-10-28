@@ -19,13 +19,7 @@ import NextPageButton from '$lib/components/NextPageButton.svelte';
 					<Headline>
 						{m.team()}
 					</Headline>
-					<p class="text-center mb-4">
-						{m.team_description()}
-					</p>
 					<p class="lead text-center mb-4">
-						{m.team_description_lower_lead()}
-					</p>
-					<p class="text-center mb-4">
 						{m.team_organizers_description()}
 					</p>
 					<div class="row justify-content-center mb-4">
