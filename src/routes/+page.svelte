@@ -28,6 +28,10 @@
 					</span>
 
 					<p class="lead text-center mb-4">
+						{m.conference_description_lead()}
+					</p>
+
+					<p class="mb-4">
 						{m.conference_description()}
 					</p>
 
