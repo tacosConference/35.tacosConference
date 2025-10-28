@@ -7,7 +7,7 @@ import LinkButton from '$lib/components/LinkButton.svelte';
 <svelte:head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Archiv - TaCoS</title>
+	<title>Archiv · TaCoS</title>
 </svelte:head>
 
 <div id="main-container" class="container mt-5">
