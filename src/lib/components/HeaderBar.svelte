@@ -34,8 +34,8 @@
 				<li class="nav-item mx-1">
 					<a
 						class="nav-link"
-						class:active={page.url.pathname === '/what-is/'}
-						href={resolve('/what-is')}>{m.what_is()}</a
+						class:active={page.url.pathname === '/about/'}
+						href={resolve('/about')}>{m.what_is()}</a
 					>
 				</li>
 				<li class="nav-item mx-1">
