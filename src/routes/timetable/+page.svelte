@@ -21,7 +21,7 @@
 					<p class="lead text-center mb-4">
 						{m.timetable_description_lead()}
 					</p>
-					<NextPageButton href="/friends" text={m.go_to_friends_button()} />
+					<NextPageButton href="/archive" text={m.go_to_archive_button()} />
 				</div>
 			</div>
 		</div>

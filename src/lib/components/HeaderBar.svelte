@@ -58,11 +58,6 @@
 					>
 				</li>
 				<li class="nav-item mx-1">
-					<a class="nav-link" class:active={page.url.pathname === '/friends/'} href={resolve('/friends')}
-						>{m.friends()}</a
-					>
-				</li>
-				<li class="nav-item mx-1">
 					<a
 						class="nav-link"
 						class:active={page.url.pathname == '/archive/'}
