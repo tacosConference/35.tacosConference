@@ -22,7 +22,7 @@ import NextPageButton from '$lib/components/NextPageButton.svelte';
 					<p class="mb-4 text-justify">
 						{m.what_is_description()}
 					</p>
-					<NextPageButton href="/about" text={m.go_to_about_button()} />
+					<NextPageButton href="/team" text={m.go_to_team_button()} />
 				</div>
 			</div>
 		</div>

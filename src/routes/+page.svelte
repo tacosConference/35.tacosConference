@@ -37,7 +37,7 @@
 						</div>
 					</div>
 
-					<NextPageButton href="/about" text={m.go_to_what_is_button()} />
+					<NextPageButton href="/about" text={m.go_to_about_button()} />
 				</div>
 			</div>
 		</div>
