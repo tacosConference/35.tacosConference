@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Headline from '$lib/components/Headline.svelte';
+	import Link from '$lib/components/Link.svelte';
 	import NextPageButton from '$lib/components/NextPageButton.svelte';
 	import { m } from '$lib/paraglide/messages.js';
 </script>
@@ -22,7 +23,7 @@
 						{m.timetable_description_lead()}
 					</p>
 					<p class="mb-4">
-						{m.timetable_description()} <a href="/">{m.subscribe_to_the_newsletter()}</a>.
+						{m.timetable_description()} <Link href="/" text="{m.subscribe_to_the_newsletter()}" />
 					</p>
 					<NextPageButton href="/participate" text={m.go_to_participate_button()} />
 				</div>

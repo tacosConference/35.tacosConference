@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Headline from '$lib/components/Headline.svelte';
 import NextPageButton from '$lib/components/NextPageButton.svelte';
+	import PrivacyLink from '$lib/components/PrivacyLink.svelte';
 	import { m } from '$lib/paraglide/messages.js';
 </script>
 
@@ -22,7 +23,8 @@ import NextPageButton from '$lib/components/NextPageButton.svelte';
 						{m.sponsors_description()}
 					</p>
 					<p class="lead text-center mb-4">
-						{m.sponsors_lead()} <a href="mailto:tacos@cl.uni-heidelberg.de">tacos@cl.uni-heidelberg.de</a>.
+						{m.sponsors_lead()} 
+						<PrivacyLink isMail={true} href="tacos@cl.uni-heidelberg.de" />
 					</p>
 					<p class="text-justify mb-4">
 						{m.sponsors_description_costs()}
