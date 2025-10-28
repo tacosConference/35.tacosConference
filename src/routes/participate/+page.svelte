@@ -7,7 +7,7 @@
 <svelte:head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>{m.timetable()} · TaCoS</title>
+	<title>Teilnehmen · TaCoS</title>
 </svelte:head>
 
 <div id="main-container" class="container mt-5">
@@ -16,12 +16,12 @@
 			<div class="card shadow-lg">
 				<div class="card-body p-5">
 					<Headline>
-						{m.timetable()}
+						Teilnehmen
 					</Headline>
 					<p class="lead text-center mb-4">
-						{m.timetable_description_lead()}
+						Loool soos
 					</p>
-					<NextPageButton href="/participate" text={m.go_to_participate_button()} />
+					<NextPageButton href="/archive" text={m.go_to_archive_button()} />
 				</div>
 			</div>
 		</div>

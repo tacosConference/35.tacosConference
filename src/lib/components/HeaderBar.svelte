@@ -60,6 +60,13 @@
 				<li class="nav-item mx-1">
 					<a
 						class="nav-link"
+						class:active={page.url.pathname === '/participate/'}
+						href={resolve('/participate')}>{m.participate()}</a
+					>
+				</li>
+				<li class="nav-item mx-1">
+					<a
+						class="nav-link"
 						class:active={page.url.pathname == '/archive/'}
 						href={resolve('/archive')}>{m.archive()}</a
 					>
