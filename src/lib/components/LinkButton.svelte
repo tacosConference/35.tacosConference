@@ -10,7 +10,7 @@
 	let colorClassName = `tacos-btn-${outline ? 'outline-' : ''}${color}`;
 </script>
 
-<a {href} class="btn btn-outline-primary btn-lg {className} {colorClassName}">
+<a {href} class="btn btn-outline-primary btn-lg {className} {colorClassName}" target="_blank">
 	{#if iconClass && iconPosition === 'left'}
 		<i class="icon-left {iconClass}"></i>
 	{/if}
