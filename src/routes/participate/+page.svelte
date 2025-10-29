@@ -53,6 +53,11 @@
 						{m.participate_language_description()}
 					</p>
 
+					<h3>{m.participate_accommodation()}</h3>
+					<p class="mb-4">
+						{m.participate_accommodation_description()}
+					</p>
+
 					<NextPageButton href="/archive" text={m.go_to_archive_button()} />
 				</div>
 			</div>
