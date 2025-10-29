@@ -24,7 +24,7 @@ import NextPageButton from '$lib/components/NextPageButton.svelte';
 					</p>
 					<p class="lead text-center mb-4">
 						{m.sponsors_lead()} 
-						<PrivacyLink isMail={true} href="tacos@cl.uni-heidelberg.de" />
+						<PrivacyLink isMail={true} href="tacos@cl.uni-heidelberg.de" />.
 					</p>
 					<p class="text-justify mb-4">
 						{m.sponsors_description_costs()}

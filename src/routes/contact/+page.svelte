@@ -8,7 +8,7 @@
 <svelte:head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Kontakt - TaCoS</title>
+	<title>{m.contact()} · TaCoS</title>
 </svelte:head>
 
 <div id="main-container" class="container mt-5">
@@ -17,7 +17,7 @@
 			<div class="card shadow-lg">
 				<div class="card-body p-5">
 					<Headline>
-						{m.contact_title()}
+						{m.contact()}
 					</Headline>
 					<p class="lead text-center mb-4">
 						{m.contact_lead()}
@@ -25,7 +25,7 @@
 					<p class="lead text-center mb-4">
 						{m.contact_mail_text()}
 						<!-- Email placeholder that will be populated by JavaScript -->
-						<PrivacyLink isMail={true} href=tacos@cl.uni-heidelberg.de />
+						<PrivacyLink isMail={true} href=tacos@cl.uni-heidelberg.de />.
 						{m.contact_mail_text_2()}
 					</p>
 				</div>
