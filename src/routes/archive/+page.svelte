@@ -19,7 +19,7 @@
 						{m.archive()}
 					</Headline>
 
-					<p class="text-center mb-4">
+					<p class="mb-4">
 						{m.archive_description()}
 					</p>
 

@@ -251,6 +251,10 @@ body {
 		mask-composite: exclude;
 		z-index: -1;
 	}
+
+	i.bi {
+		transition: none;
+	}
 }
 
 @keyframes rainbowMove {
