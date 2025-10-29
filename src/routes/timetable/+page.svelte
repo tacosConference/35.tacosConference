@@ -23,7 +23,7 @@
 						{m.timetable_description_lead()}
 					</p>
 					<p class="mb-4">
-						{m.timetable_description()} <Link href="/" text="{m.subscribe_to_the_newsletter()}" />
+						{m.timetable_description()} <Link href="/" text="{m.subscribe_to_the_newsletter()}" />.
 					</p>
 					<NextPageButton href="/participate" text={m.go_to_participate_button()} />
 				</div>
