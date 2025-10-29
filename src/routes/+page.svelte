@@ -11,7 +11,7 @@
 <svelte:head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Tagung der Computerlinguistik-Studierenden</title>
+	<title>35. Tagung der Computerlinguistik-Studierenden 2026</title>
 </svelte:head>
 
 <div id="main-container" class="container mt-5">
