@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Countdown from '$lib/components/Countdown.svelte';
 	import Headline from '$lib/components/Headline.svelte';
 	import Logo from '$lib/components/Logo.svelte';
 	import NewsletterForm from '$lib/components/NewsletterForm.svelte';
@@ -26,6 +27,8 @@
 					<span class="d-flex justify-content-center">
 						<Logo withText={false} size="250px" {color} />
 					</span>
+
+					<Countdown targetDate={new Date('2026-05-21T00:00:00')} />
 
 					<p class="lead text-center mb-4">
 						{m.conference_description_lead()}
