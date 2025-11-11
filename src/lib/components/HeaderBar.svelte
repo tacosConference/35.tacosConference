@@ -67,14 +67,14 @@
 				<li class="nav-item mx-1">
 					<a
 						class="nav-link"
-						class:active={page.url.pathname == '/archive/'}
+						class:active={page.url.pathname === '/archive/'}
 						href={resolve('/archive')}>{m.archive()}</a
 					>
 				</li>
 				<li class="nav-item mx-1">
 					<a
 						class="nav-link"
-						class:active={page.url.pathname == '/contact/'}
+						class:active={page.url.pathname === '/contact/'}
 						href={resolve('/contact')}>{m.contact()}</a
 					>
 				</li>
