@@ -27,54 +27,54 @@
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav flex-column flex-lg-row me-auto">
 				<li class="nav-item mx-1">
-					<a class="nav-link" class:active={page.url.pathname === resolve('/')} href={resolve('/')}
+					<a class="nav-link" class:active={page.url.pathname === '/'} href={resolve('/')}
 						>{m.home()}</a
 					>
 				</li>
 				<li class="nav-item mx-1">
 					<a
 						class="nav-link"
-						class:active={page.url.pathname === resolve('/about/')}
+						class:active={page.url.pathname === '/about/'}
 						href={resolve('/about')}>{m.what_is()}</a
 					>
 				</li>
 				<li class="nav-item mx-1">
-					<a class="nav-link" class:active={page.url.pathname === resolve('/team/')} href={resolve('/team')}
+					<a class="nav-link" class:active={page.url.pathname === '/team/'} href={resolve('/team')}
 						>{m.team()}</a
 					>
 				</li>
 				<li class="nav-item mx-1">
 					<a
 						class="nav-link"
-						class:active={page.url.pathname === resolve('/sponsors/')}
+						class:active={page.url.pathname === '/sponsors/'}
 						href={resolve('/sponsors')}>{m.sponsors()}</a
 					>
 				</li>
 				<li class="nav-item mx-1">
 					<a
 						class="nav-link"
-						class:active={page.url.pathname === resolve('/timetable/')}
+						class:active={page.url.pathname === '/timetable/'}
 						href={resolve('/timetable')}>{m.timetable()}</a
 					>
 				</li>
 				<li class="nav-item mx-1">
 					<a
 						class="nav-link"
-						class:active={page.url.pathname === resolve('/participate/')}
+						class:active={page.url.pathname === '/participate/'}
 						href={resolve('/participate')}>{m.participate()}</a
 					>
 				</li>
 				<li class="nav-item mx-1">
 					<a
 						class="nav-link"
-						class:active={page.url.pathname === resolve('/archive/')}
+						class:active={page.url.pathname == '/archive/'}
 						href={resolve('/archive')}>{m.archive()}</a
 					>
 				</li>
 				<li class="nav-item mx-1">
 					<a
 						class="nav-link"
-						class:active={page.url.pathname === resolve('/contact/')}
+						class:active={page.url.pathname == '/contact/'}
 						href={resolve('/contact')}>{m.contact()}</a
 					>
 				</li>
