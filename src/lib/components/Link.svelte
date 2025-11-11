@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { getContext, onMount } from 'svelte';
+	import { resolve } from '$app/paths';
 
 	export let href: string = '';
 	export let text: string = '';
@@ -8,6 +9,11 @@
 	export { className as class };
 	export let isMail: boolean = false;
 	let linkColorClass = `tacos-link-${color}`;
+
+	if(!isMail) {
+		// This is so that a base, as set in svelte.config.js, is respected.
+		href = resolve(href);
+	}
 
 	onMount(() => {
 		if (isMail) {
