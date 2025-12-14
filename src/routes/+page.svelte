@@ -40,7 +40,7 @@
 
 					<div class="card" style="background-color: transparent; backdrop-filter: none">
 						<div class="card-body">
-							<NewsletterForm />
+							<p>{m.newsletter_form_behind_vpn()}</p>
 						</div>
 					</div>
 
