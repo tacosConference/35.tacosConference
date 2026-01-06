@@ -61,5 +61,10 @@
 	"contact_lead": "Hast du Fragen, Anregungen oder möchtest uns unterstützen? Dann melde dich gerne bei uns!",
 	"contact_mail_text": "Du erreichst uns am besten per E-Mail unter ",
   "contact_mail_text_2": "Wir freuen uns auf deine Nachricht!",
-	"newsletter_consent": "Ich möchte den Newsletter abonnieren und über Neuigkeiten zur TaCoS informiert werden. Ich kann mich jederzeit wieder abmelden. Der Empfang des Newsletters muss in der entsprechenden Bestätigungs-E-Mail bestätigt werden."
+	"newsletter_consent": "Ich möchte den Newsletter abonnieren und über Neuigkeiten zur TaCoS informiert werden. Ich kann mich jederzeit wieder abmelden. Der Empfang des Newsletters muss in der entsprechenden Bestätigungs-E-Mail bestätigt werden.",
+	"sponsor_aristech_description": "TODO",
+	"sponsor_blc_description": "\"Wir bauen Sprachprozesse!\nSeit 2005 bauen wir Übersetzungs- und Terminologieprozesse, mit denen unseren Kunden ihre Effizienz- und Qualitätsziele erreichen.\n\nMit dem selbst entwickelten Daten Framework ‚blc Data Toolkit‘ und Terminologie-Expertise analysieren, klassifizieren, bereinigen und migrieren wir Terminologie- und Übersetzungsdaten unserer Kunden und legen die Datenbasis für den optimalen Daten-Einsatz in LLMs, Übersetzungssystemen oder Chatbots.\"",
+	"sponsor_dgfs_description": "TODO",
+	"sponsor_gal_description": "TODO",
+	"sponsor_hwl_description": "TODO"
 }

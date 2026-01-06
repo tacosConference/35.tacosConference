@@ -62,5 +62,10 @@
 	"contact_lead": "Do you have questions, suggestions, or would you like to support us? Please feel free to contact us!",
 	"contact_mail_text": "You can best reach us by email at ",
 	"contact_mail_text_2": "We look forward to your message!",
-	"newsletter_consent": "I would like to subscribe to the newsletter and be informed about news regarding TaCoS. I can unsubscribe at any time. The receipt of the newsletter must be confirmed in the corresponding confirmation email."
+	"newsletter_consent": "I would like to subscribe to the newsletter and be informed about news regarding TaCoS. I can unsubscribe at any time. The receipt of the newsletter must be confirmed in the corresponding confirmation email.",
+	"sponsor_aristech_description": "TODO",
+	"sponsor_blc_description": "TODO",
+	"sponsor_dgfs_description": "TODO",
+	"sponsor_gal_description": "TODO",
+	"sponsor_hwl_description": "TODO"
 }
