@@ -28,7 +28,7 @@
 						<Logo withText={false} size="250px" {color} />
 					</span>
 
-					<Countdown targetDate={new Date('2026-05-21T00:00:00')} />
+					<Countdown targetDate={new Date('2026-05-21T09:00:00+02:00')} />
 
 					<p class="lead text-center mb-4">
 						{m.conference_description_lead()}
@@ -40,7 +40,7 @@
 
 					<div class="card" style="background-color: transparent; backdrop-filter: none">
 						<div class="card-body">
-							<NewsletterForm />
+							<p>{m.newsletter_form_behind_vpn()}</p>
 						</div>
 					</div>
 
