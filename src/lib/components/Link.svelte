@@ -10,7 +10,7 @@
 	export let isMail: boolean = false;
 	let linkColorClass = `tacos-link-${color}`;
 
-	if(!isMail) {
+	if(!isMail && !href.startsWith("https://")) {
 		// This is so that a base, as set in svelte.config.js, is respected.
 		href = resolve(href);
 	}

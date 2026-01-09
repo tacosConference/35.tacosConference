@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Headline from '$lib/components/Headline.svelte';
 	import LinkButton from '$lib/components/LinkButton.svelte';
+	import Link from '$lib/components/Link.svelte';
 	import { m } from '$lib/paraglide/messages.js';
 </script>
 
@@ -18,6 +19,15 @@
 					<Headline>
 						{m.archive()}
 					</Headline>
+
+					<p class="mb-4">
+						{m.newsletter_archive_description()}
+					</p>
+
+					<ol>
+						<li><Link href="https://newsletter.fachschaft.cl.uni-heidelberg.de/archive/nmc_NWgYnLdM" text="Die TaCoS-Website ist da! // TaCoS Website is live!" /></li>
+						<li><Link href="https://newsletter.fachschaft.cl.uni-heidelberg.de/archive/nmc_GQL5WVpk" text="Frohes neues Jahr! // Happy new year!" /></li>
+					</ol>
 
 					<p class="mb-4">
 						{m.archive_description()}
