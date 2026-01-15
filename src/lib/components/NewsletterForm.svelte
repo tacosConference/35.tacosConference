@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { getContext } from 'svelte';
+	import Link from '$lib/components/Link.svelte';
 
 	export let color: string = getContext<{ color: string }>('color').color;
 	import { m } from '$lib/paraglide/messages.js';
@@ -10,7 +11,7 @@
 
 <form action="{m.newsletter_form_url()}" method="post">
     <legend>{m.newsletter_legend()}</legend>
-	<p>{m.newsletter_description()}</p>
+	<p>{m.newsletter_description()} <Link href="/archive" text="{m.archive()}" />.</p>
 
 	<div class="row g-2">
 		<div class="col-md">
