@@ -37,15 +37,9 @@
 					<Headline>
 						{m.sponsors_title()}
 					</Headline>
+
 					<p class="text-justify mb-4">
-						{m.sponsors_description()}
-					</p>
-					<p class="lead text-center mb-4">
-						{m.sponsors_lead()} 
-						<PrivacyLink isMail={true} href="tacos@cl.uni-heidelberg.de" />.
-					</p>
-					<p class="text-justify mb-4">
-						{m.sponsors_description_costs()}
+						{m.sponsors_description()} 
 					</p>
 
 					<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center mb-5">
@@ -53,6 +47,15 @@
 								<Sponsor link={sponsor.link} src={sponsor.src} alt={sponsor.alt} />
 						{/each}
 					</div>
+
+					<p class="text-justify mb-4">
+						{m.sponsors_description_costs()}
+					</p>
+
+					<p class="lead text-center mb-4">
+						{m.sponsors_lead()}
+						<PrivacyLink isMail={true} href="tacos@cl.uni-heidelberg.de" />.
+					</p>
 
 					<NextPageButton href="/timetable" text={m.go_to_timetable_button()} />
 				</div>
