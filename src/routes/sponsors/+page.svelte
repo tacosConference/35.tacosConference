@@ -13,11 +13,11 @@
 	import psv from '$lib/assets/sponsors/python-software-verband.png';
 
 	const sponsors = [
-		{ src: aristech, alt: 'Aristech GmbH', description: m.sponsor_aristech_description() }, //500€
-		{ src: blc, alt: 'berns language consulting GmbH', description: m.sponsor_blc_description() }, // 500€
-		{ src: dgfs, alt: 'Deutsche Gesellschaft für Sprachwissenschaft', description: m.sponsor_dgfs_description() }, // 300€
-		{ src: gal, alt: 'Gesellschaft für Angewandte Linguistik e.V.', description: m.sponsor_gal_description() }, // 250€
-		{ src: hwl, alt: 'HWL GmbH', description: m.sponsor_hwl_description() }, // 100€
+		{ src: aristech, alt: 'Aristech GmbH', link: "https://www.aristech.de"}, //500€
+		{ src: blc, alt: 'berns language consulting GmbH', link: "https://berns-language-consulting.de"}, // 500€
+		{ src: dgfs, alt: 'Deutsche Gesellschaft für Sprachwissenschaft', link: "https://dgfs.de"}, // 300€
+		{ src: gal, alt: 'Gesellschaft für Angewandte Linguistik e.V.', link: "https://gal-ev.de"}, // 250€
+		{ src: hwl, alt: 'HWL GmbH', link: "https://hwl.gmbh"}, // 100€
 		//{ src: eacl, alt: 'EACL' }, // bisher noch nix
 		//{ src: psv, alt: 'Python Software Verband' } // bisher noch nix
 	];
@@ -50,9 +50,7 @@
 
 					<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center mb-5">
 						{#each sponsors as sponsor}
-							<div class="col d-flex justify-content-center">
-								<Sponsor src={sponsor.src} alt={sponsor.alt} description={sponsor.description} />
-							</div>
+								<Sponsor link={sponsor.link} src={sponsor.src} alt={sponsor.alt} />
 						{/each}
 					</div>
 
