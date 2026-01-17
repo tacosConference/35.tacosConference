@@ -9,7 +9,7 @@
 	import hwl from '$lib/assets/sponsors/hwl.svg';
 	import eacl from '$lib/assets/sponsors/eacl.png';
 	import blc from '$lib/assets/sponsors/berns-language-consulting.png';
-	import gal from '$lib/assets/sponsors/gal.png';
+	import gal from '$lib/assets/sponsors/gal.svg';
 	import psv from '$lib/assets/sponsors/python-software-verband.png';
 
 	const sponsors = [
