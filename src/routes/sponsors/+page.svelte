@@ -13,13 +13,13 @@
 	import psv from '$lib/assets/sponsors/python-software-verband.png';
 
 	const sponsors = [
+		{ src: psv, alt: 'Python Software Verband e.V.', link: "https://python-verband.org/" }, // 1000€
 		{ src: aristech, alt: 'Aristech GmbH', link: "https://www.aristech.de"}, //500€
 		{ src: blc, alt: 'berns language consulting GmbH', link: "https://berns-language-consulting.de"}, // 500€
+		{ src: eacl, alt: 'The European Chapter of the ACL', link: "https://eacl.org/" }, // 400 €
 		{ src: dgfs, alt: 'Deutsche Gesellschaft für Sprachwissenschaft', link: "https://dgfs.de"}, // 300€
 		{ src: gal, alt: 'Gesellschaft für Angewandte Linguistik e.V.', link: "https://gal-ev.de"}, // 250€
 		{ src: hwl, alt: 'HWL GmbH', link: "https://hwl.gmbh"}, // 100€
-		//{ src: eacl, alt: 'EACL' }, // bisher noch nix
-		//{ src: psv, alt: 'Python Software Verband' } // bisher noch nix
 	];
 </script>
 
