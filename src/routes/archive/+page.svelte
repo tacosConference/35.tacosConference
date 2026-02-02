@@ -36,6 +36,7 @@
 					<div class="d-grid gap-2">
 						<LinkButton
 							href="https://linguistik.computer"
+							external={true}
 							outline={true}
 							iconClass="bi bi-box-arrow-up-right"
 							iconPosition="right">{m.archive_link_title()}</LinkButton

@@ -4,7 +4,7 @@
 	//import { colorMap } from "$lib/utils/theme";
 	import { getContext } from "svelte";
 
-	export let color: string = getContext("color").color;
+	export let color: string = getContext<{color: string}>("color").color;
 	export let href: Pathname = "/";
 	export let text: string = "Weiter";
 	let colorClassName = `tacos-btn-${color}`

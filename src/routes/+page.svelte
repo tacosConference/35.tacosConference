@@ -6,6 +6,8 @@
 	import NextPageButton from '$lib/components/NextPageButton.svelte';
 	import { m } from '$lib/paraglide/messages.js';
 	import { getContext } from 'svelte';
+	import LinkButton from '$lib/components/LinkButton.svelte';
+
 	let color = getContext<{ color: string }>('color').color;
 </script>
 
@@ -27,6 +29,18 @@
 					<span class="d-flex justify-content-center">
 						<Logo withText={false} size="250px" {color} />
 					</span>
+
+					<div class="alert d-flex align-items-start mx-2 my-4 tacos-input-{color} border-0 rainbow-hover" role="alert">
+						<i class="bi bi-fire fs-4 me-3 flex-shrink-0"></i>
+						<div class="d-flex flex-column">
+							<p class="h5">{m.important_info()}</p>
+							<p>
+								{m.tacos_registration_started_description()}
+							</p>
+							<LinkButton href="/participate" variant="link">{m.register()}</LinkButton>
+							<LinkButton href="/timetable" variant="link">{m.contribute()}</LinkButton>
+						</div>
+					</div>
 
 					<Countdown targetDate={new Date('2026-05-21T09:00:00+02:00')} />
 

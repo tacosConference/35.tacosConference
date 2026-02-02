@@ -3,6 +3,7 @@
 	import Link from '$lib/components/Link.svelte';
 	import NextPageButton from '$lib/components/NextPageButton.svelte';
 	import { m } from '$lib/paraglide/messages.js';
+	import LinkButton from '$lib/components/LinkButton.svelte';
 </script>
 
 <svelte:head>
@@ -22,6 +23,15 @@
 					<p class="lead text-center mb-4">
 						{m.timetable_description_lead()}
 					</p>
+					<div class="d-grid gap-2 mb-4">
+						<LinkButton
+							href="https://stage.tacos.cl.uni-heidelberg.de"
+							external={true}
+							outline={true}
+							iconClass="bi bi-box-arrow-up-right"
+							iconPosition="right">{m.tacostage_link_title()}</LinkButton
+						>
+					</div>
 					<p class="mb-4">
 						{m.timetable_description()} <Link href="/" text="{m.subscribe_to_the_newsletter()}" />.
 					</p>

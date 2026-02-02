@@ -34,7 +34,7 @@
 					class="form-control {inputClassName}"
 					id="firstName"
 				/>
-				<label for="firstName">{m.first_name()}</label>
+				<label for="firstName">{m.first_name_optional()}</label>
 			</div>
 		</div>
 	</div>
