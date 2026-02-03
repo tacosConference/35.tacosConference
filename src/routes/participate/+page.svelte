@@ -66,7 +66,7 @@
 						{m.participate_accommodation_description()}
 					</p>
 
-					<NextPageButton href="/archive" text={m.go_to_archive_button()} />
+					<NextPageButton href="/timetable" text={m.go_to_timetable_button()} />
 				</div>
 			</div>
 		</div>
