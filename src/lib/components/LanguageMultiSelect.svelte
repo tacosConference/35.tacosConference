@@ -94,7 +94,7 @@
 				<input
 					type="text"
 					class="form-control form-control-sm {inputClassName}"
-					placeholder="Search languages..."
+					placeholder="{m.search_languages()}"
 					bind:value={searchQuery}
 					onclick={(e) => e.stopPropagation()}
 					onkeydown={(e) => { if (e.key === 'Escape') isOpen = false; }}
