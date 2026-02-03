@@ -93,8 +93,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        transform: translateZ(20px); /* Gives some 3D depth to the logo */
     }
+
+	.sponsor-container:hover .logo-wrapper {
+        transform: translateZ(20px); /* Gives some 3D depth to the logo */
+	}
 
     .sponsor-logo {
         max-width: 100%;
@@ -105,6 +108,9 @@
     .sponsor-name {
         font-weight: bold;
         color: var(--borderColor);
-        transform: translateZ(10px);
     }
+
+	.sponsor-container:hover .sponsor-name {
+        transform: translateZ(10px);
+	}
 </style>

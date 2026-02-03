@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   viewBox="0 0 322.97665 184.7925"
+   id="svg1"
+   sodipodi:docname="gal.svg"
+   width="322.97665"
+   height="184.7925"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.5521817"
+     inkscape:cx="287.65962"
+     inkscape:cy="133.03855"
+     inkscape:window-width="1920"
+     inkscape:window-height="1008"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">
+      .cls-1 {
+        fill: #105591;
+      }
+    </style>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  -->
+  <path
+     class="cls-1"
+     d="m 79.976642,27.842486 c 0.52,-16.62 -16.44,-26.89000048 -31.06,-18.9700005 -36.18,19.5800005 -55.2299996,60.4500005 -47.0299996,100.9100045 11.2399996,55.48 69.1699996,88.41 122.6399976,69.62 5.59,-1.96 10.93,-4.61 16.51,-7 0.35,0.59 0.77,1.31 1.21,2.01 4,6.37 9.68,9.89 17.28,10.17 11.6,0.43 21.29,-8.36 21.4,-19.92 l -0.04,-42.93 c -0.12,-9.25 -8.48,-17.91 -17.67,-18.78 -10.51,-1 -18.34,3.34 -23.43,12.38 -11.54,20.52 -32.65,30.83 -55.439998,26.86 -30.44,-5.31 -49.74,-36.76 -40.52,-66.200004 4.19,-13.4 12.49,-23.58 24.77,-30.45 6.95,-3.89 11.14,-9.7 11.39,-17.71 M 322.97664,163.96249 c 0,-11.51 -9.33,-20.84 -20.84,-20.84 h -53.36 v -121.850004 0 c 0,-11.5100005 -9.33,-20.84000048 -20.84,-20.84000048 -11.51,0 -20.84,9.32999998 -20.84,20.84000048 v 13.94 l -30.26,-30.1100005 c -7.94,-6.91 -19.84,-6.8 -27.66,0.32 0,0 -73.749998,74.0300005 -73.749998,74.0400005 -8.12,8.15 -8.1,21.350004 0.05,29.470004 8.15,8.12 21.35,8.1 29.469998,-0.05 l 58.3,-58.580004 43.85,43.85 v 69.890004 0 c 0.04,11.39 9.22,20.61 20.58,20.75 h 74.45 c 11.51,0.01 20.84,-9.32 20.84,-20.83"
+     id="path1"
+     sodipodi:nodetypes="ccccccccccccccccccsccsssccccsccccsccc" />
+</svg>
