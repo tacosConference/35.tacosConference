@@ -17,21 +17,6 @@
 		<div class="col-md">
 			<div class="form-floating mb-3">
 				<input
-					name="contact[email]"
-					type="email"
-					class="form-control {inputClassName}"
-					id="email"
-					required
-				/>
-				<label for="email">{m.email()}</label>
-			</div>
-		</div>
-	</div>
-
-	<div class="row g-2">
-		<div class="col-md">
-			<div class="form-floating mb-3">
-				<input
 					name="contact[first_name]"
 					type="text"
 					class="form-control {inputClassName}"
@@ -50,6 +35,21 @@
 					id="lastName"
 				/>
 				<label for="lastName">{m.last_name()}</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="row g-2">
+		<div class="col-md">
+			<div class="form-floating mb-3">
+				<input
+					name="contact[email]"
+					type="email"
+					class="form-control {inputClassName}"
+					id="email"
+					required
+				/>
+				<label for="email">{m.email()}</label>
 			</div>
 		</div>
 	</div>
