@@ -135,7 +135,6 @@
     /* Ensure labels work with our custom div-based floating label */
     .form-floating > .form-control:focus ~ label,
     .form-floating > .form-control:not(:empty) ~ label {
-        opacity: .65;
         transform: scale(.85) translateY(-.5rem) translateX(.15rem);
     }
 
