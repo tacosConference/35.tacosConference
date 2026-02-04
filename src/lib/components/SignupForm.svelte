@@ -251,7 +251,6 @@
 					name="contact[data][access_needs]"
 					class="form-control {inputClassName}"
 					id="accessNeeds"
-					style="height: 100px"
 				></textarea>
 				<label for="accessNeeds">{m.signup_accessibility_placeholder()}</label>
 				<div class="form-text">
