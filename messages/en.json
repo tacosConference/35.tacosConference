@@ -56,6 +56,8 @@
 	"participate_price": "How much does it cost to participate?",
 	"participate_price_description": "The final price has not yet been determined, but it will definitely be at most €30.",
 	"previously_at_tacos": "I've been to a TaCoS conference before.",
+	"remarks": "Remarks (optional)",
+	"code_of_conduct": "I accept the Code of Conduct.",
 	"register": "Attend",
 	"signup_description": "I submit my binding registration for TaCoS. I will pay the registration fee of 10 € by May XX, 2026 to this account: DEXX XXXX XXXX XXXX XXXX XX",
 	"signup_legend": "Registration for the 35th TaCoS 2026",
