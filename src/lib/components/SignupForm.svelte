@@ -37,6 +37,17 @@
 				<label for="lastName">{m.last_name()}</label>
 			</div>
 		</div>
+		<div class="col-md">
+			<div class="form-floating mb-3">
+				<input
+					name="contact[data][pronouns]"
+					type="text"
+					class="form-control {inputClassName}"
+					id="pronouns"
+				/>
+				<label for="pronouns">{m.pronouns()}</label>
+			</div>
+		</div>
 	</div>
 
 	<div class="row g-2">

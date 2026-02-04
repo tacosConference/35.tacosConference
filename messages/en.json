@@ -16,6 +16,7 @@
 	"email": "E-mail address",
 	"first_name": "First name",
 	"first_name_optional": "First name (optional)",
+	"pronouns": "Pronouns (optional)",
 	"friends": "Friends",
 	"global_title_short": " · 35th TaCoS 2026",
 	"go_to_about_button": "What is TaCoS?",
