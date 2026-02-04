@@ -285,9 +285,10 @@
 					class="form-check-input {checkClassName}"
 					type="checkbox"
 					value="true"
+					required
 				/>
 				<label class="form-check-label" for="codeOfConduct">
-					{m.code_of_conduct()}
+					{m.code_of_conduct_acceptance()}
 				</label>
 			</div>
 		</div>
