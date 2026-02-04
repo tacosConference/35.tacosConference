@@ -308,4 +308,8 @@ textarea:not(:placeholder-shown) ~ label::after {
 .form-floating textarea.form-control {
 	height: calc(2 * 3.5rem + calc(var(--bs-border-width) * 2));
 }
+
+hr {
+	margin-top: unset;
+}
 </style>
