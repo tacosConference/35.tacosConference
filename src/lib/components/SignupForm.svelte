@@ -124,7 +124,49 @@
 	</div>
 
 	<div class="row g-2">
+		<div class="col-md">
+			<div class="form-floating mb-3">
+				<textarea
+					name="contact[data][remarks]"
+					type="text"
+					class="form-control {inputClassName}"
+					id="remarks"
+				/>
+				<label for="remarks">{m.remarks()}</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="row g-2">
+		<div class="col-md">
+			<div class="form-check mb-3">
+				<input name="contact[data][code_of_conduct]" type="hidden" value="false" />
+				<input
+					id="codeOfConduct"
+					name="contact[data][code_of_conduct]"
+					class="form-check-input {checkClassName}"
+					type="checkbox"
+					value="true"
+				/>
+				<label class="form-check-label" for="codeOfConduct">
+					{m.code_of_conduct()}
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="row g-2">
 		<input aria-hidden="true" autocomplete="off" name="h[url]" style="display: none" />
 		<button class="btn btn-primary {colorClassName}">{m.register()}</button>
 	</div>
 </form>
+
+<style>
+textarea:not(:placeholder-shown) ~ label::after {
+	background: none !important;
+}
+
+.form-floating textarea.form-control {
+	height: calc(2 * 3.5rem + calc(var(--bs-border-width) * 2));
+}
+</style>
