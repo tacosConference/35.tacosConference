@@ -4,6 +4,9 @@
 	import NextPageButton from '$lib/components/NextPageButton.svelte';
 	import { m } from '$lib/paraglide/messages.js';
 	import SignupForm from '$lib/components/SignupForm.svelte';
+
+	export let data: any;
+	let iban: string = data?.iban ?? '';
 </script>
 
 <svelte:head>
@@ -21,15 +24,15 @@
 						{m.participate()}
 					</Headline>
 
-					<div class="card mb-4" style="background-color: transparent; backdrop-filter: none">
-						<div class="card-body">
-							<SignupForm />
-						</div>
-					</div>
-
 					<p class="mb-4">
 						{m.participate_description()} <Link href="/" text="{m.subscribe_to_the_newsletter()}" />.
 					</p>
+
+					<div class="card mb-4" style="background-color: transparent; backdrop-filter: none">
+						<div class="card-body">
+							<SignupForm {iban} />
+						</div>
+					</div>
 
 					<h3>{m.participate_price()}</h3>
 					<p class="mb-4">

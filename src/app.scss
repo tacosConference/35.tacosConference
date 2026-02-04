@@ -63,6 +63,16 @@ $tacos-colors: (
 		background-color 2s,
 		color 2s;
 }
+
+.btn,
+.form-control,
+.form-check-input {
+	transition:
+		background-color 0.15s ease-in-out,
+		border-color 0.15s ease-in-out,
+		color 0.15s ease-in-out,
+		box-shadow 0.15s ease-in-out;
+}
 .tacos-btn-transparent {
 	transition:
 		background-color 2s,
@@ -95,13 +105,13 @@ $tacos-colors: (
 }
 
 @mixin tacos-btn-outline($color) {
-	background-color: transparent;
+	background-color: var(--tacos-#{"" + $color}-lighter);
 	border-color: var(--tacos-#{"" + $color}-main) !important;
 	color: var(--tacos-#{"" + $color}-main);
 
 	&:hover {
-		background-color: var(--tacos-#{"" + $color}-main);
-		color: white;
+		background-color: var(--tacos-#{"" + $color}-light) !important;
+		color: var(--tacos-#{"" + $color}-darkest);
 	}
 
 	&:active {
@@ -114,6 +124,11 @@ $tacos-colors: (
 		box-shadow: 0 0 0 0.25rem var(--tacos-#{"" + $color}-light);
 		background-color: var(--tacos-#{"" + $color}-dark);
 		color: white;
+	}
+
+	.btn-check:checked + & {
+		background-color: var(--tacos-#{"" + $color}-main) !important;
+		color: white !important;
 	}
 }
 
@@ -166,13 +181,22 @@ $tacos-colors: (
 
 	// Checkbox and radio classes
 	.tacos-check-#{"" + $color-name} {
+		background-color: var(--tacos-#{"" + $color-name}-lighter);
+		border-color: var(--tacos-#{"" + $color-name}-light);
 		transition:
 			border-color 0.15s ease-in-out,
 			box-shadow 0.15s ease-in-out,
 			background-color 0.15s ease-in-out;
-		&:checked {
-			background-color: var(--tacos-#{"" + $color-name}-main);
+
+		&:hover {
+			background-color: var(--tacos-#{"" + $color-name}-light);
 			border-color: var(--tacos-#{"" + $color-name}-main);
+			cursor: pointer;
+		}
+
+		&:checked {
+			background-color: var(--tacos-#{"" + $color-name}-main) !important;
+			border-color: var(--tacos-#{"" + $color-name}-main) !important;
 		}
 		&:focus {
 			box-shadow: 0 0 0 0.25rem var(--tacos-#{"" + $color-name}-light);
