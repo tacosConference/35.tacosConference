@@ -80,5 +80,18 @@
 	"welcome_to_35th_tacos": "Willkommen zur 35. TaCoS!",
 	"what_is": "Über TaCoS",
 	"what_is_description": "Die Tagung der Computerlinguistik-Studierenden (kurz: TaCoS) ist eine seit 1992 jährlich und komplett von studentischen Freiwilligen organisierte Tagung zu den Themenbereichen Computerlinguistik, Sprachtechnologie, Computational Humanities, Künstliche Intelligenz und Natural Language Processing.\n\nStudierende aus dem ganzen deutschsprachigen Raum präsentieren dort ihre Arbeiten in Form von Vorträgen und Workshops.  Ganz gleich, ob es sich bei der Arbeit um eine Abschlussarbeit, ein Seminarprojekt, aktuelle Forschung oder ein Pet Project handelt – die TaCoS hat für fast alles einen Platz, was interessant ist. Neben den studentischen Präsentationen werden auch etablierte Wissenschaftler:innen der Gastgeberuniversität als Keynote-Speaker eingeladen. Darüber hinaus gibt es ein soziales Programm, das allen Teilnehmenden die Möglichkeit bietet, Kontakte zu knüpfen und zu netzwerken.\n\nKurz: Die TaCoS ist da, um andere aus dem eigenen Studienfach kennenzulernen, etwas zu lernen und um Spaß zu haben.",
-	"what_is_title": "Was ist die TaCoS?"
+	"what_is_title": "Was ist die TaCoS?",
+	"and": "und",
+	"quote_left": "„",
+	"quote_right": "“",
+	"participate_privacy": "Wofür benutzt ihr die Anmeldedaten?",
+	"participate_privacy_description": "Die aggregierten Statistiken teilen wir im Laufe der Konferenz natürlich mit dir.",
+	"privacy_name": "Um dich ansprechen zu können, dich zu identifizieren und es dir aufs Namensschild zu drucken. Falls du ein Mononym benutzt, trage es als Vornamen ein und lasse den Nachnamen leer.",
+	"privacy_pronouns": "Um sie dir aufs Namensschild zu drucken.",
+	"privacy_email": "Um dir E-Mails zu schicken.",
+	"privacy_affiliation": "Um es dir aufs Namensschild zu drucken, für Statistiken, und um den Austragungsort der 36. TaCoS 2027 zu bestimmen.",
+	"privacy_study_programme": "Für Statistiken.",
+	"privacy_languages": "Um sie dir aufs Namensschild zu drucken und für Statistiken.",
+	"privacy_previously_at_tacos": "Für Statistiken, und um zu wissen, ob wir besonders auf erstmalige oder wiederholte Teilnehmer:innen eingehen sollten.",
+	"privacy_remarks": "Hängt davon ab, was du in das Feld reinschreibst. Allgemein nutzen wir die Daten in dem Feld, um auf deine Anmerkungen einzugehen."
 }
