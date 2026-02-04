@@ -69,7 +69,7 @@
 			style="min-height: 58px; padding-top: 1.625rem; padding-bottom: 0.625rem;"
 		>
 			{#if selectedLanguages.length === 0}
-				<span class="text-muted opacity-50">{searchQuery ? '' : '...'}</span>
+				<span class="text-muted opacity-50"></span>
 			{/if}
 			{#each selectedLanguages as lang}
 				<span class="badge {badgeClassName} d-flex align-items-center gap-1">
