@@ -53,15 +53,15 @@
 				<li class="nav-item mx-1">
 					<a
 						class="nav-link"
-						class:active={page.route.id === '/timetable'}
-						href={resolve('/timetable')}>{m.timetable()}</a
+						class:active={page.route.id === '/participate'}
+						href={resolve('/participate')}>{m.participate()}</a
 					>
 				</li>
 				<li class="nav-item mx-1">
 					<a
 						class="nav-link"
-						class:active={page.route.id === '/participate'}
-						href={resolve('/participate')}>{m.participate()}</a
+						class:active={page.route.id === '/timetable'}
+						href={resolve('/timetable')}>{m.timetable()}</a
 					>
 				</li>
 				<li class="nav-item mx-1">

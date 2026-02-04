@@ -69,7 +69,7 @@
 			style="min-height: 58px; padding-top: 1.625rem; padding-bottom: 0.625rem;"
 		>
 			{#if selectedLanguages.length === 0}
-				<span class="text-muted opacity-50">{searchQuery ? '' : '...'}</span>
+				<span class="text-muted opacity-50"></span>
 			{/if}
 			{#each selectedLanguages as lang}
 				<span class="badge {badgeClassName} d-flex align-items-center gap-1">
@@ -94,7 +94,7 @@
 				<input
 					type="text"
 					class="form-control form-control-sm {inputClassName}"
-					placeholder="Search languages..."
+					placeholder="{m.search_languages()}"
 					bind:value={searchQuery}
 					onclick={(e) => e.stopPropagation()}
 					onkeydown={(e) => { if (e.key === 'Escape') isOpen = false; }}
@@ -135,7 +135,6 @@
     /* Ensure labels work with our custom div-based floating label */
     .form-floating > .form-control:focus ~ label,
     .form-floating > .form-control:not(:empty) ~ label {
-        opacity: .65;
         transform: scale(.85) translateY(-.5rem) translateX(.15rem);
     }
 
