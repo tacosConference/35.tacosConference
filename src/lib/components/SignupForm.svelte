@@ -2,6 +2,7 @@
 	import { getContext } from 'svelte';
 	import { m } from '$lib/paraglide/messages.js';
 	import LanguageMultiSelect from './LanguageMultiSelect.svelte';
+	import Link from '$lib/components/Link.svelte';
 
 	export let color: string = getContext<{ color: string }>('color').color;
 	let outlineButtonColor = `tacos-btn-outline-${color}`;
@@ -287,7 +288,7 @@
 					required
 				/>
 				<label class="form-check-label" for="codeOfConduct">
-					{m.code_of_conduct_acceptance()}
+					{m.i_accept()} <Link href="https://berlincodeofconduct.org/" text="{m.code_of_conduct()}" target="_blank" /> {m.and_am_aware_i_can_be_excluded()}.
 				</label>
 			</div>
 		</div>

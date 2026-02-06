@@ -4,6 +4,7 @@
 
 	export let href: string = '';
 	export let text: string = '';
+	export let target: string = '';
 	export let color: string = getContext<{ color: string }>('color').color;
 	let className: string = '';
 	export { className as class };
@@ -22,6 +23,6 @@
 	});
 </script>
 
-<a {href} class="text-decoration-none fw-bold {linkColorClass} {className}">
+<a {href} class="text-decoration-none fw-bold {linkColorClass} {className}" target="{target}">
 	{text}
 </a>
