@@ -78,14 +78,6 @@
 						href={resolve('/contact')}>{m.contact()}</a
 					>
 				</li>
-				<li class="nav-item mx-1">
-					<a
-						class="nav-link"
-						href="https://berlincodeofconduct.org/"
-						target="_blank"
-						rel="noopener noreferrer">{m.code_of_conduct()}</a
-					>
-				</li>
 			</ul>
 
 			<LanguageSwitcher />
