@@ -30,6 +30,18 @@
 						<Logo withText={false} size="250px" {color} />
 					</span>
 
+					<div class="alert d-flex align-items-start mx-2 my-4 tacos-input-{color} border-0 rainbow-hover" role="alert">
+						<i class="bi bi-fire fs-4 me-3 flex-shrink-0"></i>
+						<div class="d-flex flex-column">
+							<p class="h5">{m.registration_open()}</p>
+							<p>
+								{m.tacos_registration_started_description()}
+							</p>
+							<LinkButton href="/attend" variant="link">{m.register()}</LinkButton>
+							<LinkButton href="/schedule" variant="link">{m.contribute()}</LinkButton>
+						</div>
+					</div>
+
 					<Countdown targetDate={new Date('2026-05-21T09:00:00+02:00')} />
 
 					<p class="lead text-center mb-4">
