@@ -17,7 +17,6 @@
 
 <form action="https://newsletter.fachschaft.cl.uni-heidelberg.de/forms/nfrm_vzLdxLjQ" method="post">
 	<h4>{m.signup_legend()}</h4>
-	<p>{m.signup_description() + " " + iban}</p>
 
 	<div class="row g-2">
 		<div class="col-md">
@@ -128,7 +127,7 @@
 		</div>
 	</div>
 
-	<hr class="my-4" />
+	<hr />
 
 	<div class="row g-2">
 		<div class="col-md">
@@ -187,7 +186,7 @@
 		</div>
 	</div>
 
-	<hr class="my-4" />
+	<hr />
 
 	<div class="row g-2">
 		<div class="col-md">
@@ -241,7 +240,7 @@
 		</div>
 	</div>
 
-	<hr class="my-4" />
+	<hr />
 
 	<div class="row g-2">
 		<div class="col-md">
