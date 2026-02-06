@@ -60,8 +60,8 @@
 				<li class="nav-item mx-1">
 					<a
 						class="nav-link"
-						class:active={page.route.id === '/timetable'}
-						href={resolve('/timetable')}>{m.timetable()}</a
+						class:active={page.route.id === '/schedule'}
+						href={resolve('/schedule')}>{m.timetable()}</a
 					>
 				</li>
 				<li class="nav-item mx-1">

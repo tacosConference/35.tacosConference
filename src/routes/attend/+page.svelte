@@ -62,7 +62,7 @@
 
 					<h3>{m.participate_presentation_howto()}</h3>
 					<p class="mb-4">
-						{m.on_page()}<Link href="/timetable" text="{m.timetable()}"></Link>{m.participate_presentation_howto_description()}
+						{m.on_page()}<Link href="/schedule" text="{m.timetable()}"></Link>{m.participate_presentation_howto_description()}
 					</p>
 
 					<h3>{m.participate_certificate()}</h3>
@@ -90,7 +90,7 @@
 						{m.code_of_conduct_description()} <Link href="https://berlincodeofconduct.org/" text="Berlin Code of Conduct" />.
 					</p>
 
-					<NextPageButton href="/timetable" text={m.go_to_timetable_button()} />
+					<NextPageButton href="/schedule" text={m.go_to_timetable_button()} />
 				</div>
 			</div>
 		</div>

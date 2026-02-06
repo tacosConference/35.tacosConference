@@ -38,7 +38,7 @@
 								{m.tacos_registration_started_description()}
 							</p>
 							<LinkButton href="/attend" variant="link">{m.register()}</LinkButton>
-							<LinkButton href="/timetable" variant="link">{m.contribute()}</LinkButton>
+							<LinkButton href="/schedule" variant="link">{m.contribute()}</LinkButton>
 						</div>
 					</div>
 
