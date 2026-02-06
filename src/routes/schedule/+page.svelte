@@ -23,6 +23,9 @@
 					<p class="lead text-center mb-4">
 						{m.timetable_description_lead()}
 					</p>
+					<p class="mb-4">
+						{m.timetable_description()}
+					</p>
 					<div class="d-grid gap-2 mb-4">
 						<LinkButton
 							href="https://stage.tacos.cl.uni-heidelberg.de"
@@ -32,9 +35,6 @@
 							iconPosition="right">{m.tacostage_link_title()}</LinkButton
 						>
 					</div>
-					<p class="mb-4">
-						{m.timetable_description()} <Link href="/" text="{m.subscribe_to_the_newsletter()}" />.
-					</p>
 					<NextPageButton href="/archive" text={m.go_to_archive_button()} />
 				</div>
 			</div>
