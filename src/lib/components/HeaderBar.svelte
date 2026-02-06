@@ -53,8 +53,8 @@
 				<li class="nav-item mx-1">
 					<a
 						class="nav-link"
-						class:active={page.route.id === '/participate'}
-						href={resolve('/participate')}>{m.participate()}</a
+						class:active={page.route.id === '/attend'}
+						href={resolve('/attend')}>{m.participate()}</a
 					>
 				</li>
 				<li class="nav-item mx-1">

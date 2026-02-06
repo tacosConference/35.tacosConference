@@ -57,7 +57,7 @@
 						<PrivacyLink isMail={true} href="tacos@cl.uni-heidelberg.de" />.
 					</p>
 
-					<NextPageButton href="/participate" text={m.go_to_participate_button()} />
+					<NextPageButton href="/attend" text={m.go_to_participate_button()} />
 				</div>
 			</div>
 		</div>

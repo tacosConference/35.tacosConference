@@ -1,7 +1,6 @@
-import type { ServerLoad } from '@sveltejs/kit';
-import { IBAN } from '$env/static/private';
+import { redirect } from '@sveltejs/kit';
+import { resolve } from "$app/paths";
 
-export const load: ServerLoad = async () => {
-  const iban = IBAN;
-  return { iban };
-};
+export function load(): null {
+	redirect(308, resolve("/attend/"));
+}
