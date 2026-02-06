@@ -32,6 +32,7 @@
 							external={true}
 							outline={true}
 							iconClass="bi bi-box-arrow-up-right"
+							target="_blank"
 							iconPosition="right">{m.tacostage_link_title()}</LinkButton
 						>
 					</div>

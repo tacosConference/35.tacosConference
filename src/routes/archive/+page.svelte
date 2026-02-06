@@ -38,6 +38,7 @@
 							href="https://linguistik.computer"
 							external={true}
 							outline={true}
+							target="_blank"
 							iconClass="bi bi-box-arrow-up-right"
 							iconPosition="right">{m.archive_link_title()}</LinkButton
 						>
