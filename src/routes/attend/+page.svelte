@@ -56,6 +56,22 @@
 						{m.participate_language_description()}
 					</p>
 
+					<h3>{m.participate_privacy()}</h3>
+					<ul class="mb-4">
+						<li><strong>{m.first_name()}</strong> {m.and()} <strong>{m.last_name()}</strong>: {m.privacy_name()}</li>
+						<li><strong>{m.pronouns()}</strong>: {m.privacy_pronouns()}</li>
+						<li><strong>{m.email()}</strong>: {m.privacy_email()}</li>
+						<li><strong>{m.affiliation()}</strong>: {m.privacy_affiliation()}</li>
+						<li><strong>{m.study_programme()}</strong>: {m.privacy_study_programme()}</li>
+						<li><strong>{m.languages()}</strong>: {m.privacy_languages()}</li>
+						<li><strong>{m.quote_left()}{m.previously_at_tacos()}{m.quote_right()}</strong>: {m.privacy_previously_at_tacos()}</li>
+						<li><strong>{m.remarks()}</strong>: {m.privacy_remarks()}</li>
+					</ul>
+					
+					<p class="mb-4">
+						{m.participate_privacy_description()}
+					</p>
+
 					<NextPageButton href="/schedule" text={m.go_to_timetable_button()} />
 				</div>
 			</div>
