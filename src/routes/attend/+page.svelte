@@ -23,11 +23,6 @@
 						{m.participate_description()} <Link href="/" text="{m.subscribe_to_the_newsletter()}" />.
 					</p>
 
-					<h3>{m.participate_price()}</h3>
-					<p class="mb-4">
-						{m.participate_price_description()}
-					</p>
-
 					<h3>{m.participate_presentation_needed()}</h3>
 					<p class="mb-4">
 						{m.participate_presentation_needed_description()}
