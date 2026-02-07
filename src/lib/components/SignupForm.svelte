@@ -1,23 +1,48 @@
 <script lang="ts">
-	import { getContext } from 'svelte';
+	import { getContext, onMount } from 'svelte';
 	import { m } from '$lib/paraglide/messages.js';
 	import LanguageMultiSelect from './LanguageMultiSelect.svelte';
 	import Link from '$lib/components/Link.svelte';
+	import { QRCode } from '@castlenine/svelte-qrcode';
+	import { colorMap } from '$lib/utils/theme';
 
-	export let color: string = getContext<{ color: string }>('color').color;
+	let color = getContext<{ color: string }>('color').color;
 	let outlineButtonColor = `tacos-btn-outline-${color}`;
 	let primaryButtonColor = `tacos-btn-${color}`;
 	let inputClassName = `tacos-input-${color}`;
 	let checkClassName = `tacos-check-${color}`;
 
-	let accommodationNeeded = 'have';
-	let membership = 'not_member_full_fee';
+	let accommodationNeeded = $state('have');
+	let membership: 'not_member_full_fee' | 'already_member' = $state('not_member_full_fee');
 
-	let firstName = '';
-	let lastName = '';
+	let firstName = $state('');
+	let lastName = $state('');
 
 	const beneficiaryName = 'Junge Sprachwissenschaft e.V.';
 	const beneficiaryIban = 'DE98 8306 5408 0004 9025 05';
+	const beneficiaryBIC = 'GENODEF1SLR';
+
+	let epcCode = $derived(`BCD
+002
+1
+SCT
+${beneficiaryBIC}
+${beneficiaryName}
+${beneficiaryIban}
+EUR${membership === 'not_member_full_fee' ? '10' : '5'}
+
+Teilnahmebeitrag TaCoS 2026, ${firstName} ${lastName}
+`);
+	let qrCodeColor = $derived(colorMap[color]);
+
+	onMount(() => {
+		const timer = setTimeout(() => {
+			qrCodeColor = colorMap[color] + 'ff';
+		}, 1);
+
+		return () => clearTimeout(timer);
+	});
+
 </script>
 
 <form action="https://newsletter.fachschaft.cl.uni-heidelberg.de/forms/nfrm_vzLdxLjQ" method="post">
@@ -193,23 +218,33 @@
 				</div>
 			</div>
 
-			<div class="col-md">
-				<p>
-					{m.please_wire_fee_of()} {membership === "already_member" ? "5" : "10"} € {m.until_deadline_to()}:
-				</p>
+			<div class="col-md d-flex flex-row">
+				<div class="w-50  flex-grow-1">
+					<p>
+						{m.please_wire_fee_of()} {membership === "already_member" ? "5" : "10"} € {m.until_deadline_to()}:
+					</p>
 
-				<p>
-					{m.beneficiary()}: {beneficiaryName}<br />
-					{m.iban()}: {beneficiaryIban}<br />
-					{m.bank()}: VR-Bank Altenburger Land / Deutsche Skatbank<br />
-					{m.remittance_information()}: Teilnahmebetrag TaCoS 2026, {firstName || lastName ? `${firstName} ${lastName}` : m.your_name()}<br />
-				</p>
+					<p>
+						{m.beneficiary()}: {beneficiaryName}<br />
+						{m.iban()}: {beneficiaryIban}<br />
+						{m.bank()}: VR-Bank Altenburger Land / Deutsche Skatbank<br />
+						{m.remittance_information()}: Teilnahmebetrag TaCoS
+						2026, {firstName || lastName ? `${firstName} ${lastName}` : m.your_name()}<br />
+					</p>
 
-				<p>
-					{m.you_can_scan_this_qr_code_to_pay()}:
-				</p>
+					<p>
+						{m.you_can_scan_this_qr_code_to_pay()}:
+					</p>
+				</div>
 
-				<!-- TODO: Place the QR code here -->
+				<div class="m-2 ms-4" style="flex-grow: 2;">
+					{#key qrCodeColor}
+						{#key epcCode}
+							<QRCode isResponsive data={epcCode} color={qrCodeColor} haveBackgroundRoundedEdges
+											backgroundColor='#ffffffA0' />
+						{/key}
+					{/key}
+				</div>
 			</div>
 		</div>
 	</div>
@@ -285,7 +320,6 @@
 			<div class="form-floating mb-3">
 				<textarea
 					name="contact[data][remarks]"
-					type="text"
 					class="form-control {inputClassName}"
 					id="remarks"
 				></textarea>
@@ -307,7 +341,9 @@
 					required
 				/>
 				<label class="form-check-label" for="codeOfConduct">
-					{m.i_accept()} <Link href="https://berlincodeofconduct.org/" text="{m.code_of_conduct()}" target="_blank" /> {m.and_am_aware_i_can_be_excluded()}.
+					{m.i_accept()}
+					<Link href="https://berlincodeofconduct.org/" text={m.code_of_conduct()}
+								target="_blank" /> {m.and_am_aware_i_can_be_excluded()}.
 				</label>
 			</div>
 		</div>
@@ -324,15 +360,15 @@
 </form>
 
 <style>
-textarea:not(:placeholder-shown) ~ label::after {
-	background: none !important;
-}
+    textarea:not(:placeholder-shown) ~ label::after {
+        background: none !important;
+    }
 
-.form-floating textarea.form-control {
-	height: calc(2 * 3.5rem + calc(var(--bs-border-width) * 2));
-}
+    .form-floating textarea.form-control {
+        height: calc(2 * 3.5rem + calc(var(--bs-border-width) * 2));
+    }
 
-hr {
-	margin-top: unset;
-}
+    hr {
+        margin-top: unset;
+    }
 </style>
