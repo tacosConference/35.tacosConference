@@ -106,5 +106,8 @@
 	"privacy_study_programme": "Für Statistiken.",
 	"privacy_languages": "Um sie dir aufs Namensschild zu drucken und für Statistiken.",
 	"privacy_previously_at_tacos": "Für Statistiken, und um zu wissen, ob wir besonders auf erstmalige oder wiederholte Teilnehmer:innen eingehen sollten.",
-	"privacy_remarks": "Hängt davon ab, was du in das Feld reinschreibst. Allgemein nutzen wir die Daten in dem Feld, um auf deine Anmerkungen einzugehen."
+	"privacy_remarks": "Hängt davon ab, was du in das Feld reinschreibst. Allgemein nutzen wir die Daten in dem Feld, um auf deine Anmerkungen einzugehen.",
+	"registration_successful": "Erfolgreich angemeldet",
+	"registration_successful_details": "Du hast dich erfolgreich und verbindlich zur 35. TaCoS 2026 in Heidelberg angemeldet. Wir sehen uns im Mai!",
+	"registration_further_info_mail": "Spätestens Anfang April erhältst du von uns noch mal eine E-Mail mit weiteren Informationen."
 }

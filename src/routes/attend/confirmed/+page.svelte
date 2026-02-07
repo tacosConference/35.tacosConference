@@ -6,7 +6,7 @@
 <svelte:head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Erfolgreich angemeldet {m.global_title_short()}</title>
+	<title>{ m.registration_successful() } {m.global_title_short()}</title>
 </svelte:head>
 
 <div id="main-container" class="container mt-5">
@@ -15,15 +15,15 @@
 			<div class="card shadow-lg">
 				<div class="card-body p-5">
 					<Headline>
-						Erfolgreich angemeldet
+						{ m.registration_successful() }
 					</Headline>
 
 					<p class="mb-4">
-						Du hast dich erfolgreich und verbindlich zur 35. TaCoS 2026 in Heidelberg angemeldet. Wir sehen uns im Mai!
+						{ m.registration_successful_details() }
 					</p>
 
 					<p class="mb-4">
-						Spätestens Anfang April erhältst du von uns noch mal eine E-Mail mit weiteren Informationen.
+						{ m.registration_further_info_mail() }
 					</p>
 				</div>
 			</div>

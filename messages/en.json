@@ -106,5 +106,8 @@
 	"welcome_to_35th_tacos": "Welcome to the 35th TaCoS!",
 	"what_is": "About TaCoS",
 	"what_is_description": "TaCoS (“Tagung der Computerlinguistik-Studierenden”) is an annual conference that has been organized entirely by student volunteers since 1992. It covers the fields of computational linguistics, language technology, computational humanities, artificial intelligence, and natural language processing.\n\nAt the conference, students present their work in the form of talks and workshops. Whether the work is a thesis, a seminar project, current research, or a pet project, TaCoS has a place for almost anything that is interesting.  In addition to the student presentations, established scientists from the host university are invited as keynote speakers. There is also a social program that offers all participants the opportunity to make contacts and network.\n\nIn short, TaCoS is a place to meet others from your own field of study, learn something new, and have fun.",
-	"what_is_title": "What is TaCoS?"
+	"what_is_title": "What is TaCoS?",
+	"registration_successful": "Successfully registered",
+	"registration_successful_details": "You've successfully and bindingly registered for 35th TaCoS 2026 in Heidelberg. See you in May!",
+	"registration_further_info_mail": "At the latest at the start of April, you will receive another mail with more information."
 }
