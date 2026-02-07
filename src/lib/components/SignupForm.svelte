@@ -218,8 +218,8 @@ Teilnahmebeitrag TaCoS 2026, ${firstName} ${lastName}
 				</div>
 			</div>
 
-			<div class="col-md d-flex flex-row">
-				<div class="w-50  flex-grow-1">
+			<div class="col-md d-flex flex-column flex-md-row gap-4">
+				<div class="w-md-50 w-100 flex-grow-1">
 					<p>
 						{m.please_wire_fee_of()} {membership === "already_member" ? "5" : "10"} € {m.until_deadline_to()}:
 					</p>
@@ -237,7 +237,7 @@ Teilnahmebeitrag TaCoS 2026, ${firstName} ${lastName}
 					</p>
 				</div>
 
-				<div class="m-2 ms-4" style="flex-grow: 2;">
+				<div class="m-2 d-flex justify-content-center" style="flex-grow: 2;">
 					{#key qrCodeColor}
 						{#key epcCode}
 							<QRCode isResponsive data={epcCode} color={qrCodeColor} haveBackgroundRoundedEdges
@@ -359,7 +359,7 @@ Teilnahmebeitrag TaCoS 2026, ${firstName} ${lastName}
 	</div>
 </form>
 
-<style>
+<style lang="scss">
     textarea:not(:placeholder-shown) ~ label::after {
         background: none !important;
     }
@@ -370,5 +370,10 @@ Teilnahmebeitrag TaCoS 2026, ${firstName} ${lastName}
 
     hr {
         margin-top: unset;
+    }
+    @media (min-width: 768px) {
+        .w-md-50 {
+            width: 50%!important;
+        }
     }
 </style>
