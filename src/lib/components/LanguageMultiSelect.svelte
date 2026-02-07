@@ -25,7 +25,7 @@
 	})).sort((a, b) => a.name.localeCompare(b.name, locale));
 
 	let searchQuery = $state('');
-	let selectedCodes = $state<string[]>([]);
+	let selectedCodes = $state<string[]>([locale]);
 	let isOpen = $state(false);
 
 	let filteredLanguages = $derived(
