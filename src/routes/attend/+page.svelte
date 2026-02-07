@@ -27,14 +27,14 @@
 						</div>
 					</div>
 
-					<h3>Wird es am Sonntag wieder einen Brunch geben?</h3>
+					<h3>{m.participate_brunch()}</h3>
 					<p class="mb-4">
-						Ja, am Sonntag, den 24. Mai 2026, wird es wie üblich den traditionellen, inoffiziellen Brunch in einem Heidelberger Café geben. Die Infos dazu erhältst du während der Konferenz. Falls du teilnehmen willst, berücksichtige das bitte bei deiner Abreiseplanung.
+						{m.participate_brunch_description()}
 					</p>
 
-					<h3>Wie lange ist die Anmeldung geöffnet?</h3>
+					<h3>{m.participate_deadline()}</h3>
 					<p class="mb-4">
-						Bis zum 15. März 2026.
+						{m.participate_deadline_description()}
 					</p>
 
 					<h3>{m.participate_presentation_needed()}</h3>
