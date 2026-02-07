@@ -144,7 +144,7 @@
 					<input
 						class="btn-check"
 						type="radio"
-						name="contact[data][membership]"
+						name="contact[data][fee]"
 						id="membershipNotMemberFullFee"
 						value="not_member_full_fee"
 						bind:group={membership}
@@ -158,7 +158,7 @@
 					<input
 						class="btn-check"
 						type="radio"
-						name="contact[data][membership]"
+						name="contact[data][fee]"
 						id="membershipAlreadyMember"
 						value="already_member"
 						bind:group={membership}
