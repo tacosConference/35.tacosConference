@@ -71,6 +71,9 @@
 						<li><strong>{m.study_programme()}</strong>: {m.privacy_study_programme()}</li>
 						<li><strong>{m.languages()}</strong>: {m.privacy_languages()}</li>
 						<li><strong>{m.quote_left()}{m.previously_at_tacos()}{m.quote_right()}</strong>: {m.privacy_previously_at_tacos()}</li>
+						<li><strong>{m.attendance_fee()}</strong>: {m.privacy_attendance_fee()}</li>
+						<li><strong>{m.accommodation_label()}</strong>: {m.privacy_accommodation()}</li>
+						<li><strong>{m.signup_accessibility_label()}</strong>: {m.privacy_accessibility()}</li>
 						<li><strong>{m.remarks()}</strong>: {m.privacy_remarks()}</li>
 					</ul>
 					
