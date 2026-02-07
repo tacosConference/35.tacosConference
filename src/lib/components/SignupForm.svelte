@@ -16,8 +16,8 @@
 	let firstName = '';
 	let lastName = '';
 
-	const beneficiary = 'Junge Sprachwissenschaft e.V.';
-	const iban = 'DE98 8306 5408 0004 9025 05';
+	const beneficiaryName = 'Junge Sprachwissenschaft e.V.';
+	const beneficiaryIban = 'DE98 8306 5408 0004 9025 05';
 </script>
 
 <form action="https://newsletter.fachschaft.cl.uni-heidelberg.de/forms/nfrm_vzLdxLjQ" method="post">
@@ -199,11 +199,17 @@
 				</p>
 
 				<p>
-					{m.beneficiary()}: {beneficiary}<br />
-					{m.iban()}: {iban}<br />
+					{m.beneficiary()}: {beneficiaryName}<br />
+					{m.iban()}: {beneficiaryIban}<br />
 					{m.bank()}: VR-Bank Altenburger Land / Deutsche Skatbank<br />
 					{m.remittance_information()}: Teilnahmebetrag TaCoS 2026, {firstName || lastName ? `${firstName} ${lastName}` : m.your_name()}<br />
 				</p>
+
+				<p>
+					{m.you_can_scan_this_qr_code_to_pay()}:
+				</p>
+
+				<!-- TODO: Place the QR code here -->
 			</div>
 		</div>
 	</div>
