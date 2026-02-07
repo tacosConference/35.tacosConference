@@ -5,12 +5,29 @@
 	import { getContext } from 'svelte';
 	import LanguageSwitcher from './LanguageSwitcher.svelte';
 	import Logo from './Logo.svelte';
+	import { afterNavigate } from '$app/navigation';
+
 	export let color: string = getContext<{ color: string }>('color').color;
 	let colorBgClass = `tacos-bg-${color}`;
+
+	let navBar: HTMLElement;
+
+	afterNavigate(() => {
+		const collapseElement = navBar.querySelector('#navbarNav');
+		if (collapseElement && typeof window !== 'undefined' && window.bootstrap) {
+			const bsCollapse = window.bootstrap.Collapse.getInstance(collapseElement);
+			if (bsCollapse) {
+				bsCollapse.hide();
+			}
+		}
+	});
 </script>
 
 <!-- Header Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm z-1 sticky-top {colorBgClass}">
+<nav
+	bind:this={navBar}
+	class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm z-1 sticky-top {colorBgClass}"
+>
 	<div class="container">
 		<Logo color={color} />
 

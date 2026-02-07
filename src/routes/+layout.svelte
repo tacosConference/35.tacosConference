@@ -12,7 +12,9 @@
 
 	onMount(() => {
 		// @ts-expect-error - Bootstrap JS bundle doesn't have proper type declarations
-		import('bootstrap/dist/js/bootstrap.bundle.min.js');
+		import('bootstrap/dist/js/bootstrap.bundle.min.js').then((bootstrap) => {
+			window.bootstrap = bootstrap;
+		});
 	});
 </script>
 
