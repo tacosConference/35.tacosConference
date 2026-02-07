@@ -21,7 +21,7 @@
 	<div class="row justify-content-center">
 		<div class="col-lg-8 col-md-10">
 			<div class="card shadow-lg">
-				<div class="card-body p-5">
+				<div class="card-body p-3 p-md-5">
 					<Headline>
 						{m.welcome_to_35th_tacos()}
 					</Headline>
