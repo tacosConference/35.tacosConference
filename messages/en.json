@@ -123,5 +123,13 @@
 	"attendance_fee": "Attendance fee",
 	"interested_in_junge_sprawi": "I want to receive informations about Junge Sprachwissenschaft e. V. via mail.",
 	"attendance_fee_is_10": "The attendance fee is 10 €.",
-	"reduced_attendance_fee_is_5": "For members of Junge Sprachwissenschaft e. V., there is a reduced attendance fee of 5 €."
+	"reduced_attendance_fee_is_5": "For members of Junge Sprachwissenschaft e. V., there is a reduced attendance fee of 5 €.",
+	"your_name": "<Your name>",
+	"please_wire_fee_of": "Please wire the attendence fee of",
+	"until_deadline_to": "to the following account until March 31st, 2026",
+	"beneficiary": "Beneficiary",
+	"iban": "IBAN",
+	"bank": "Bank",
+	"remittance_information": "Remittance information",
+	"you_can_scan_this_qr_code_to_pay": "You can scan this QR code with a banking app, and the fields for the transfer will be automatically filled in with the above information."
 }

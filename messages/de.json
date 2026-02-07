@@ -121,5 +121,13 @@
 	"attendance_fee": "Teilnahmebeitrag",
 	"interested_in_junge_sprawi": "Ich möchte Informationen über die Junge Sprachwissenschaft e. V. per Mail erhalten.",
 	"attendance_fee_is_10": "Der Teilnahmebeitrag beträgt 10 €.",
-	"reduced_attendance_fee_is_5": "Für Mitglieder der Jungen Sprachwissenschaft e. V. gilt ein reduzierter Teilnahmebeitrag von 5 €."
+	"reduced_attendance_fee_is_5": "Für Mitglieder der Jungen Sprachwissenschaft e. V. gilt ein reduzierter Teilnahmebeitrag von 5 €.",
+	"your_name": "<Dein Name>",
+	"please_wire_fee_of": "Bitte überweise den Teilnahmebetrag in Höhe von",
+	"until_deadline_to": "bis zum 31. März 2026 an",
+	"beneficiary": "Kontoinhaber",
+	"iban": "IBAN",
+	"bank": "Bank",
+	"remittance_information": "Verwendungszweck",
+	"you_can_scan_this_qr_code_to_pay": "Du kannst diesen QR-Code mit einer Banking-App scannen, dann werden die Felder für die Überweisung gleich mit den obigen Daten vorausgefüllt"
 }

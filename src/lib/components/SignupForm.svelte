@@ -12,6 +12,12 @@
 
 	let accommodationNeeded = 'have';
 	let membership = 'not_member_full_fee';
+
+	let firstName = '';
+	let lastName = '';
+
+	const beneficiary = 'Junge Sprachwissenschaft e.V.';
+	const iban = 'DE98 8306 5408 0004 9025 05';
 </script>
 
 <form action="https://newsletter.fachschaft.cl.uni-heidelberg.de/forms/nfrm_vzLdxLjQ" method="post">
@@ -26,6 +32,7 @@
 					class="form-control {inputClassName}"
 					id="firstName"
 					required
+					bind:value={firstName}
 				/>
 				<label for="firstName">{m.first_name()}</label>
 			</div>
@@ -37,6 +44,7 @@
 					type="text"
 					class="form-control {inputClassName}"
 					id="lastName"
+					bind:value={lastName}
 				/>
 				<label for="lastName">{m.last_name()}</label>
 			</div>
@@ -183,6 +191,19 @@
 						{m.interested_in_junge_sprawi()}
 					</label>
 				</div>
+			</div>
+
+			<div class="col-md">
+				<p>
+					{m.please_wire_fee_of()} {membership === "already_member" ? "5" : "10"} € {m.until_deadline_to()}:
+				</p>
+
+				<p>
+					{m.beneficiary()}: {beneficiary}<br />
+					{m.iban()}: {iban}<br />
+					{m.bank()}: VR-Bank Altenburger Land / Deutsche Skatbank<br />
+					{m.remittance_information()}: Teilnahmebetrag TaCoS 2026, {firstName || lastName ? `${firstName} ${lastName}` : m.your_name()}<br />
+				</p>
 			</div>
 		</div>
 	</div>
