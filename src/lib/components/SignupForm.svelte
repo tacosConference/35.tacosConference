@@ -10,9 +10,8 @@
 	let inputClassName = `tacos-input-${color}`;
 	let checkClassName = `tacos-check-${color}`;
 
-	let accommodationNeeded = 'false';
+	let accommodationNeeded = 'a';
 	let membership = 'not_member_full_fee';
-	export let iban;
 </script>
 
 <form action="https://newsletter.fachschaft.cl.uni-heidelberg.de/forms/nfrm_vzLdxLjQ" method="post">
@@ -109,6 +108,7 @@
 			/>
 		</div>
 	</div>
+
 	<div class="row g-2">
 		<div class="col-md">
 			<div class="form-check mt-2 mb-3">
@@ -131,22 +131,15 @@
 
 	<div class="row g-2">
 		<div class="col-md">
-			<h5>{m.membership_label()}</h5>
+			<h5>Teilnahmebeitrag</h5>
+			<ul>
+				<li>Der Teilnahmebeitrag beträgt 10 €.</li>
+				<li>Für Mitglieder der Jungen Sprachwissenschaft e. V. gilt ein reduzierter Teilnahmebeitrag von 5 €.</li>
+			</ul>
+			<p>
+				Bist du Mitglied der Jungen Sprachwissenschaft e. V.?
+			</p>
 			<div class="d-flex flex-column gap-2 mb-3">
-				<div>
-					<input
-						class="btn-check"
-						type="radio"
-						name="contact[data][membership]"
-						id="membershipAlreadyMember"
-						value="already_member"
-						bind:group={membership}
-					/>
-					<label class="btn {outlineButtonColor} w-100 text-start" for="membershipAlreadyMember">
-						{m.membership_already_member()}
-					</label>
-				</div>
-
 				<div>
 					<input
 						class="btn-check"
@@ -166,23 +159,31 @@
 						class="btn-check"
 						type="radio"
 						name="contact[data][membership]"
-						id="membershipInfoRequested"
-						value="info_requested"
+						id="membershipAlreadyMember"
+						value="already_member"
 						bind:group={membership}
 					/>
-					<label class="btn {outlineButtonColor} w-100 text-start" for="membershipInfoRequested">
-						{m.membership_not_member_info_requested()}
+					<label class="btn {outlineButtonColor} w-100 text-start" for="membershipAlreadyMember">
+						{m.membership_already_member()}
 					</label>
 				</div>
 			</div>
 
-			{#if membership === 'info_requested'}
-				<div class="card border-{color} bg-light mb-3">
-					<div class="card-body py-2">
-						<p class="mb-0 small">{m.membership_disclaimer()}</p>
-					</div>
+			<div class="col-md">
+				<div class="form-check mt-2 mb-3">
+					<input name="contact[data][junge_sprawi_info_requested]" type="hidden" value="false" />
+					<input
+						id="jungeSprawiInfo"
+						name="contact[data][junge_sprawi_info_requested]"
+						class="form-check-input {checkClassName}"
+						type="checkbox"
+						value="true"
+					/>
+					<label class="form-check-label" for="jungeSprawiInfo">
+						Ich möchte Informationen über die Junge Sprachwissenschaft e. V. per Mail erhalten.
+					</label>
 				</div>
-			{/if}
+			</div>
 		</div>
 	</div>
 
@@ -198,10 +199,10 @@
 					type="radio"
 					name="contact[data][accommodation_needed]"
 					id="accommodationNone"
-					value="false"
+					value="a"
 					bind:group={accommodationNeeded}
 				/>
-				<label class="btn {outlineButtonColor} flex-fill" for="accommodationNone">
+				<label class="btn {outlineButtonColor} w-100 text-start" for="accommodationNone">
 					{m.accommodation_none()}
 				</label>
 
@@ -209,34 +210,26 @@
 					class="btn-check"
 					type="radio"
 					name="contact[data][accommodation_needed]"
-					id="accommodationNeeded"
-					value="true"
+					id="accommodationNeededCouchsurfing"
+					value="b"
 					bind:group={accommodationNeeded}
 				/>
-				<label class="btn {outlineButtonColor} flex-fill" for="accommodationNeeded">
-					{m.accommodation_needed()}
+				<label class="btn {outlineButtonColor} w-100 text-start" for="accommodationNeededCouchsurfing">
+					{m.accommodation_needed_couchsurfing()}
+				</label>
+
+				<input
+					class="btn-check"
+					type="radio"
+					name="contact[data][accommodation_needed]"
+					id="accommodationNeededNoCouchsurfing"
+					value="c"
+					bind:group={accommodationNeeded}
+				/>
+				<label class="btn {outlineButtonColor} w-100 text-start" for="accommodationNeededNoCouchsurfing">
+					{m.accommodation_needed_no_couchsurfing()}
 				</label>
 			</div>
-
-			{#if accommodationNeeded === 'true'}
-				<div class="card border-{color} bg-light mb-3">
-					<div class="card-body py-2">
-						<div class="form-check">
-							<input name="contact[data][couchsurfing_ok]" type="hidden" value="false" />
-							<input
-								id="couchsurfingOk"
-								name="contact[data][couchsurfing_ok]"
-								class="form-check-input {checkClassName}"
-								type="checkbox"
-								value="true"
-							/>
-							<label class="form-check-label fw-bold" for="couchsurfingOk">
-								{m.couchsurfing()}
-							</label>
-						</div>
-					</div>
-				</div>
-			{/if}
 		</div>
 	</div>
 
@@ -253,22 +246,22 @@
 					id="accessNeeds"
 				></textarea>
 				<label for="accessNeeds">{m.signup_accessibility_placeholder()}</label>
-				<div class="form-text">
-					{m.signup_accessibility_help()}
-				</div>
 			</div>
 		</div>
 	</div>
 
+	<hr />
+
 	<div class="row g-2">
 		<div class="col-md">
+			<h5>{m.remarks_label()}</h5>
 			<div class="form-floating mb-3">
 				<textarea
 					name="contact[data][remarks]"
 					type="text"
 					class="form-control {inputClassName}"
 					id="remarks"
-				/>
+				></textarea>
 				<label for="remarks">{m.remarks()}</label>
 			</div>
 		</div>
@@ -293,9 +286,13 @@
 		</div>
 	</div>
 
-	<div class="row g-2">
+	<div class="row g-2 mb-3">
 		<input aria-hidden="true" autocomplete="off" name="h[url]" style="display: none" />
-		<button class="btn btn-primary {primaryButtonColor}">{m.register()}</button>
+		<button class="btn btn-primary {primaryButtonColor}">Teilnehmen</button>
+	</div>
+
+	<div class="row g-2">
+		Du wirst eine Bestätigungsmail erhalten. Erst nach Klick auf den Link in der Mail wird deine Anmeldung verbindlich.
 	</div>
 </form>
 

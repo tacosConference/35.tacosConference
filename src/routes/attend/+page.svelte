@@ -2,12 +2,8 @@
 	import Headline from '$lib/components/Headline.svelte';
 	import Link from '$lib/components/Link.svelte';
 	import NextPageButton from '$lib/components/NextPageButton.svelte';
-	import { m } from '$lib/paraglide/messages.js';
-
 	import SignupForm from '$lib/components/SignupForm.svelte';
-
-	export let data: any;
-	let iban: string = data?.iban ?? '';
+	import { m } from '$lib/paraglide/messages.js';
 </script>
 
 <svelte:head>
@@ -27,9 +23,19 @@
 
 					<div class="card mb-4" style="background-color: transparent; backdrop-filter: none">
 						<div class="card-body">
-							<SignupForm {iban} />
+							<SignupForm />
 						</div>
 					</div>
+
+					<h3>Wird es am Sonntag wieder einen Brunch geben?</h3>
+					<p class="mb-4">
+						Ja, am Sonntag, den 24. Mai 2026, wird es wie üblich den traditionellen, inoffiziellen Brunch in einem Heidelberger Café geben. Die Infos dazu erhältst du während der Konferenz. Falls du teilnehmen willst, berücksichtige das bitte bei deiner Abreiseplanung.
+					</p>
+
+					<h3>Wie lange ist die Anmeldung geöffnet?</h3>
+					<p class="mb-4">
+						Bis zum 15. März 2026.
+					</p>
 
 					<h3>{m.participate_presentation_needed()}</h3>
 					<p class="mb-4">
