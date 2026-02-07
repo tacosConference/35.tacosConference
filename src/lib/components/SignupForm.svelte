@@ -10,7 +10,7 @@
 	let inputClassName = `tacos-input-${color}`;
 	let checkClassName = `tacos-check-${color}`;
 
-	let accommodationNeeded = 'a';
+	let accommodationNeeded = 'have';
 	let membership = 'not_member_full_fee';
 </script>
 
@@ -197,9 +197,9 @@
 				<input
 					class="btn-check"
 					type="radio"
-					name="contact[data][accommodation_needed]"
+					name="contact[data][accommodation]"
 					id="accommodationNone"
-					value="a"
+					value="have"
 					bind:group={accommodationNeeded}
 				/>
 				<label class="btn {outlineButtonColor} w-100 text-start" for="accommodationNone">
@@ -209,9 +209,9 @@
 				<input
 					class="btn-check"
 					type="radio"
-					name="contact[data][accommodation_needed]"
+					name="contact[data][accommodation]"
 					id="accommodationNeededCouchsurfing"
-					value="b"
+					value="needed-couchsurfing-okay"
 					bind:group={accommodationNeeded}
 				/>
 				<label class="btn {outlineButtonColor} w-100 text-start" for="accommodationNeededCouchsurfing">
@@ -221,9 +221,9 @@
 				<input
 					class="btn-check"
 					type="radio"
-					name="contact[data][accommodation_needed]"
+					name="contact[data][accommodation]"
 					id="accommodationNeededNoCouchsurfing"
-					value="c"
+					value="needed-no-couchsurfing"
 					bind:group={accommodationNeeded}
 				/>
 				<label class="btn {outlineButtonColor} w-100 text-start" for="accommodationNeededNoCouchsurfing">
