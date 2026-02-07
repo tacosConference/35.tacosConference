@@ -131,13 +131,13 @@
 
 	<div class="row g-2">
 		<div class="col-md">
-			<h5>Teilnahmebeitrag</h5>
+			<h5>{m.attendance_fee()}</h5>
 			<ul>
-				<li>Der Teilnahmebeitrag beträgt 10 €.</li>
-				<li>Für Mitglieder der Jungen Sprachwissenschaft e. V. gilt ein reduzierter Teilnahmebeitrag von 5 €.</li>
+				<li>{m.attendance_fee_is_10()}</li>
+				<li>{m.reduced_attendance_fee_is_5()}</li>
 			</ul>
 			<p>
-				Bist du Mitglied der Jungen Sprachwissenschaft e. V.?
+				{m.membership_label()}
 			</p>
 			<div class="d-flex flex-column gap-2 mb-3">
 				<div>
@@ -180,7 +180,7 @@
 						value="true"
 					/>
 					<label class="form-check-label" for="jungeSprawiInfo">
-						Ich möchte Informationen über die Junge Sprachwissenschaft e. V. per Mail erhalten.
+						{m.interested_in_junge_sprawi()}
 					</label>
 				</div>
 			</div>
@@ -288,11 +288,11 @@
 
 	<div class="row g-2 mb-3">
 		<input aria-hidden="true" autocomplete="off" name="h[url]" style="display: none" />
-		<button class="btn btn-primary {primaryButtonColor}">Teilnehmen</button>
+		<button class="btn btn-primary {primaryButtonColor}">{m.participate()}</button>
 	</div>
 
 	<div class="row g-2">
-		Du wirst eine Bestätigungsmail erhalten. Erst nach Klick auf den Link in der Mail wird deine Anmeldung verbindlich.
+		{m.you_will_receive_confirmation_mail()}
 	</div>
 </form>
 

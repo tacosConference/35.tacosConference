@@ -31,7 +31,7 @@
 	"languages": "Sprachen, die ich spreche",
 	"last_name": "Nachname",
 	"membership_disclaimer": "Wir leiten deine Emailadresse an Junge Sprachwissenschaft e.V. weiter, der euch einmalig Informationen zuschickt.",
-	"membership_label": "Mitgliedschaft Junge Sprachwissenschaft e.V.",
+	"membership_label": "Bist du Mitglied der Jungen Sprachwissenschaft e. V.?",
 	"membership_not_member_full_fee": "Nein, ich bin kein Mitglied und zahle den vollen Beitrag.",
 	"membership_already_member": "Ja, ich bin bereits Mitglied und zahle den reduzierten Beitrag.",
 	"newsletter_archive_description": "Du möchtest einen alten Newsletter lesen, hast aber die Mail nicht (mehr)? Kein Problem: Hier findest du alle bisher versandten Newsletter, sortiert vom ältesten zum jüngsten:",
@@ -70,7 +70,7 @@
 	"i_accept": "Ich akzeptiere den",
 	"and_am_aware_i_can_be_excluded": "und bin mir bewusst, dass ich bei Nichteinhaltung von der Veranstaltung ausgeschlossen werden kann",
 	"register": "Teilnehmen",
-	"signup_accessibility_info": "Unser Ziel ist es, die Konferenz so barrierefrei wie möglich zu gestalten. Falls Du Unterstützung (rollstuhlgerechte Zimmer, Gebärdensprachdolmetschung, allergenfreies Essen, ...) benötigst, kannst du uns das hier mitteilen",
+	"signup_accessibility_info": "Unser Ziel ist es, die Konferenz so barrierefrei wie möglich zu gestalten. Falls Du Unterstützung (rollstuhlgerechte Zimmer, Gebärdensprachdolmetschung, allergenfreies Essen, ...) benötigst, kannst du uns das hier mitteilen.",
 	"signup_accessibility_label": "Barrierefreiheit",
 	"signup_accessibility_placeholder": "Bedürfnisse zur Barrierefreiheit (optional)",
 	"signup_accommodation_info": "Für Gruppen von mehreren Leuten empfehlen wir Airbnb als relativ kostengünstige Option. In direkter Uninähe gibt es in Heidelberg ansonsten auch eine Jugendherberge – hier sind die Preise allerdings etwas höher. Zusätzlich werden wir ein Coli-Couchsurfing organisieren, bei welchem du bei anderen Computerlinguistik-Studis aus Heidelberg unterkommen kannst.",
@@ -113,5 +113,10 @@
 	"privacy_remarks": "Hängt davon ab, was du in das Feld reinschreibst. Allgemein nutzen wir die Daten in dem Feld, um auf deine Anmerkungen einzugehen.",
 	"registration_successful": "Erfolgreich angemeldet",
 	"registration_successful_details": "Du hast dich erfolgreich und verbindlich zur 35. TaCoS 2026 in Heidelberg angemeldet. Wir sehen uns im Mai!",
-	"registration_further_info_mail": "Spätestens Anfang April erhältst du von uns noch mal eine E-Mail mit weiteren Informationen."
+	"registration_further_info_mail": "Spätestens Anfang April erhältst du von uns noch mal eine E-Mail mit weiteren Informationen.",
+	"you_will_receive_confirmation_mail": "Du wirst eine Bestätigungsmail erhalten. Erst nach Klick auf den Link in der Mail wird deine Anmeldung verbindlich.",
+	"attendance_fee": "Teilnahmebeitrag",
+	"interested_in_junge_sprawi": "Ich möchte Informationen über die Junge Sprachwissenschaft e. V. per Mail erhalten.",
+	"attendance_fee_is_10": "Der Teilnahmebeitrag beträgt 10 €.",
+	"reduced_attendance_fee_is_5": "Für Mitglieder der Jungen Sprachwissenschaft e. V. gilt ein reduzierter Teilnahmebeitrag von 5 €."
 }
