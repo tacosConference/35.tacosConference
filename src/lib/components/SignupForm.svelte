@@ -241,7 +241,7 @@
 			<p>{m.signup_accessibility_info()}</p>
 			<div class="form-floating mb-3">
 				<textarea
-					name="contact[data][access_needs]"
+					name="contact[data][accessibility_needs]"
 					class="form-control {inputClassName}"
 					id="accessNeeds"
 				></textarea>
