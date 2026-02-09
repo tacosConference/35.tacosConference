@@ -27,6 +27,7 @@
 					<ol>
 						<li><Link href="https://newsletter.fachschaft.cl.uni-heidelberg.de/archive/nmc_NWgYnLdM" text="Die TaCoS-Website ist da! // TaCoS Website is live!" /></li>
 						<li><Link href="https://newsletter.fachschaft.cl.uni-heidelberg.de/archive/nmc_GQL5WVpk" text="Frohes neues Jahr! // Happy new year!" /></li>
+						<li><Link href="https://newsletter.fachschaft.cl.uni-heidelberg.de/archive/nmc_G4LyxgjB" text="Anmeldung zur 35. TaCoS 2026 geöffnet // Registration for 35th TaCoS 2026 open"/></li>
 					</ol>
 
 					<p class="mb-4">
