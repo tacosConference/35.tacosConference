@@ -350,6 +350,7 @@ Teilnahmebeitrag TaCoS 2026, ${firstName} ${lastName}
 	</div>
 
 	<div class="row g-2 mb-3">
+		<input name="contact[data][late_bird]" type="hidden" value="true">
 		<input aria-hidden="true" autocomplete="off" name="h[url]" style="display: none" />
 		<button class="btn btn-primary {primaryButtonColor}">{m.participate()}</button>
 	</div>
