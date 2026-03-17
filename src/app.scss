@@ -22,7 +22,7 @@ $tacos-colors: (
 		main: #009999,
 		dark: #008989,
 		darkest: #006060,
-		light: #ccffcc,
+		light: #bbe8e8,
 		lighter: #f0fffa
 	),
 	purple: (
@@ -102,6 +102,16 @@ $tacos-colors: (
 		box-shadow: 0 0 0 0.25rem var(--tacos-#{"" + $color}-light);
 		background-color: var(--tacos-#{"" + $color}-dark);
 	}
+
+	&:disabled,
+	&.disabled {
+		background-color: var(--tacos-#{"" + $color}-light);
+		border-color: var(--tacos-#{"" + $color}-light) !important;
+		color: var(--tacos-#{"" + $color}-dark);
+		cursor: not-allowed;
+		opacity: 0.65;
+		pointer-events: none;
+	}
 }
 
 @mixin tacos-btn-outline($color) {
@@ -129,6 +139,16 @@ $tacos-colors: (
 	.btn-check:checked + & {
 		background-color: var(--tacos-#{"" + $color}-main) !important;
 		color: white !important;
+	}
+
+	&:disabled,
+	&.disabled {
+		background-color: var(--tacos-#{"" + $color}-lighter);
+		border-color: var(--tacos-#{"" + $color}-light) !important;
+		color: var(--tacos-#{"" + $color}-dark);
+		cursor: not-allowed;
+		opacity: 0.65;
+		pointer-events: none;
 	}
 }
 
