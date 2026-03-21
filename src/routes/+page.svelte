@@ -9,6 +9,7 @@
 	import LinkButton from '$lib/components/LinkButton.svelte';
 
 	let color = getContext<{ color: string }>('color').color;
+	let registrationClosed = true;
 </script>
 
 <svelte:head>
@@ -31,14 +32,23 @@
 					</span>
 
 					<div class="alert d-flex align-items-start mx-2 my-4 tacos-input-{color} border-0 rainbow-hover" role="alert">
-						<i class="bi bi-fire fs-4 me-3 flex-shrink-0"></i>
+						<i class="bi {registrationClosed ? 'bi-info-circle' : 'bi-fire'} fs-4 me-3 flex-shrink-0"></i>
 						<div class="d-flex flex-column">
-							<p class="h5">{m.registration_open()}</p>
-							<p>
-								{m.tacos_registration_started_description()}
-							</p>
-							<LinkButton href="/attend" variant="link">{m.register()}</LinkButton>
-							<LinkButton href="/schedule" variant="link">{m.contribute()}</LinkButton>
+							{#if registrationClosed}
+								<p class="h5">{m.registration_closed_home()}</p>
+								<p>
+									{m.registration_closed_description_home()}
+								</p>
+								<LinkButton href="/attend" variant="link">{m.go_to_payment_info()}</LinkButton>
+								<LinkButton href="/schedule" variant="link">{m.contribute()}</LinkButton>
+							{:else}
+								<p class="h5">{m.registration_open()}</p>
+								<p>
+									{m.tacos_registration_started_description()}
+								</p>
+								<LinkButton href="/attend" variant="link">{m.register()}</LinkButton>
+								<LinkButton href="/schedule" variant="link">{m.contribute()}</LinkButton>
+							{/if}
 						</div>
 					</div>
 
