@@ -43,7 +43,7 @@ Teilnahmebeitrag TaCoS 2026, ${firstName} ${lastName}
 		return () => clearTimeout(timer);
 	});
 
-	let registrationClosed = true;
+	let { registrationClosed } = $props();
 </script>
 
 {#if registrationClosed}
