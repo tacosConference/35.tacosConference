@@ -23,7 +23,7 @@
 
 					<div class="card mb-4" style="background-color: transparent; backdrop-filter: none">
 						<div class="card-body">
-							<SignupForm registrationClosed />
+							<SignupForm />
 						</div>
 					</div>
 

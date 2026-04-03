@@ -43,7 +43,15 @@ Teilnahmebeitrag TaCoS 2026, ${firstName} ${lastName}
 		return () => clearTimeout(timer);
 	});
 
+	let { registrationClosed } = $props();
 </script>
+
+{#if registrationClosed}
+	<div class="alert alert-warning mb-4">
+		<h4 class="alert-heading">{m.registration_closed()}</h4>
+		<p class="mb-0">{m.registration_closed_description()}</p>
+	</div>
+{/if}
 
 <form action="https://newsletter.fachschaft.cl.uni-heidelberg.de/forms/nfrm_vzLdxLjQ" method="post">
 	<h4>{m.signup_legend()}</h4>
@@ -81,6 +89,7 @@ Teilnahmebeitrag TaCoS 2026, ${firstName} ${lastName}
 					type="text"
 					class="form-control {inputClassName}"
 					id="pronouns"
+					disabled={registrationClosed}
 				/>
 				<label for="pronouns">{m.pronouns()}</label>
 			</div>
@@ -96,6 +105,7 @@ Teilnahmebeitrag TaCoS 2026, ${firstName} ${lastName}
 					class="form-control {inputClassName}"
 					id="email"
 					required
+					disabled={registrationClosed}
 				/>
 				<label for="email">{m.email()}</label>
 			</div>
@@ -111,6 +121,7 @@ Teilnahmebeitrag TaCoS 2026, ${firstName} ${lastName}
 					class="form-control {inputClassName}"
 					id="affiliation"
 					required
+					disabled={registrationClosed}
 				/>
 				<label for="affiliation">{m.affiliation()}</label>
 			</div>
@@ -125,6 +136,7 @@ Teilnahmebeitrag TaCoS 2026, ${firstName} ${lastName}
 					type="text"
 					class="form-control {inputClassName}"
 					id="study"
+					disabled={registrationClosed}
 				/>
 				<label for="study">{m.study_programme()}</label>
 			</div>
@@ -138,6 +150,7 @@ Teilnahmebeitrag TaCoS 2026, ${firstName} ${lastName}
 				label={m.languages()}
 				{color}
 				required
+				disabled={registrationClosed}
 			/>
 		</div>
 	</div>
@@ -152,6 +165,7 @@ Teilnahmebeitrag TaCoS 2026, ${firstName} ${lastName}
 					class="form-check-input {checkClassName}"
 					type="checkbox"
 					value="true"
+					disabled={registrationClosed}
 				/>
 				<label class="form-check-label" for="previouslyAtTacos">
 					{m.previously_at_tacos()}
@@ -211,6 +225,7 @@ Teilnahmebeitrag TaCoS 2026, ${firstName} ${lastName}
 						class="form-check-input {checkClassName}"
 						type="checkbox"
 						value="true"
+						disabled={registrationClosed}
 					/>
 					<label class="form-check-label" for="jungeSprawiInfo">
 						{m.interested_in_junge_sprawi()}
@@ -263,6 +278,7 @@ Teilnahmebeitrag TaCoS 2026, ${firstName} ${lastName}
 					id="accommodationNone"
 					value="have"
 					bind:group={accommodationNeeded}
+					disabled={registrationClosed}
 				/>
 				<label class="btn {outlineButtonColor} w-100 text-start" for="accommodationNone">
 					{m.accommodation_none()}
@@ -275,6 +291,7 @@ Teilnahmebeitrag TaCoS 2026, ${firstName} ${lastName}
 					id="accommodationNeededCouchsurfing"
 					value="needed-couchsurfing-okay"
 					bind:group={accommodationNeeded}
+					disabled={registrationClosed}
 				/>
 				<label class="btn {outlineButtonColor} w-100 text-start" for="accommodationNeededCouchsurfing">
 					{m.accommodation_needed_couchsurfing()}
@@ -287,6 +304,7 @@ Teilnahmebeitrag TaCoS 2026, ${firstName} ${lastName}
 					id="accommodationNeededNoCouchsurfing"
 					value="needed-no-couchsurfing"
 					bind:group={accommodationNeeded}
+					disabled={registrationClosed}
 				/>
 				<label class="btn {outlineButtonColor} w-100 text-start" for="accommodationNeededNoCouchsurfing">
 					{m.accommodation_needed_no_couchsurfing()}
@@ -306,6 +324,7 @@ Teilnahmebeitrag TaCoS 2026, ${firstName} ${lastName}
 					name="contact[data][accessibility_needs]"
 					class="form-control {inputClassName}"
 					id="accessNeeds"
+					disabled={registrationClosed}
 				></textarea>
 				<label for="accessNeeds">{m.signup_accessibility_placeholder()}</label>
 			</div>
@@ -322,6 +341,7 @@ Teilnahmebeitrag TaCoS 2026, ${firstName} ${lastName}
 					name="contact[data][remarks]"
 					class="form-control {inputClassName}"
 					id="remarks"
+					disabled={registrationClosed}
 				></textarea>
 				<label for="remarks">{m.remarks()}</label>
 			</div>
@@ -339,6 +359,7 @@ Teilnahmebeitrag TaCoS 2026, ${firstName} ${lastName}
 					type="checkbox"
 					value="true"
 					required
+					disabled={registrationClosed}
 				/>
 				<label class="form-check-label" for="codeOfConduct">
 					{m.i_accept()}
@@ -352,7 +373,7 @@ Teilnahmebeitrag TaCoS 2026, ${firstName} ${lastName}
 	<div class="row g-2 mb-3">
 		<input name="contact[data][late_bird]" type="hidden" value="true">
 		<input aria-hidden="true" autocomplete="off" name="h[url]" style="display: none" />
-		<button class="btn btn-primary {primaryButtonColor}">{m.participate()}</button>
+		<button class="btn btn-primary {primaryButtonColor}" disabled={registrationClosed}>{m.participate()}</button>
 	</div>
 
 	<div class="row g-2">

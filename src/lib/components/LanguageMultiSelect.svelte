@@ -8,9 +8,10 @@
 		label: string;
 		color: string;
 		required?: boolean;
+		disabled?: boolean;
 	}
 
-	let { name, label, color, required = false }: Props = $props();
+	let { name, label, color, required = false, disabled = false }: Props = $props();
 
 	let inputClassName = `tacos-input-${color}`;
 	let badgeClassName = `tacos-bg-${color}`;
@@ -63,10 +64,10 @@
 			aria-controls="language-select-listbox"
 			aria-expanded={isOpen}
 			aria-haspopup="listbox"
-			tabindex="0"
-			onclick={() => isOpen = !isOpen}
-			onkeydown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); isOpen = !isOpen; } }}
-			style="min-height: 58px; padding-top: 1.625rem; padding-bottom: 0.625rem;"
+			tabindex={disabled ? -1 : 0}
+			onclick={() => { if (!disabled) isOpen = !isOpen; }}
+			onkeydown={(e) => { if (!disabled && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); isOpen = !isOpen; } }}
+			style="min-height: 58px; padding-top: 1.625rem; padding-bottom: 0.625rem; {disabled ? 'background-color: var(--bs-secondary-bg); opacity: 1; cursor: not-allowed;' : ''}"
 		>
 			{#if selectedLanguages.length === 0}
 				<span class="text-muted opacity-50"></span>
@@ -74,13 +75,15 @@
 			{#each selectedLanguages as lang}
 				<span class="badge {badgeClassName} d-flex align-items-center gap-1">
 					{lang.name}
-					<button
-						type="button"
-						class="btn-close btn-close-white"
-						style="font-size: 0.5rem; padding: 0.25rem;"
-						aria-label="Remove {lang.name}"
-						onclick={(e) => { e.stopPropagation(); removeLanguage(lang.code); }}
-					></button>
+					{#if !disabled}
+						<button
+							type="button"
+							class="btn-close btn-close-white"
+							style="font-size: 0.5rem; padding: 0.25rem;"
+							aria-label="Remove {lang.name}"
+							onclick={(e) => { e.stopPropagation(); removeLanguage(lang.code); }}
+						></button>
+					{/if}
 				</span>
 			{/each}
 		</div>
