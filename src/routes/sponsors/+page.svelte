@@ -11,8 +11,10 @@
 	import blc from '$lib/assets/sponsors/berns-language-consulting.png';
 	import gal from '$lib/assets/sponsors/gal.svg';
 	import psv from '$lib/assets/sponsors/python-software-verband.png';
+	import sap from '$lib/assets/sponsors/sap.svg';
 
 	const sponsors = [
+		{ src: sap, alt: 'SAP SE', link: "https://sap.com/" }, // 1000€
 		{ src: psv, alt: 'Python Software Verband e.V.', link: "https://python-verband.org/" }, // 1000€
 		{ src: aristech, alt: 'Aristech GmbH', link: "https://www.aristech.de"}, //500€
 		{ src: blc, alt: 'berns language consulting GmbH', link: "https://berns-language-consulting.de"}, // 500€
