@@ -21,6 +21,6 @@
 		class="btn btn-sm {currentLocale === 'en' ? 'btn-light' : 'btn-outline-light'}"
 		on:click={() => switchLanguage('en')}
 	>
-		🇺🇸 EN
+		🌐 EN
 	</button>
 </div>
