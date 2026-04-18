@@ -35,6 +35,14 @@
 	import valerie from '$lib/assets/portraits/valerie/valerie.webp';
 	import valerie500 from '$lib/assets/portraits/valerie/valerie-500.webp';
 	import valerie250 from '$lib/assets/portraits/valerie/valerie-250.webp';
+	import eliMini from '$lib/assets/portraits/eli/eli-mini.webp';
+	import eli from '$lib/assets/portraits/eli/eli.webp';
+	import eli500 from '$lib/assets/portraits/eli/eli-500.webp';
+	import eli250 from '$lib/assets/portraits/eli/eli-250.webp';
+	import raziyeMini from '$lib/assets/portraits/raziye/raziye-mini.webp';
+	import raziye from '$lib/assets/portraits/raziye/raziye.webp';
+	import raziye500 from '$lib/assets/portraits/raziye/raziye-500.webp';
+	import raziye250 from '$lib/assets/portraits/raziye/raziye-250.webp';
 </script>
 
 <svelte:head>
@@ -163,6 +171,32 @@
 								loading="lazy"
 							/>
 							<p class="mb-0">Valerie</p>
+						</div>
+						<div class="col-md-4 text-center d-flex flex-column align-items-center">
+							<ProgressiveImage
+								previewSrc={eliMini}
+								fullSrc={eli}
+								srcset="{eli} 1000w, {eli500} 500w, {eli250} 250w"
+								alt="Portrait von Eli"
+								aspectRatio="1/1"
+								class="rounded-circle img-fluid mb-2"
+								style="width: 200px; height: 200px; object-fit: cover;"
+								loading="lazy"
+							/>
+							<p class="mb-0">Eli</p>
+						</div>
+						<div class="col-md-4 text-center d-flex flex-column align-items-center">
+							<ProgressiveImage
+								previewSrc={raziyeMini}
+								fullSrc={raziye}
+								srcset="{raziye} 1000w, {raziye500} 500w, {raziye250} 250w"
+								alt="Portrait von Raziye"
+								aspectRatio="1/1"
+								class="rounded-circle img-fluid mb-2"
+								style="width: 200px; height: 200px; object-fit: cover;"
+								loading="lazy"
+							/>
+							<p class="mb-0">Raziye</p>
 						</div>
 					</div>
 					<NextPageButton href="/sponsors" text={m.go_to_sponsors_button()} />
