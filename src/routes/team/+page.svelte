@@ -183,7 +183,7 @@
 								style="width: 200px; height: 200px; object-fit: cover;"
 								loading="lazy"
 							/>
-							<p class="mb-0">Eli</p>
+							<p class="mb-0">Elizaveta</p>
 						</div>
 						<div class="col-md-4 text-center d-flex flex-column align-items-center">
 							<ProgressiveImage
