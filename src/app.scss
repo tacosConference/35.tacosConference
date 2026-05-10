@@ -85,6 +85,14 @@ $tacos-colors: (
 }
 
 // Mixins for button styles
+@mixin tacos-nav-link-active($color) {
+	&.nav-link.active {
+		background-color: var(--tacos-#{"" + $color}-main) !important;
+		color: white !important;
+		border-color: var(--tacos-#{"" + $color}-light) !important;
+	}
+}
+
 @mixin tacos-btn($color) {
 	background-color: var(--tacos-#{"" + $color}-main);
 	border-color: var(--tacos-#{"" + $color}-light) !important;
@@ -187,11 +195,13 @@ $tacos-colors: (
 	// Button classes
 	.tacos-btn-#{"" + $color-name} {
 		@include tacos-btn($color-name);
+		@include tacos-nav-link-active($color-name);
 	}
 
 	// Outline button classes
 	.tacos-btn-outline-#{"" + $color-name} {
 		@include tacos-btn-outline($color-name);
+		@include tacos-nav-link-active($color-name);
 	}
 
 	// Input field classes
