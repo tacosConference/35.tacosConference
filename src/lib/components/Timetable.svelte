@@ -170,6 +170,11 @@
 
 	function portal(node: HTMLElement) {
 		document.body.appendChild(node);
+		return {
+			destroy() {
+				document.body.removeChild(node);
+			}
+		};
 	}
 
 	let colorButton = `tacos-btn-${color}`;
