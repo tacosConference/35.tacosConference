@@ -13,7 +13,7 @@ color = "#8B4513"
 
 [[events]]
 date = "2026-05-21"
-day = "Donnerstag"
+day = { de = "Donnerstag", en = "Thursday" }
 time = "09:15"
 end = "09:45"
 title = "Opening - Begrüßung"
@@ -24,7 +24,7 @@ color = "#009999"
 
 [[events]]
 date = "2026-05-21"
-day = "Donnerstag"
+day = { de = "Donnerstag", en = "Thursday" }
 time = "09:45"
 end = "10:15"
 title = "Graph Language Models"
@@ -35,7 +35,7 @@ color = "#00a0d7"
 
 [[events]]
 date = "2026-05-21"
-day = "Donnerstag"
+day = { de = "Donnerstag", en = "Thursday" }
 time = "10:15"
 end = "10:45"
 title = "Embedding Collapse in Two-Tower News Recommendation"
@@ -46,7 +46,7 @@ color = "#00a0d7"
 
 [[events]]
 date = "2026-05-21"
-day = "Donnerstag"
+day = { de = "Donnerstag", en = "Thursday" }
 time = "10:45"
 end = "11:15"
 title = "Kaffee - Die zweite Tasse"
@@ -57,7 +57,7 @@ color = "#8B4513"
 
 [[events]]
 date = "2026-05-21"
-day = "Donnerstag"
+day = { de = "Donnerstag", en = "Thursday" }
 time = "11:15"
 end = "12:15"
 title = "Is This a Moral Claim? Humans vs. LLMs on a Surprisingly Difficult Task"
@@ -68,7 +68,7 @@ color = "#5b2d90"
 
 [[events]]
 date = "2026-05-21"
-day = "Donnerstag"
+day = { de = "Donnerstag", en = "Thursday" }
 time = "12:15"
 end = "13:45"
 title = "Mittagspause"
@@ -79,7 +79,7 @@ color = "#f39c12"
 
 [[events]]
 date = "2026-05-21"
-day = "Donnerstag"
+day = { de = "Donnerstag", en = "Thursday" }
 time = "13:45"
 end = "14:45"
 title = "Programming Language that Functions – Haskell for Computational Linguists"
@@ -90,7 +90,7 @@ color = "#008c3a"
 
 [[events]]
 date = "2026-05-21"
-day = "Donnerstag"
+day = { de = "Donnerstag", en = "Thursday" }
 time = "18:00"
 end = "19:00"
 title = "Spieleabend / Campustour"
@@ -101,7 +101,7 @@ color = "#cc0368"
 
 [[events]]
 date = "2026-05-21"
-day = "Donnerstag"
+day = { de = "Donnerstag", en = "Thursday" }
 time = "19:00"
 end = "23:45"
 title = "Spieleabend"
@@ -112,7 +112,7 @@ color = "#cc0368"
 
 [[events]]
 date = "2026-05-21"
-day = "Donnerstag"
+day = { de = "Donnerstag", en = "Thursday" }
 time = "09:45"
 end = "10:15"
 title = "Cultural Themes in Turkish and Georgian Folk Songs: A Corpus-Based Keyword and Collocation Study"
@@ -123,7 +123,7 @@ color = "#00a0d7"
 
 [[events]]
 date = "2026-05-21"
-day = "Donnerstag"
+day = { de = "Donnerstag", en = "Thursday" }
 time = "10:15"
 end = "10:45"
 title = "A Dual-Track Theory of Local Discourse Coherence in Humans and Language Models"
@@ -134,7 +134,7 @@ color = "#00a0d7"
 
 [[events]]
 date = "2026-05-21"
-day = "Donnerstag"
+day = { de = "Donnerstag", en = "Thursday" }
 time = "13:45"
 end = "14:45"
 title = "Uncovering Political Rhetoric with Corpus Tools: A Hands-On Introduction to Skelog and ParlaMint"
@@ -145,7 +145,7 @@ color = "#008c3a"
 
 [[events]]
 date = "2026-05-21"
-day = "Donnerstag"
+day = { de = "Donnerstag", en = "Thursday" }
 time = "09:45"
 end = "10:15"
 title = "A statistical analysis of translation errors in machine translations."
@@ -156,7 +156,7 @@ color = "#00a0d7"
 
 [[events]]
 date = "2026-05-21"
-day = "Donnerstag"
+day = { de = "Donnerstag", en = "Thursday" }
 time = "10:15"
 end = "10:45"
 title = "Kodierte Keilschriftkurse: Eine Lern-App für Keilschriftzeichen"
@@ -167,7 +167,7 @@ color = "#00a0d7"
 
 [[events]]
 date = "2026-05-22"
-day = "Freitag"
+day = { de = "Freitag", en = "Friday" }
 time = "09:15"
 end = "09:30"
 title = "Kaffee am Freitag"
@@ -178,7 +178,7 @@ color = "#8B4513"
 
 [[events]]
 date = "2026-05-22"
-day = "Freitag"
+day = { de = "Freitag", en = "Friday" }
 time = "09:30"
 end = "09:45"
 title = "Opening - Donnerstag"
@@ -189,7 +189,7 @@ color = "#009999"
 
 [[events]]
 date = "2026-05-22"
-day = "Freitag"
+day = { de = "Freitag", en = "Friday" }
 time = "09:45"
 end = "10:15"
 title = "Grokking Multilinguality: Ein mechanistischer Blick auf Cross-Lingual Generalization"
@@ -200,7 +200,7 @@ color = "#00a0d7"
 
 [[events]]
 date = "2026-05-22"
-day = "Freitag"
+day = { de = "Freitag", en = "Friday" }
 time = "10:15"
 end = "10:45"
 short_title = "The Levenshteins: Transparent methods applied to language learning of German orthography"
@@ -212,7 +212,7 @@ color = "#00a0d7"
 
 [[events]]
 date = "2026-05-22"
-day = "Freitag"
+day = { de = "Freitag", en = "Friday" }
 time = "10:45"
 end = "11:00"
 title = "Noch mehr Kaffee"
@@ -223,7 +223,7 @@ color = "#8B4513"
 
 [[events]]
 date = "2026-05-22"
-day = "Freitag"
+day = { de = "Freitag", en = "Friday" }
 time = "11:00"
 end = "11:15"
 title = "Lightning Talk"
@@ -234,7 +234,7 @@ color = "#00a0d7"
 
 [[events]]
 date = "2026-05-22"
-day = "Freitag"
+day = { de = "Freitag", en = "Friday" }
 time = "11:15"
 end = "12:15"
 title = "Inside the Transformer's Matrix: A Practical Guide to Mechanistic Interpretability"
@@ -245,7 +245,7 @@ color = "#5b2d90"
 
 [[events]]
 date = "2026-05-22"
-day = "Freitag"
+day = { de = "Freitag", en = "Friday" }
 time = "12:15"
 end = "13:45"
 title = "Mittagspause"
@@ -256,7 +256,7 @@ color = "#f39c12"
 
 [[events]]
 date = "2026-05-22"
-day = "Freitag"
+day = { de = "Freitag", en = "Friday" }
 time = "13:45"
 end = "14:15"
 title = "Zwischen KI und Kundenprojekten: Computerlinguistik in der Praxis"
@@ -267,7 +267,7 @@ color = "#e67e22"
 
 [[events]]
 date = "2026-05-22"
-day = "Freitag"
+day = { de = "Freitag", en = "Friday" }
 time = "14:15"
 end = "14:30"
 title = "SAP"
@@ -278,7 +278,7 @@ color = "#e67e22"
 
 [[events]]
 date = "2026-05-22"
-day = "Freitag"
+day = { de = "Freitag", en = "Friday" }
 time = "14:30"
 end = "15:00"
 title = "Kaffee mit SAP"
@@ -289,7 +289,7 @@ color = "#8B4513"
 
 [[events]]
 date = "2026-05-22"
-day = "Freitag"
+day = { de = "Freitag", en = "Friday" }
 time = "15:00"
 end = "16:00"
 title = "Academia vs. Industry"
@@ -300,7 +300,7 @@ color = "#e67e22"
 
 [[events]]
 date = "2026-05-22"
-day = "Freitag"
+day = { de = "Freitag", en = "Friday" }
 time = "16:00"
 end = "16:15"
 title = "Der letzte Kaffee am Freitag"
@@ -311,7 +311,7 @@ color = "#8B4513"
 
 [[events]]
 date = "2026-05-22"
-day = "Freitag"
+day = { de = "Freitag", en = "Friday" }
 time = "16:15"
 end = "17:15"
 title = "The cost of cutting corners"
@@ -322,7 +322,7 @@ color = "#008c3a"
 
 [[events]]
 date = "2026-05-22"
-day = "Freitag"
+day = { de = "Freitag", en = "Friday" }
 time = "19:00"
 end = "23:45"
 title = "Karaoke"
@@ -333,7 +333,7 @@ color = "#cc0368"
 
 [[events]]
 date = "2026-05-22"
-day = "Freitag"
+day = { de = "Freitag", en = "Friday" }
 time = "09:45"
 end = "10:15"
 title = "«John dropped the apple — Which apple?» Investigating LLM Reasoning with Attention Scores"
@@ -344,7 +344,7 @@ color = "#00a0d7"
 
 [[events]]
 date = "2026-05-22"
-day = "Freitag"
+day = { de = "Freitag", en = "Friday" }
 time = "10:15"
 end = "10:45"
 title = "Protein LLMs: Applying NLP Methods to Protein Sequence Modeling"
@@ -355,7 +355,7 @@ color = "#00a0d7"
 
 [[events]]
 date = "2026-05-22"
-day = "Freitag"
+day = { de = "Freitag", en = "Friday" }
 time = "16:15"
 end = "16:45"
 title = "Social Impact of AI"
@@ -366,7 +366,7 @@ color = "#00a0d7"
 
 [[events]]
 date = "2026-05-22"
-day = "Freitag"
+day = { de = "Freitag", en = "Friday" }
 time = "16:45"
 end = "17:15"
 title = "Is Computational Linguistics dead? - An exploratory survey on CL job market across China and Europe"
@@ -377,7 +377,7 @@ color = "#00a0d7"
 
 [[events]]
 date = "2026-05-22"
-day = "Freitag"
+day = { de = "Freitag", en = "Friday" }
 time = "09:45"
 end = "10:15"
 title = "Beyond Names: Tracing the Stylistic Influence of Canonical Texts in Fanfiction"
@@ -388,7 +388,7 @@ color = "#00a0d7"
 
 [[events]]
 date = "2026-05-22"
-day = "Freitag"
+day = { de = "Freitag", en = "Friday" }
 time = "10:15"
 end = "10:45"
 short_title = "Do AI Models Judge Like Humans?"
@@ -400,7 +400,7 @@ color = "#00a0d7"
 
 [[events]]
 date = "2026-05-23"
-day = "Samstag"
+day = { de = "Samstag", en = "Saturday" }
 time = "09:15"
 end = "09:30"
 title = "Samstagskaffee"
@@ -411,7 +411,7 @@ color = "#8B4513"
 
 [[events]]
 date = "2026-05-23"
-day = "Samstag"
+day = { de = "Samstag", en = "Saturday" }
 time = "09:30"
 end = "09:45"
 title = "Opening - Freitag"
@@ -422,7 +422,7 @@ color = "#009999"
 
 [[events]]
 date = "2026-05-23"
-day = "Samstag"
+day = { de = "Samstag", en = "Saturday" }
 time = "09:45"
 end = "10:45"
 title = "Scaling the Right Things: Data, Grounding, and Knowing When Not to Answer"
@@ -433,7 +433,7 @@ color = "#5b2d90"
 
 [[events]]
 date = "2026-05-23"
-day = "Samstag"
+day = { de = "Samstag", en = "Saturday" }
 time = "10:45"
 end = "11:15"
 title = "Es gibt nie genug Kaffee"
@@ -444,7 +444,7 @@ color = "#8B4513"
 
 [[events]]
 date = "2026-05-23"
-day = "Samstag"
+day = { de = "Samstag", en = "Saturday" }
 time = "11:15"
 end = "12:15"
 title = "tba"
@@ -455,7 +455,7 @@ color = "#5b2d90"
 
 [[events]]
 date = "2026-05-23"
-day = "Samstag"
+day = { de = "Samstag", en = "Saturday" }
 time = "12:15"
 end = "14:15"
 title = "Mittagspause"
@@ -466,7 +466,7 @@ color = "#f39c12"
 
 [[events]]
 date = "2026-05-23"
-day = "Samstag"
+day = { de = "Samstag", en = "Saturday" }
 time = "14:15"
 end = "15:30"
 title = "Lightning Talks"
@@ -477,7 +477,7 @@ color = "#00a0d7"
 
 [[events]]
 date = "2026-05-23"
-day = "Samstag"
+day = { de = "Samstag", en = "Saturday" }
 time = "15:30"
 end = "16:00"
 title = "Kaffee"
@@ -488,7 +488,7 @@ color = "#8B4513"
 
 [[events]]
 date = "2026-05-23"
-day = "Samstag"
+day = { de = "Samstag", en = "Saturday" }
 time = "16:00"
 end = "16:15"
 title = "Nachfolge suchen"
@@ -499,7 +499,7 @@ color = "#009999"
 
 [[events]]
 date = "2026-05-23"
-day = "Samstag"
+day = { de = "Samstag", en = "Saturday" }
 time = "16:15"
 end = "16:45"
 title = "Closing"
@@ -510,7 +510,7 @@ color = "#009999"
 
 [[events]]
 date = "2026-05-23"
-day = "Samstag"
+day = { de = "Samstag", en = "Saturday" }
 time = "19:00"
 end = "23:45"
 title = "Barabend"
@@ -521,7 +521,7 @@ color = "#cc0368"
 
 [[events]]
 date = "2026-05-24"
-day = "Sonntag"
+day = { de = "Sonntag", en = "Sunday" }
 time = "11:00"
 end = "14:00"
 title = "Brunch"
