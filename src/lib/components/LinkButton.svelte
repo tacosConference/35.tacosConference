@@ -31,7 +31,7 @@
 		class: className = '',
 		iconClass = null,
 		iconPosition = 'left',
-		color = getContext<{ color: string }>('color').color,
+		color = getContext<{ color: string }>('color')?.color,
 		external = false,
 		href = '/',
 		outline = false,
@@ -39,10 +39,10 @@
 		target = null
 	}: Props = $props();
 
-	let colorClassName =
-		variant === 'button'
-			? `tacos-btn-${outline ? 'outline-' : ''}${color}`
-			: `tacos-link-${color}`;
+	let colorClassName = $derived(
+		variant === 'button' ? `tacos-btn-${outline ? 'outline-' : ''}${color}` : `tacos-link-${color}`
+	);
+
 	const internalHref = $derived(!external ? resolve(href as Pathname) : '');
 </script>
 

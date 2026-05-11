@@ -199,7 +199,7 @@
 							<p class="mb-0">Raziye</p>
 						</div>
 					</div>
-					<NextPageButton href="/sponsors" text={m.go_to_sponsors_button()} />
+					<NextPageButton href="/sponsors/" text={m.go_to_sponsors_button()} />
 				</div>
 			</div>
 		</div>

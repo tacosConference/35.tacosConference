@@ -43,7 +43,7 @@ Teilnahmebeitrag TaCoS 2026, ${firstName} ${lastName}
 		return () => clearTimeout(timer);
 	});
 
-	let { registrationClosed } = $props();
+	let { registrationClosed = false }: { registrationClosed?: boolean } = $props();
 </script>
 
 {#if registrationClosed}
@@ -256,7 +256,7 @@ Teilnahmebeitrag TaCoS 2026, ${firstName} ${lastName}
 					{#key qrCodeColor}
 						{#key epcCode}
 							<QRCode isResponsive data={epcCode} color={qrCodeColor} haveBackgroundRoundedEdges
-											backgroundColor='#ffffffA0' />
+							        backgroundColor='#ffffffA0' />
 						{/key}
 					{/key}
 				</div>
@@ -363,8 +363,8 @@ Teilnahmebeitrag TaCoS 2026, ${firstName} ${lastName}
 				/>
 				<label class="form-check-label" for="codeOfConduct">
 					{m.i_accept()}
-					<Link href="https://berlincodeofconduct.org/" text={m.code_of_conduct()}
-								target="_blank" /> {m.and_am_aware_i_can_be_excluded()}.
+					<Link external href="https://berlincodeofconduct.org/" text={m.code_of_conduct()}
+					      target="_blank" /> {m.and_am_aware_i_can_be_excluded()}.
 				</label>
 			</div>
 		</div>
@@ -382,20 +382,21 @@ Teilnahmebeitrag TaCoS 2026, ${firstName} ${lastName}
 </form>
 
 <style lang="scss">
-    textarea:not(:placeholder-shown) ~ label::after {
-        background: none !important;
-    }
+  textarea:not(:placeholder-shown) ~ label::after {
+    background: none !important;
+  }
 
-    .form-floating textarea.form-control {
-        height: calc(2 * 3.5rem + calc(var(--bs-border-width) * 2));
-    }
+  .form-floating textarea.form-control {
+    height: calc(2 * 3.5rem + calc(var(--bs-border-width) * 2));
+  }
 
-    hr {
-        margin-top: unset;
+  hr {
+    margin-top: unset;
+  }
+
+  @media (min-width: 768px) {
+    .w-md-50 {
+      width: 50% !important;
     }
-    @media (min-width: 768px) {
-        .w-md-50 {
-            width: 50%!important;
-        }
-    }
+  }
 </style>

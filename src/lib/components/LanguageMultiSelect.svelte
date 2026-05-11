@@ -13,9 +13,9 @@
 
 	let { name, label, color, required = false, disabled = false }: Props = $props();
 
-	let inputClassName = `tacos-input-${color}`;
-	let badgeClassName = `tacos-bg-${color}`;
-	let buttonClassName = `tacos-btn-${color}`;
+	let inputClassName = $derived(`tacos-input-${color}`);
+	let badgeClassName = $derived(`tacos-bg-${color}`);
+	let buttonClassName = $derived(`tacos-btn-${color}`);
 
 	let locale = getLocale();
 	let displayNames = new Intl.DisplayNames([locale], { type: 'language' });

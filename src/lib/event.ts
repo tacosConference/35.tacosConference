@@ -10,7 +10,3 @@ export interface Event {
 	location: string;
 	color: string;
 }
-
-export interface EventWithColAndRow extends Event { col: number; row: number; }
-
-export interface TableCellEvent extends EventWithColAndRow { span: number; }

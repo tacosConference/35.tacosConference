@@ -44,7 +44,7 @@
 
 					<h3>{m.participate_presentation_howto()}</h3>
 					<p class="mb-4">
-						{m.on_page()}<Link href="/schedule" text="{m.timetable()}"></Link>{m.participate_presentation_howto_description()}
+						{m.on_page()}<Link href="/schedule/" text="{m.timetable()}"></Link>{m.participate_presentation_howto_description()}
 					</p>
 
 					<h3>{m.participate_certificate()}</h3>
@@ -81,7 +81,7 @@
 						{m.participate_privacy_description()}
 					</p>
 
-					<NextPageButton href="/schedule" text={m.go_to_timetable_button()} />
+					<NextPageButton href="/schedule/" text={m.go_to_timetable_button()} />
 				</div>
 			</div>
 		</div>

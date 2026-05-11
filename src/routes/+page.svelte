@@ -39,15 +39,15 @@
 								<p>
 									{m.registration_closed_description_home()}
 								</p>
-								<LinkButton href="/attend" variant="link">{m.go_to_payment_info()}</LinkButton>
-								<LinkButton href="/schedule" variant="link">{m.contribute()}</LinkButton>
+								<LinkButton href="/attend/" variant="link">{m.go_to_payment_info()}</LinkButton>
+								<LinkButton href="/schedule/" variant="link">{m.contribute()}</LinkButton>
 							{:else}
 								<p class="h5">{m.registration_open()}</p>
 								<p>
 									{m.tacos_registration_started_description()}
 								</p>
-								<LinkButton href="/attend" variant="link">{m.register()}</LinkButton>
-								<LinkButton href="/schedule" variant="link">{m.contribute()}</LinkButton>
+								<LinkButton href="/attend/" variant="link">{m.register()}</LinkButton>
+								<LinkButton href="/schedule/" variant="link">{m.contribute()}</LinkButton>
 							{/if}
 						</div>
 					</div>
@@ -68,7 +68,7 @@
 						</div>
 					</div>
 
-					<NextPageButton href="/about" text={m.go_to_about_button()} />
+					<NextPageButton href="/about/" text={m.go_to_about_button()} />
 				</div>
 			</div>
 		</div>
