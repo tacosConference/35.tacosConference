@@ -1,11 +1,13 @@
 [[events]]
 date = "2026-05-21"
-day = "Donnerstag"
+day = { de = "Donnerstag", en = "Thursday" }
 time = "08:45"
 end = "09:15"
-title = "Registrierung"
+title = { de = "Registrierung", en = "Registration" }
 person = ""
-description = "Hier meldet ihr euch an und bekommt ihr eure Namensschilder."
+description = {
+    de = "Hier meldet ihr euch an und bekommt ihr eure Namensschilder.",
+    en = "Check in here and pick up your name badges." }
 location = "Foyer"
 color = "#8B4513"
 
