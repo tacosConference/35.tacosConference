@@ -163,6 +163,9 @@
 		return Math.max(...enrichedActiveEvents.map(e => e.col)) + 1;
 	});
 
+	const columnMin = 320;
+	const gridMinWidth = $derived(80 + maxCols * columnMin);
+
 	const dayLabel = $derived(events.find((e: Event) => e.date === activeDate)?.day || activeDate);
 
 	function portal(node: HTMLElement) {
@@ -193,85 +196,88 @@
 	</div>
 
 	<!-- Desktop View -->
-	<div
-		class="d-none d-md-grid bg-light border rounded overflow-hidden shadow-sm"
-		style="
-        --slots: {slots.length};
-        grid-template-columns: 80px repeat({maxCols}, 1fr);
-        grid-template-rows: auto repeat({slots.length}, 45px);
-    "
-	>
-		<!-- Headers -->
-		<div class="bg-dark text-white p-2 text-center fw-bold sticky-top z-3">Zeit</div>
+	<div class="timetable-scroll d-none d-md-block">
 		<div
-			class="bg-dark text-white p-2 text-center fw-bold sticky-top z-3"
-			style="grid-column: 2 / span {maxCols}"
+			class="timetable-grid d-grid bg-light border rounded overflow-hidden shadow-sm"
+			style="
+        --slots: {slots.length};
+        grid-template-columns: 80px repeat({maxCols}, minmax({columnMin}px, 1fr));
+        grid-template-rows: auto repeat({slots.length}, 45px);
+        min-width: {gridMinWidth}px;
+    "
 		>
-			{dayLabel}
-		</div>
-
-		<!-- Time column -->
-		{#each slots as slot, i}
+			<!-- Headers -->
+			<div class="bg-dark text-white p-2 text-center fw-bold sticky-top z-3">Zeit</div>
 			<div
-				class="border-end border-bottom pe-2 text-end small text-muted bg-white"
-				style="grid-row: {i + 2}; grid-column: 1;"
+				class="bg-dark text-white p-2 text-center fw-bold sticky-top z-3"
+				style="grid-column: 2 / span {maxCols}"
 			>
-				{slot}
+				{dayLabel}
 			</div>
-		{/each}
 
-		<!-- Background Grid Lines -->
-		{#each slots as _, r}
-			<div
-				class="border-end border-bottom bg-white"
-				style="grid-row: {r + 2}; grid-column: 2 / span {maxCols};"
-			></div>
-		{/each}
+			<!-- Time column -->
+			{#each slots as slot, i}
+				<div
+					class="border-end border-bottom pe-2 text-end small text-muted bg-white"
+					style="grid-row: {i + 2}; grid-column: 1;"
+				>
+					{slot}
+				</div>
+			{/each}
 
-		<!-- Desktop View -->
-		{#each enrichedActiveEvents as event}
-			{@const short = isShortEvent(event)}
-			<button
-				type="button"
-				class="event-item m-1 p-1 p-sm-2 rounded text-white small position-relative shadow-sm border-0 text-start d-flex flex-column"
-				class:current={isCurrent(event)}
-				onclick={() => (selectedEvent = event)}
-				data-bs-toggle="modal"
-				data-bs-target="#eventModal"
-				style="
+			<!-- Background Grid Lines -->
+			{#each slots as _, r}
+				<div
+					class="border-end border-bottom bg-white"
+					style="grid-row: {r + 2}; grid-column: 2 / span {maxCols};"
+				></div>
+			{/each}
+
+			<!-- Desktop View -->
+			{#each enrichedActiveEvents as event}
+				{@const short = isShortEvent(event)}
+				<button
+					type="button"
+					class="event-item m-1 p-1 p-sm-2 rounded text-white small position-relative shadow-sm border-0 text-start d-flex flex-column"
+					class:current={isCurrent(event)}
+					onclick={() => (selectedEvent = event)}
+					data-bs-toggle="modal"
+					data-bs-target="#eventModal"
+					style="
                     grid-column: {event.col + 2} / span {event.span};
                     grid-row: {getGridRow(event.time)} / {getGridRow(event.end)};
                     border-left: 4px solid rgba(0,0,0,0.2) !important;
                     background-color: {event.color};
                 "
-			>
-				<span class="w-100 overflow-hidden">
-					<span class="fw-bold lh-sm {short ? '' : 'mb-1'}"
-					      style="font-size: 0.85rem;"
-					      title={event.title}>
-						{event.short_title ? event.short_title : event.title}
-						{#if isCurrent(event)}
-						<span class="badge bg-danger pulse-badge ms-2">JETZT</span>
-						{/if}
-					</span>
-					<br />
-					<span class="d-inline-flex align-items-center small">
-					{#if !short}
-						{#if event.person}
-							<span class="fw-semibold lh-tight text-truncate" style="max-width: 14em; letter-spacing: -0.02em;"
-							      title={event.person}>
-								{event.person}
-							</span>
-							<span class="text-white-50">&nbsp;•&nbsp;</span>
-						{/if}
-						<span class="fw-semibold text-truncate me-1">
-							{event.time} - {event.end}<span class="text-white-50">&nbsp;•&nbsp;</span>{event.location}
+				>
+					<span class="w-100 overflow-hidden">
+						<span class="fw-bold lh-sm {short ? '' : 'mb-1'}"
+						      style="font-size: 0.85rem;"
+						      title={event.title}>
+							{event.short_title ? event.short_title : event.title}
+							{#if isCurrent(event)}
+							<span class="badge bg-danger pulse-badge ms-2">JETZT</span>
+							{/if}
 						</span>
-					{/if}
+						<br />
+						<span class="d-inline-flex align-items-center small">
+						{#if !short}
+							{#if event.person}
+								<span class="fw-semibold lh-tight text-truncate" style="max-width: 14em; letter-spacing: -0.02em;"
+								      title={event.person}>
+									{event.person}
+								</span>
+								<span class="text-white-50">&nbsp;•&nbsp;</span>
+							{/if}
+							<span class="fw-semibold text-truncate me-1">
+								{event.time} - {event.end}<span class="text-white-50">&nbsp;•&nbsp;</span>{event.location}
+							</span>
+						{/if}
+						</span>
 					</span>
-				</span>
-			</button>
-		{/each}
+				</button>
+			{/each}
+		</div>
 	</div>
 
 	<!-- Mobile View -->
@@ -405,4 +411,14 @@
             box-shadow: 0 0 0 0 rgba(220, 53, 69, 0);
         }
     }
+
+    .timetable-scroll {
+		width: 100%;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.timetable-grid {
+		width: 100%;
+	}
 </style>
