@@ -52,7 +52,7 @@
 						</div>
 					</div>
 
-					<Countdown targetDate={new Date('2026-05-21T09:00:00+02:00')} />
+					<Countdown targetDate={new Date('2026-05-21T09:30:00+02:00')} />
 
 					<p class="lead text-center mb-4">
 						{m.conference_description_lead()}
