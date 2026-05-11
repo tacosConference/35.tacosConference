@@ -9,16 +9,16 @@ description = {
     de = "Hier meldet ihr euch an und bekommt ihr eure Namensschilder.",
     en = "Check in here and pick up your name badges." }
 location = "Foyer"
-color = "#8B4513"
+color = "#009999"
 
 [[events]]
 date = "2026-05-21"
 day = { de = "Donnerstag", en = "Thursday" }
 time = "09:15"
 end = "09:45"
-title = "Opening - Begrüßung"
+title = { de = "Opening - Begrüßung", en = "Opening - Welcome" }
 person = ""
-description = "Wir heißen euch herzlich willkommen und erklären kurz den Ablauf der nächsten Tage."
+description = { de = "Wir heißen euch herzlich willkommen und erklären kurz den Ablauf der nächsten Tage.", en = "We welcome you and briefly explain the schedule for the coming days." }
 location = "Konferenzraum 5/104"
 color = "#009999"
 
@@ -27,6 +27,17 @@ date = "2026-05-21"
 day = { de = "Donnerstag", en = "Thursday" }
 time = "09:45"
 end = "10:15"
+title = { de = "Kaffee - Die zweite Tasse", en = "Coffee - Second Cup" }
+person = ""
+description = { de = "Kurze Kaffeepause zum Durchatmen und Austauschen.", en = "Short coffee break to recharge and chat." }
+location = "Foyer"
+color = "#8B4513"
+
+[[events]]
+date = "2026-05-21"
+day = { de = "Donnerstag", en = "Thursday" }
+time = "10:15"
+end = "10:45"
 title = "Graph Language Models"
 person = "Moritz Plenz"
 description = "While Language Models (LMs) are the workhorses of NLP, their interplay with structured knowledge graphs (KGs) is still actively researched. Current methods for encoding such graphs typically either (i) linearize them for embedding with LMs – which underutilize structural information, or (ii) use Graph Neural Networks (GNNs) to preserve the graph structure – but GNNs cannot represent text features as well as pretrained LMs. In our work we introduce a novel LM type, the Graph Language Model (GLM), that integrates the strengths of both approaches and mitigates their weaknesses. The GLM parameters are initialized from a pretrained LM to enhance understanding of individual graph concepts and triplets. Simultaneously, we design the GLM’s architecture to incorporate graph biases, thereby promoting effective knowledge distribution within the graph. This enables GLMs to process graphs, texts, and interleaved inputs of both. Empirical evaluations on relation classification tasks show that GLM embeddings surpass both LM- and GNN-based baselines in supervised and zero-shot setting, demonstrating their versatility."
@@ -36,24 +47,14 @@ color = "#00a0d7"
 [[events]]
 date = "2026-05-21"
 day = { de = "Donnerstag", en = "Thursday" }
-time = "10:15"
-end = "10:45"
+time = "10:45"
+end = "11:15"
 title = "Embedding Collapse in Two-Tower News Recommendation"
 person = "Martin Scheuermann"
 description = "News recommendation is characterized by rapidly evolving content and highly skewed interaction data, making it challenging to learn robust user and article representations. While two-tower models are widely used for scalable retrieval, we show that they exhibit a critical failure mode in this setting: embedding collapse.\nWe demonstrate that user and article embeddings quickly degenerate into a low-dimensional structure, limiting retrieval performance and leading to an overemphasis on popular content. This collapse emerges early during training and constrains downstream performance.\nTo mitigate this issue, we propose and analyze spectral regularization, which encourages a more balanced use of the embedding space by preventing variance from concentrating in a few dominant directions. This leads to more stable training and improved recommendation quality."
 location = "Konferenzraum 5/104"
 color = "#00a0d7"
 
-[[events]]
-date = "2026-05-21"
-day = { de = "Donnerstag", en = "Thursday" }
-time = "10:45"
-end = "11:15"
-title = "Kaffee - Die zweite Tasse"
-person = ""
-description = ""
-location = "Foyer"
-color = "#8B4513"
 
 [[events]]
 date = "2026-05-21"
@@ -71,9 +72,9 @@ date = "2026-05-21"
 day = { de = "Donnerstag", en = "Thursday" }
 time = "12:15"
 end = "13:45"
-title = "Mittagspause"
+title = { de = "Mittagspause", en = "Lunch Break" }
 person = ""
-description = ""
+description = { de = "Zeit zum Essen und für eine kleine Pause.", en = "Time for lunch and a short break." }
 location = "Zentralmensa"
 color = "#f39c12"
 
@@ -93,9 +94,9 @@ date = "2026-05-21"
 day = { de = "Donnerstag", en = "Thursday" }
 time = "18:00"
 end = "19:00"
-title = "Spieleabend / Campustour"
+title = { de = "Spieleabend / Campustour", en = "Game Night / Campus Tour" }
 person = ""
-description = ""
+description = { de = "Lockerer Ausklang mit Spielen oder einer Tour über den Campus.", en = "Wind down with games or join a campus tour." }
 location = "Auf dem Campus (Treffpunkt: Foyer)"
 color = "#cc0368"
 
@@ -104,17 +105,17 @@ date = "2026-05-21"
 day = { de = "Donnerstag", en = "Thursday" }
 time = "19:00"
 end = "23:45"
-title = "Spieleabend"
+title = { de = "Spieleabend", en = "Game Night" }
 person = ""
-description = ""
+description = { de = "Gemeinsam spielen, lachen und den Tag ausklingen lassen.", en = "Play, relax, and end the day together." }
 location = "Konferenzraum 5/104"
 color = "#cc0368"
 
 [[events]]
 date = "2026-05-21"
 day = { de = "Donnerstag", en = "Thursday" }
-time = "09:45"
-end = "10:15"
+time = "10:15"
+end = "10:45"
 title = "Cultural Themes in Turkish and Georgian Folk Songs: A Corpus-Based Keyword and Collocation Study"
 person = "Ömer Faruk Bülbül"
 description = "Folk songs serve as rich repositories of a community's cultural memory, but can statistical methods reveal fundamental differences in how neighboring cultures conceptualize the world? This talk presents a quantitative, corpus-based comparison of translated Turkish and Georgian folk songs to uncover their distinct semantic landscapes. Analyzing a manually compiled corpus of approximately 22,600 tokens across 183 songs, this study utilizes POS-tagging, Log-Likelihood, and Pointwise Mutual Information (PMI) to extract dominant keywords and evaluate semantic prosody.\n\nThe computational findings reveal a cultural divergence: The Turkish dataset is highly localized and inward-facing, statistically dominated by intimate, somatic terms (e.g., beloved, wound) that reflect the individualistic aşık (minstrel) tradition. Conversely, the Georgian corpus projects outward, emphasizing collective identity, cosmic elements (highlighted by a strong bidirectional statistical attraction between Sun and Woman), and social defense (e.g., enemy). By moving beyond traditional qualitative ethnomusicology into data-driven lexical quantification, this presentation demonstrates how stylistic analysis can expose distinct cultural scripts and reveal translation artifacts embedded within oral traditions."
@@ -124,8 +125,8 @@ color = "#00a0d7"
 [[events]]
 date = "2026-05-21"
 day = { de = "Donnerstag", en = "Thursday" }
-time = "10:15"
-end = "10:45"
+time = "10:45"
+end = "11:15"
 title = "A Dual-Track Theory of Local Discourse Coherence in Humans and Language Models"
 person = "Souvik Banerjee"
 description = "What makes a sequence of sentences feel coherent rather than disjointed? At the local level, psycholinguistic and computational evidence points to two distinct mechanisms operating simultaneously. Relational coherence tracks how adjacent sentences are logically connected: whether one explains, contrasts, or elaborates on the other. Entity coherence tracks which referents are in focus and how attention shifts between them. These two tracks are not independent: the type of relation between sentences shapes which entities stay in focus, and the entity configuration constrains which relations are plausible.  Despite decades of work on each track in isolation, we lack a unified formal account of how they interact.\n\nWe develop an information-theoretic framework that models both tracks jointly. At each word in a text, a reader maintains and updates beliefs about the discourse relation currently being constructed.  We validate this model against human reading times. We then ask whether LLMs implement a similar dual-track structure internally using targeted interventions on model activations. We test whether relational and entity coherence are encoded in separable regions of the model's representation space, and whether they interact in the ways our theory predicts. This lets us ask: do LLMs solve discourse coherence the same way humans do, or do they find a fundamentally different solution?"
@@ -146,8 +147,8 @@ color = "#008c3a"
 [[events]]
 date = "2026-05-21"
 day = { de = "Donnerstag", en = "Thursday" }
-time = "09:45"
-end = "10:15"
+time = "10:15"
+end = "10:45"
 title = "A statistical analysis of translation errors in machine translations."
 person = "Cristina Gutiérrez Alcalá"
 description = "This research examines if machine translations, even with notable progress recently, can provide the same level of exactness and correctness as human translators. AI tools like Google Translate, DeepL or ChatGPT are appreciated for their quickness and convenience, but they usually do not perform well in important aspects such as context related adaptation, cultural integration and style adjustment. This work suggests that these flaws underline the essential function of human translators while presenting Machine Translation more as an assisting tool instead of a replacement one. The research looks at different translations that are made by many tools for varied types of texts, such as technical, literary and legal ones. It finds usual mistakes - wrong use of terms, changes in style consistency, differences in culture among others - and checks their effect on proper comprehension of specific content. The outcomes were then compared with known translation rules to show the continuing gaps found in translations done by AI-based systems. Through examining the disparity across platforms and recognizing the mistakes repeating themselves, this dissertation seeks to present a detailed view on the boundaries of Machine Translation. The results endorse suggestions for using Machine Translation as an addition tool, highlighting the necessity of human supervision to guarantee accuracy, exactness, and relevance in culture when working on translations."
@@ -157,8 +158,8 @@ color = "#00a0d7"
 [[events]]
 date = "2026-05-21"
 day = { de = "Donnerstag", en = "Thursday" }
-time = "10:15"
-end = "10:45"
+time = "10:45"
+end = "11:15"
 title = "Kodierte Keilschriftkurse: Eine Lern-App für Keilschriftzeichen"
 person = "Anna Fischer"
 description = "In diesem Vortrag möchte ich der Fragestellung nachgehen, wie eine Lern-App für sumerisch-akkadische Keilschrift aussehen kann. Diese Schrift ist eine logosyllabische, derer sich mehrere Völker bedient haben. Sie wurde im späten vierten Jahrtausend in Mesopotamien entwickelt und war von dort über 3000 Jahre in Gebrauch. Ziel meiner  App soll es sein, ein Mittel zu bieten, mit dem sich ihre Lesungen und Zeichenformen über verschiedene Epochen hinweg spielerisch lernen lassen.\n\nZusammensetzen wird die App sich aus zwei Komponenten: einer Sammlung an Zeichen mit ihren jeweiligen Entwicklungsstufen, Lautwerten und Logorammen, aus denen man sich Kartensätze zusammenstellen kann; und einer Reihe an Lernspielen, die das Verinnerlichen dieser Zeichen unterstützen. Ich verwende hierfür React Native, ein Framework für JavaScript. Als Datengrundlage dient die Oracc Sign List [1]. Die Anwendung umfasst bereits zwei Lernspiele: ein Verbindungs- und ein Lernspiel.\n\nBeginnen möchte ich den Vortrag mit einer kurzen Einführung in die Keilschrift, deren Besonderheiten und welche Vorteile aus einer speziell für sie entwickelte App gezogen werden können. Daraufhin werde ich den aktuellen Stand der Anwendung vorstellen. Abschließend beschäftigte ich mich damit, welche computerlinguistischen Methoden zur Lernunterstützung in der App eingebaut werden können.\n\n[1] https://oracc.museum.upenn.edu/osl/"
@@ -170,9 +171,9 @@ date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
 time = "09:15"
 end = "09:30"
-title = "Kaffee am Freitag"
+title = { de = "Kaffee am Freitag", en = "Friday Coffee" }
 person = ""
-description = ""
+description = { de = "Kleiner Kaffee-Start in den Freitag.", en = "A quick coffee to start Friday." }
 location = "Foyer"
 color = "#8B4513"
 
@@ -181,9 +182,9 @@ date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
 time = "09:30"
 end = "09:45"
-title = "Opening - Donnerstag"
+title = { de = "Opening - Donnerstag", en = "Opening - Thursday" }
 person = ""
-description = ""
+description = { de = "Kurzer Tagesauftakt und Überblick.", en = "Short kickoff and daily overview." }
 location = "Konferenzraum 5/104"
 color = "#009999"
 
@@ -215,9 +216,9 @@ date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
 time = "10:45"
 end = "11:00"
-title = "Noch mehr Kaffee"
+title = { de = "Noch mehr Kaffee", en = "More Coffee" }
 person = ""
-description = ""
+description = { de = "Kurze Pause für Kaffee und Austausch.", en = "Quick break for coffee and conversation." }
 location = "Foyer"
 color = "#8B4513"
 
@@ -228,7 +229,7 @@ time = "11:00"
 end = "11:15"
 title = "Lightning Talk"
 person = ""
-description = "Präsentiert von: Penelope"
+description = ""
 location = "Konferenzraum 5/104"
 color = "#00a0d7"
 
@@ -248,9 +249,9 @@ date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
 time = "12:15"
 end = "13:45"
-title = "Mittagspause"
+title = { de = "Mittagspause", en = "Lunch Break" }
 person = ""
-description = ""
+description = { de = "Zeit für Essen und eine kurze Verschnaufpause.", en = "Time for lunch and a short breather." }
 location = "Zentralmensa"
 color = "#f39c12"
 
@@ -272,7 +273,7 @@ time = "14:15"
 end = "14:30"
 title = "SAP"
 person = ""
-description = ""
+description = { de = "Die SAP stellt sich vor und zeigt, wie NLP in der Industrie angewandt wird", en = "SAP presents itself and shows how NLP is applied in industry." }
 location = "Konferenzraum 5/104"
 color = "#e67e22"
 
@@ -281,9 +282,9 @@ date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
 time = "14:30"
 end = "15:00"
-title = "Kaffee mit SAP"
+title = { de = "Kaffee mit SAP", en = "Coffee with SAP" }
 person = ""
-description = ""
+description = { de = "Kaffeepause mit Gelegenheit zum Austausch.", en = "Coffee break with time to connect." }
 location = "Foyer"
 color = "#8B4513"
 
@@ -294,7 +295,7 @@ time = "15:00"
 end = "16:00"
 title = "Academia vs. Industry"
 person = ""
-description = ""
+description = { de = "Austausch über Perspektiven aus Wissenschaft und Industrie.", en = "Discussion of perspectives from academia and industry." }
 location = "Konferenzraum 5/104"
 color = "#e67e22"
 
@@ -303,9 +304,9 @@ date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
 time = "16:00"
 end = "16:15"
-title = "Der letzte Kaffee am Freitag"
+title = { de = "Der letzte Kaffee am Freitag", en = "Last Coffee on Friday" }
 person = ""
-description = ""
+description = { de = "Letzte Kaffeepause vor dem Endspurt.", en = "Final coffee break before the last sessions." }
 location = "Foyer"
 color = "#8B4513"
 
@@ -327,7 +328,7 @@ time = "19:00"
 end = "23:45"
 title = "Karaoke"
 person = ""
-description = ""
+description = { de = "Offenes Karaoke-Event mit viel Spaß und Musik.", en = "Open karaoke night for fun and music." }
 location = "Konferenzraum 5/104"
 color = "#cc0368"
 
@@ -403,9 +404,9 @@ date = "2026-05-23"
 day = { de = "Samstag", en = "Saturday" }
 time = "09:15"
 end = "09:30"
-title = "Samstagskaffee"
+title = { de = "Samstagskaffee", en = "Saturday Coffee" }
 person = ""
-description = ""
+description = { de = "Kurzer Kaffee-Start in den Samstag.", en = "A quick coffee to start Saturday." }
 location = "Foyer"
 color = "#8B4513"
 
@@ -414,9 +415,9 @@ date = "2026-05-23"
 day = { de = "Samstag", en = "Saturday" }
 time = "09:30"
 end = "09:45"
-title = "Opening - Freitag"
+title = { de = "Opening - Freitag", en = "Opening - Friday" }
 person = ""
-description = ""
+description = { de = "Kurzer Tagesauftakt und Überblick.", en = "Short kickoff and daily overview." }
 location = "Mathematikon Hörsaal"
 color = "#009999"
 
@@ -436,9 +437,9 @@ date = "2026-05-23"
 day = { de = "Samstag", en = "Saturday" }
 time = "10:45"
 end = "11:15"
-title = "Es gibt nie genug Kaffee"
+title = { de = "Es gibt nie genug Kaffee", en = "There Is Never Enough Coffee" }
 person = ""
-description = ""
+description = { de = "Kaffeepause zum Durchatmen.", en = "Coffee break to recharge." }
 location = "Foyer"
 color = "#8B4513"
 
@@ -458,9 +459,9 @@ date = "2026-05-23"
 day = { de = "Samstag", en = "Saturday" }
 time = "12:15"
 end = "14:15"
-title = "Mittagspause"
+title = { de = "Mittagspause", en = "Lunch Break" }
 person = ""
-description = ""
+description = { de = "Zeit für Essen und eine Pause.", en = "Time for lunch and a break." }
 location = "Marstallmensa"
 color = "#f39c12"
 
@@ -471,7 +472,7 @@ time = "14:15"
 end = "15:30"
 title = "Lightning Talks"
 person = ""
-description = ""
+description = { de = "Kurze Vorträge im schnellen Wechsel.", en = "Short talks in quick succession." }
 location = "Mathematikon Hörsaal"
 color = "#00a0d7"
 
@@ -480,9 +481,9 @@ date = "2026-05-23"
 day = { de = "Samstag", en = "Saturday" }
 time = "15:30"
 end = "16:00"
-title = "Kaffee"
+title = { de = "Der letzte Kaffee", en = "The Last Coffee" }
 person = ""
-description = ""
+description = { de = "Die letzte Kaffeepause dieser TaCoS.", en = "Last short coffee break of this TaCoS." }
 location = "Foyer"
 color = "#8B4513"
 
@@ -491,9 +492,9 @@ date = "2026-05-23"
 day = { de = "Samstag", en = "Saturday" }
 time = "16:00"
 end = "16:15"
-title = "Nachfolge suchen"
+title = { de = "Nachfolge suchen", en = "Seeking Successors" }
 person = ""
-description = ""
+description = { de = "Kurzer Slot zur Suche nach neuen Orga-Mitgliedern.", en = "Short slot to find new organizers." }
 location = "Mathematikon Hörsaal"
 color = "#009999"
 
@@ -501,10 +502,10 @@ color = "#009999"
 date = "2026-05-23"
 day = { de = "Samstag", en = "Saturday" }
 time = "16:15"
-end = "16:45"
+end = "17:00"
 title = "Closing"
 person = ""
-description = ""
+description = { de = "Abschluss und kurzer Ausblick.", en = "Closing remarks and a brief outlook." }
 location = "Mathematikon Hörsaal"
 color = "#009999"
 
@@ -513,9 +514,9 @@ date = "2026-05-23"
 day = { de = "Samstag", en = "Saturday" }
 time = "19:00"
 end = "23:45"
-title = "Barabend"
+title = { de = "Barabend", en = "Evening at the Bar" }
 person = ""
-description = ""
+description = { de = "Gemeinsamer Ausklang bei Getränken.", en = "Wind down together with drinks." }
 location = "Draußen"
 color = "#cc0368"
 
@@ -526,7 +527,7 @@ time = "11:00"
 end = "14:00"
 title = "Brunch"
 person = ""
-description = ""
+description = { de = "Gemütlicher Brunch zum Abschluss.", en = "Casual farewell brunch." }
 location = "tba"
 color = "#f39c12"
 
