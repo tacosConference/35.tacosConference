@@ -201,9 +201,10 @@ date = "2026-05-22"
 day = "Freitag"
 time = "10:15"
 end = "10:45"
-title = "A statistical analysis of translation errors in machine translations."
-person = "Cristina Gutiérrez Alcalá"
-description = "This research examines if machine translations, even with notable progress recently, can provide the same level of exactness and correctness as human translators. AI tools like Google Translate, DeepL or ChatGPT are appreciated for their quickness and convenience, but they usually do not perform well in important aspects such as context related adaptation, cultural integration and style adjustment. This work suggests that these flaws underline the essential function of human translators while presenting Machine Translation more as an assisting tool instead of a replacement one. The research looks at different translations that are made by many tools for varied types of texts, such as technical, literary and legal ones. It finds usual mistakes - wrong use of terms, changes in style consistency, differences in culture among others - and checks their effect on proper comprehension of specific content. The outcomes were then compared with known translation rules to show the continuing gaps found in translations done by AI-based systems. Through examining the disparity across platforms and recognizing the mistakes repeating themselves, this dissertation seeks to present a detailed view on the boundaries of Machine Translation. The results endorse suggestions for using Machine Translation as an addition tool, highlighting the necessity of human supervision to guarantee accuracy, exactness, and relevance in culture when working on translations."
+short_title = "The Levenshteins: Transparent methods applied to language learning of German orthography"
+title = "The Levenshteins: A family of good ol' transparent methods applied to human language learning of German orthography"
+person = "Nicolas Arnold"
+description = "In computational linguistics, we enable computers to perform tasks in natural language processing and generation. Using such methods and models\nin the context of _human_ language acquisition comes with its own set of challenges.\nIn my interdisciplinary bachelor's thesis, I applied methods from computational linguistics to the didactical setting, modelling the phonetic plausibility of _spelling errors_ by early language learners.\n\nThe idea is quite simple:  Given a misspelled word, let's predict its pronunciation and find candidate words in the lexicon that sound similar. What could possibly go wrong?\n\nI used openly available tools like *BAS Web Services* [1] and *epitran* [2] for grapheme-to-phoneme (G2P) conversion, *PHOIBLE* [3] for phoneme inventories and phonetic features and took spelling errors from the *Litkey-Corpus* [4] for evaluation. I will point out some challenges between *linguistic theory*, *language acquisition research* and the applied contexts of *language teaching/learning* and show how they affect the perspective from *computational linguistics*.\n\nFurthermore, I will present problems and surprising failures of existing methods while answering some critical questions:\n\n- Does grapheme-based spelling correction really outperform phoneme-based ones?\n- Is there still a place for simple algorithms like Levenshtein distance, heuristics and rule-based approaches, or even linguistic theory in modern computational linguistics?\n- As learner language does not follow all the rules. Will the prediction of phonemes still work in the case of _misspelled_ words?\n\nAll in all, are we ready for learner language yet?\n\n_The spelling examples are in German. However, German skills are not needed to follow the talk. The talk is held in English._\n\n\n[1]: https://clarin.phonetik.uni-muenchen.de/BASWebServices/interface/Grapheme2Phoneme\n[2]: https://github.com/dmort27/epitran\n[3]: https://phoible.org/\n[4]: https://www.linguistics.rub.de/litkeycorpus/"
 location = "Konferenzraum 5/104"
 color = "#00a0d7"
 
@@ -396,18 +397,6 @@ location = "Seminarraum 11"
 color = "#00a0d7"
 
 [[events]]
-date = "2026-05-22"
-day = "Freitag"
-time = "16:15"
-end = "16:45"
-short_title = "The Levenshteins: Transparent methods applied to language learning of German orthography"
-title = "The Levenshteins: A family of good ol' transparent methods applied to human language learning of German orthography"
-person = "Nicolas Arnold"
-description = "In computational linguistics, we enable computers to perform tasks in natural language processing and generation. Using such methods and models\nin the context of _human_ language acquisition comes with its own set of challenges.\nIn my interdisciplinary bachelor's thesis, I applied methods from computational linguistics to the didactical setting, modelling the phonetic plausibility of _spelling errors_ by early language learners.\n\nThe idea is quite simple:  Given a misspelled word, let's predict its pronunciation and find candidate words in the lexicon that sound similar. What could possibly go wrong?\n\nI used openly available tools like *BAS Web Services* [1] and *epitran* [2] for grapheme-to-phoneme (G2P) conversion, *PHOIBLE* [3] for phoneme inventories and phonetic features and took spelling errors from the *Litkey-Corpus* [4] for evaluation. I will point out some challenges between *linguistic theory*, *language acquisition research* and the applied contexts of *language teaching/learning* and show how they affect the perspective from *computational linguistics*.\n\nFurthermore, I will present problems and surprising failures of existing methods while answering some critical questions:\n\n- Does grapheme-based spelling correction really outperform phoneme-based ones?\n- Is there still a place for simple algorithms like Levenshtein distance, heuristics and rule-based approaches, or even linguistic theory in modern computational linguistics?\n- As learner language does not follow all the rules. Will the prediction of phonemes still work in the case of _misspelled_ words?\n\nAll in all, are we ready for learner language yet?\n\n_The spelling examples are in German. However, German skills are not needed to follow the talk. The talk is held in English._\n\n\n[1]: https://clarin.phonetik.uni-muenchen.de/BASWebServices/interface/Grapheme2Phoneme\n[2]: https://github.com/dmort27/epitran\n[3]: https://phoible.org/\n[4]: https://www.linguistics.rub.de/litkeycorpus/"
-location = "Seminarraum 11"
-color = "#00a0d7"
-
-[[events]]
 date = "2026-05-23"
 day = "Samstag"
 time = "09:15"
@@ -426,7 +415,7 @@ end = "09:45"
 title = "Opening - Freitag"
 person = ""
 description = ""
-location = "Mathematikon Hörsal"
+location = "Mathematikon Hörsaal"
 color = "#009999"
 
 [[events]]
@@ -437,7 +426,7 @@ end = "10:45"
 title = "tba"
 person = "Letitia Parcalabescu"
 description = ""
-location = "Mathematikon Hörsal"
+location = "Mathematikon Hörsaal"
 color = "#5b2d90"
 
 [[events]]
@@ -459,7 +448,7 @@ end = "12:15"
 title = "tba"
 person = "Schakob Juster"
 description = ""
-location = "Mathematikon Hörsal"
+location = "Mathematikon Hörsaal"
 color = "#5b2d90"
 
 [[events]]
@@ -481,7 +470,7 @@ end = "15:30"
 title = "Lightning Talks"
 person = ""
 description = ""
-location = "Mathematikon Hörsal"
+location = "Mathematikon Hörsaal"
 color = "#00a0d7"
 
 [[events]]
@@ -503,7 +492,7 @@ end = "16:15"
 title = "Nachfolge suchen"
 person = ""
 description = ""
-location = "Mathematikon Hörsal"
+location = "Mathematikon Hörsaal"
 color = "#009999"
 
 [[events]]
@@ -514,7 +503,7 @@ end = "16:45"
 title = "Closing"
 person = ""
 description = ""
-location = "Mathematikon Hörsal"
+location = "Mathematikon Hörsaal"
 color = "#009999"
 
 [[events]]
