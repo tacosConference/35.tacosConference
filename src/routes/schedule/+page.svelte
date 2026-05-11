@@ -11,7 +11,7 @@
 	<title>{m.timetable()} {m.global_title_short()}</title>
 </svelte:head>
 
-<div id="main-container" class="container mt-5 mb-5">
+<div id="main-container" class="container mt-5 mb-5" style="max-width: 85vw;">
 	<div class="row justify-content-center">
 		<div class="col-12">
 			<div class="card shadow-lg border-0">

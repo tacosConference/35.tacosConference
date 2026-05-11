@@ -258,7 +258,7 @@
 					<span class="d-inline-flex align-items-center small">
 					{#if !short}
 						{#if event.person}
-							<span class="fw-semibold lh-tight text-truncate" style="max-width: 18em"
+							<span class="fw-semibold lh-tight text-truncate" style="max-width: 14em; letter-spacing: -0.02em;"
 							      title={event.person}>
 								{event.person}
 							</span>
