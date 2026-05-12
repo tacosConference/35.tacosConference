@@ -5,7 +5,6 @@
 
 	interface BaseProps {
 		class?: string;
-		href?: string;
 		text: string;
 		target?: string;
 		color?: string;
@@ -34,16 +33,9 @@
 		external = false
 	}: Props = $props();
 
-	//export let href: Pathname | string = '';
-	//export let text: string = '';
-	//export let target: string = '';
-	//export let color: string = getContext<{ color: string }>('color').color;
-	//let className: string = '';
-	//export { className as class };
-	//export let isMail: boolean = false;
 	let linkColorClass = $derived(`tacos-link-${color}`);
 
-	let internalHref = $derived(!isMail && !external ? resolve(href as Pathname) : href);
+	let internalHref = $derived(!isMail && !external ? resolve(href as Pathname) : '');
 
 	onMount(() => {
 		if (isMail) {
@@ -52,6 +44,6 @@
 	});
 </script>
 
-<a href={!isMail && !external ? href : internalHref} class="text-decoration-none fw-bold {linkColorClass} {className}" target="{target}">
+<a href={isMail || external ? href : internalHref} class="text-decoration-none fw-bold {linkColorClass} {className}" target="{target}">
 	{text}
 </a>
