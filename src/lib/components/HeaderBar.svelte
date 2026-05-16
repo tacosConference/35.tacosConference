@@ -84,6 +84,13 @@
 				<li class="nav-item mx-1">
 					<a
 						class="nav-link"
+						class:active={page.route.id === '/map'}
+						href={resolve('/map')}>{m.map()}</a
+					>
+				</li>
+				<li class="nav-item mx-1">
+					<a
+						class="nav-link"
 						class:active={page.route.id === '/archive'}
 						href={resolve('/archive')}>{m.archive()}</a
 					>

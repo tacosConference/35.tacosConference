@@ -50,7 +50,7 @@
 
 					<Timetable events={localizedEvents as Event[]} />
 
-					<NextPageButton href="/archive/" text={m.go_to_archive_button()} />
+					<NextPageButton href="/map/" text={m.go_to_map_button()} />
 				</div>
 			</div>
 		</div>
