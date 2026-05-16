@@ -7,6 +7,13 @@
 	let selectedEvent = $state<Event | null>(null);
 	let activeDate = $state<string>('');
 
+	const minStepSize: number = 5;
+	const displayStepSize: number = 15;
+	if (displayStepSize % minStepSize !== 0.0) {
+		throw new Error('displayStepSize must be a multiple of minStepSize');
+	}
+	const stepSizeRatio = displayStepSize / minStepSize;
+
 	const toMinutes = (timeStr: string) => {
 		const [h, m] = timeStr.split(':').map(Number);
 		return h * 60 + m;
@@ -38,12 +45,12 @@
 	const endHour = $derived(Math.ceil(maxMinute / 60));
 
 	/**
-	 * A list of all time-slots in the timetable in 15-minute increments.
+	 * A list of all time-slots in the timetable in {minStepSize}-minute increments.
 	 */
 	const slots = $derived.by(() => {
 		const result: string[] = [];
 		for (let h = startHour; h <= endHour; h++) {
-			for (let m = 0; m < 60; m += 15) {
+			for (let m = 0; m < 60; m += minStepSize) {
 				if (h === endHour && m > 0) break;
 				result.push(`${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}`);
 			}
@@ -81,14 +88,14 @@
 	 */
 	const getGridRow = (timeStr: string) => {
 		const mins = toMinutes(timeStr);
-		return (mins - startHour * 60) / 15 + 2; // +2 because row 1 is header
+		return (mins - startHour * 60) / minStepSize + 2; // +2 because row 1 is header
 	};
 
 	// Calculate overlaps for the active day
 	const enrichedActiveEvents = $derived.by(() => {
 		if (!activeDate) return [];
 
-		// 1. Assign columns using greedy approach
+		// 1. Assign columns using a greedy approach
 		const columns: Event[][] = [];
 		const eventToCol = new Map<Event, number>();
 
@@ -207,7 +214,7 @@
 			style="
         --slots: {slots.length};
         grid-template-columns: 80px repeat({maxCols}, minmax({columnMin}px, 1fr));
-        grid-template-rows: auto repeat({slots.length}, 45px);
+        grid-template-rows: auto repeat({slots.length}, {45/stepSizeRatio}px);
         min-width: {gridMinWidth}px;
     "
 		>
@@ -222,20 +229,24 @@
 
 			<!-- Time column -->
 			{#each slots as slot, i}
-				<div
-					class="border-end border-bottom pe-2 text-end small text-muted bg-white"
-					style="grid-row: {i + 2}; grid-column: 1;"
-				>
-					{slot}
-				</div>
+				{#if i % stepSizeRatio === 0}
+					<div
+						class="border-end border-bottom pe-2 text-end small text-muted bg-white"
+						style="grid-row: {i + 2} / {i + 2 + stepSizeRatio}; grid-column: 1;"
+					>
+						{slot}
+					</div>
+				{/if}
 			{/each}
 
 			<!-- Background Grid Lines -->
 			{#each slots as _, r}
+				{#if r % stepSizeRatio === 0}
 				<div
 					class="border-end border-bottom bg-white"
-					style="grid-row: {r + 2}; grid-column: 2 / span {maxCols};"
+					style="grid-row: {r + 2} / {r + 2 + stepSizeRatio}; grid-column: 2 / span {maxCols};"
 				></div>
+				{/if}
 			{/each}
 
 			<!-- Desktop View -->
@@ -418,12 +429,12 @@
     }
 
     .timetable-scroll {
-		width: 100%;
-		overflow-x: auto;
-		-webkit-overflow-scrolling: touch;
-	}
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
 
-	.timetable-grid {
-		width: 100%;
-	}
+    .timetable-grid {
+        width: 100%;
+    }
 </style>
