@@ -140,7 +140,7 @@ time = "13:45"
 end = "14:45"
 title = "Uncovering Political Rhetoric with Corpus Tools: A Hands-On Introduction to NoSketchEngine and ParlaMint"
 person = "Isabell Furkert"
-description = "Parliamentary debates are a good resource for studying political discourse - but analysing thousands of speeches by hand is impossible. This workshop serves as a hands-on introduction to Skelog, a free web-based corpus analysis platform provided by CLARIN, and a look into the ParlaMint dataset, a large, metadata-rich collection of parliamentary proceedings from 29 European parliaments. Together, these tools enable new possibilities for empirical, reproducible research into political language.\n\nParticipants will receive a guided walthrough of Skelog's core features - subcorpus creation and keyword analysis - illustrated with concrete examples.\n\nNo prior experience with corpus linguistics or programming required."
+description = "Parliamentary debates are a good resource for studying political discourse - but analysing thousands of speeches by hand is impossible. This workshop serves as a hands-on introduction to NoSketchEngine, a free web-based corpus analysis platform provided by CLARIN, and a look into the ParlaMint dataset, a large, metadata-rich collection of parliamentary proceedings from 29 European parliaments. Together, these tools enable new possibilities for empirical, reproducible research into political language.\n\nParticipants will receive a guided walthrough of NoSketchEngine's core features - subcorpus creation and keyword analysis - illustrated with concrete examples.\n\nNo prior experience with corpus linguistics or programming required."
 location = "Seminarraum 10"
 color = "#008c3a"
 
