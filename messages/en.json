@@ -47,7 +47,7 @@
 	"languages": "Languages I speak",
 	"last_name": "Last name",
 	"map": "Map",
-	"map_description": "We created a map so that you can find all the locations TaCoS is taking place at.",
+	"map_description": "We created a map so that you can find all the locations TaCoS is taking place at (zooming out might be a good idea, as we have placed a few more markers you don't see at the default magnification level).",
 	"map_fullscreen_button": "Open in full-screen view",
 	"membership_already_member": "Yes, I am already a member and pay the reduced fee.",
 	"membership_disclaimer": "We will forward your email address to Junge Sprachwissenschaft e.V., which will send you a one-time information pack.",
