@@ -3,11 +3,11 @@ date = "2026-05-21"
 day = { de = "Donnerstag", en = "Thursday" }
 time = "08:45"
 end = "09:15"
-title = { de = "Registrierung", en = "Registration" }
+title = { de = "Registrierung + Kaffee", en = "Registration + Coffee" }
 person = ""
 description = {
-    de = "Hier meldet ihr euch an und bekommt ihr eure Namensschilder.",
-    en = "Check in here and pick up your name badges." }
+    de = "Hier meldet ihr euch an und bekommt ihr eure Namensschilder (und Kaffee).",
+    en = "Check in here and pick up your name badges (and coffee)." }
 location = "Foyer"
 color = "#009999"
 
@@ -25,19 +25,8 @@ color = "#009999"
 [[events]]
 date = "2026-05-21"
 day = { de = "Donnerstag", en = "Thursday" }
-time = "09:45"
-end = "10:15"
-title = { de = "Kaffee - Die zweite Tasse", en = "Coffee - Second Cup" }
-person = ""
-description = { de = "Kurze Kaffeepause zum Durchatmen und Austauschen.", en = "Short coffee break to recharge and chat." }
-location = "Foyer"
-color = "#8B4513"
-
-[[events]]
-date = "2026-05-21"
-day = { de = "Donnerstag", en = "Thursday" }
-time = "10:15"
-end = "10:45"
+time = "10:00"
+end = "10:30"
 title = "Graph Language Models"
 person = "Moritz Plenz"
 description = "While Language Models (LMs) are the workhorses of NLP, their interplay with structured knowledge graphs (KGs) is still actively researched. Current methods for encoding such graphs typically either (i) linearize them for embedding with LMs – which underutilize structural information, or (ii) use Graph Neural Networks (GNNs) to preserve the graph structure – but GNNs cannot represent text features as well as pretrained LMs. In our work we introduce a novel LM type, the Graph Language Model (GLM), that integrates the strengths of both approaches and mitigates their weaknesses. The GLM parameters are initialized from a pretrained LM to enhance understanding of individual graph concepts and triplets. Simultaneously, we design the GLM’s architecture to incorporate graph biases, thereby promoting effective knowledge distribution within the graph. This enables GLMs to process graphs, texts, and interleaved inputs of both. Empirical evaluations on relation classification tasks show that GLM embeddings surpass both LM- and GNN-based baselines in supervised and zero-shot setting, demonstrating their versatility."
@@ -47,20 +36,19 @@ color = "#00a0d7"
 [[events]]
 date = "2026-05-21"
 day = { de = "Donnerstag", en = "Thursday" }
-time = "10:45"
-end = "11:15"
+time = "10:40"
+end = "11:10"
 title = "Embedding Collapse in Two-Tower News Recommendation"
 person = "Martin Scheuermann"
 description = "News recommendation is characterized by rapidly evolving content and highly skewed interaction data, making it challenging to learn robust user and article representations. While two-tower models are widely used for scalable retrieval, we show that they exhibit a critical failure mode in this setting: embedding collapse.\nWe demonstrate that user and article embeddings quickly degenerate into a low-dimensional structure, limiting retrieval performance and leading to an overemphasis on popular content. This collapse emerges early during training and constrains downstream performance.\nTo mitigate this issue, we propose and analyze spectral regularization, which encourages a more balanced use of the embedding space by preventing variance from concentrating in a few dominant directions. This leads to more stable training and improved recommendation quality."
 location = "Konferenzraum 5/104"
 color = "#00a0d7"
 
-
 [[events]]
 date = "2026-05-21"
 day = { de = "Donnerstag", en = "Thursday" }
-time = "11:15"
-end = "12:15"
+time = "11:20"
+end = "12:20"
 title = "Is This a Moral Claim? Humans vs. LLMs on a Surprisingly Difficult Task"
 person = "Maria Becker"
 description = "These days, almost everything seems to become a moral issue – from what we eat to how we travel, speak, or consume. In this talk, I focus on the role of moral values in public discourse, more specifically on their use in arguments about controversial issues. We refer to such arguments based on moral values as moralizations and examine how closely machines match human judgments in identifying them. Building on a theoretically grounded operationalization, we construct and annotate a diverse corpus of authentic texts to capture how moralization emerges in discourse. A key challenge is that identifying moralization is inherently subjective: even trained annotators do not always agree. This raises the question of whether large language models can learn such nuanced distinctions from data or from instructions alone. To address this, we compare different modeling strategies, including prompting and fine-tuning, and analyze how closely model predictions align with human judgments. Ultimately, the talk shows that identifying moralization is not just a technical challenge, but depends crucially on how we define, model, and interpret it."
@@ -70,7 +58,7 @@ color = "#5b2d90"
 [[events]]
 date = "2026-05-21"
 day = { de = "Donnerstag", en = "Thursday" }
-time = "12:15"
+time = "12:20"
 end = "13:45"
 title = { de = "Mittagspause", en = "Lunch Break" }
 person = ""
@@ -108,25 +96,25 @@ end = "23:45"
 title = { de = "Spieleabend", en = "Game Night" }
 person = ""
 description = { de = "Gemeinsam spielen, lachen und den Tag ausklingen lassen.", en = "Play, relax, and end the day together." }
-location = "Konferenzraum 5/104"
+location = "tba."
 color = "#cc0368"
 
 [[events]]
 date = "2026-05-21"
 day = { de = "Donnerstag", en = "Thursday" }
-time = "10:15"
-end = "10:45"
-title = "Cultural Themes in Turkish and Georgian Folk Songs: A Corpus-Based Keyword and Collocation Study"
-person = "Ömer Faruk Bülbül"
-description = "Folk songs serve as rich repositories of a community's cultural memory, but can statistical methods reveal fundamental differences in how neighboring cultures conceptualize the world? This talk presents a quantitative, corpus-based comparison of translated Turkish and Georgian folk songs to uncover their distinct semantic landscapes. Analyzing a manually compiled corpus of approximately 22,600 tokens across 183 songs, this study utilizes POS-tagging, Log-Likelihood, and Pointwise Mutual Information (PMI) to extract dominant keywords and evaluate semantic prosody.\n\nThe computational findings reveal a cultural divergence: The Turkish dataset is highly localized and inward-facing, statistically dominated by intimate, somatic terms (e.g., beloved, wound) that reflect the individualistic aşık (minstrel) tradition. Conversely, the Georgian corpus projects outward, emphasizing collective identity, cosmic elements (highlighted by a strong bidirectional statistical attraction between Sun and Woman), and social defense (e.g., enemy). By moving beyond traditional qualitative ethnomusicology into data-driven lexical quantification, this presentation demonstrates how stylistic analysis can expose distinct cultural scripts and reveal translation artifacts embedded within oral traditions."
+time = "10:00"
+end = "10:30"
+title = "Can Social Interaction Help Ground AI Storytelling Ability?"
+person = "Long Le"
+description = "Current methods in the automatic storytelling task often pay more attention to the plot structure aspect of stories, while neglecting the problem of representing character emotional development. From how emotion progression in stories generated by language models differs from that in human-written stories, we suggest that current methods are not enough to mitigate this difference. Through a narratology-informed perspective, we propose to solve this problem by learning from an interactive environment that can ground language models to human emotional experience. We show that behaviour cloning and multi-turn reinforcement learning in this dynamic setting can help models generate more human-like stories while still maintaining generalization performance."
 location = "Seminarraum 10"
 color = "#00a0d7"
 
 [[events]]
 date = "2026-05-21"
 day = { de = "Donnerstag", en = "Thursday" }
-time = "10:45"
-end = "11:15"
+time = "10:40"
+end = "11:10"
 title = "A Dual-Track Theory of Local Discourse Coherence in Humans and Language Models"
 person = "Souvik Banerjee"
 description = "What makes a sequence of sentences feel coherent rather than disjointed? At the local level, psycholinguistic and computational evidence points to two distinct mechanisms operating simultaneously. Relational coherence tracks how adjacent sentences are logically connected: whether one explains, contrasts, or elaborates on the other. Entity coherence tracks which referents are in focus and how attention shifts between them. These two tracks are not independent: the type of relation between sentences shapes which entities stay in focus, and the entity configuration constrains which relations are plausible.  Despite decades of work on each track in isolation, we lack a unified formal account of how they interact.\n\nWe develop an information-theoretic framework that models both tracks jointly. At each word in a text, a reader maintains and updates beliefs about the discourse relation currently being constructed.  We validate this model against human reading times. We then ask whether LLMs implement a similar dual-track structure internally using targeted interventions on model activations. We test whether relational and entity coherence are encoded in separable regions of the model's representation space, and whether they interact in the ways our theory predicts. This lets us ask: do LLMs solve discourse coherence the same way humans do, or do they find a fundamentally different solution?"
@@ -138,7 +126,7 @@ date = "2026-05-21"
 day = { de = "Donnerstag", en = "Thursday" }
 time = "13:45"
 end = "14:45"
-title = "Uncovering Political Rhetoric with Corpus Tools: A Hands-On Introduction to NoSketchEngine and ParlaMint"
+title = "Uncovering Political Rhetoric with Corpus Tools: A Hands-On Introduction to NoSketchEngine and Parlamint"
 person = "Isabell Furkert"
 description = "Parliamentary debates are a good resource for studying political discourse - but analysing thousands of speeches by hand is impossible. This workshop serves as a hands-on introduction to NoSketchEngine, a free web-based corpus analysis platform provided by CLARIN, and a look into the ParlaMint dataset, a large, metadata-rich collection of parliamentary proceedings from 29 European parliaments. Together, these tools enable new possibilities for empirical, reproducible research into political language.\n\nParticipants will receive a guided walthrough of NoSketchEngine's core features - subcorpus creation and keyword analysis - illustrated with concrete examples.\n\nNo prior experience with corpus linguistics or programming required."
 location = "Seminarraum 10"
@@ -147,8 +135,8 @@ color = "#008c3a"
 [[events]]
 date = "2026-05-21"
 day = { de = "Donnerstag", en = "Thursday" }
-time = "10:15"
-end = "10:45"
+time = "10:00"
+end = "10:30"
 title = "A statistical analysis of translation errors in machine translations."
 person = "Cristina Gutiérrez Alcalá"
 description = "This research examines if machine translations, even with notable progress recently, can provide the same level of exactness and correctness as human translators. AI tools like Google Translate, DeepL or ChatGPT are appreciated for their quickness and convenience, but they usually do not perform well in important aspects such as context related adaptation, cultural integration and style adjustment. This work suggests that these flaws underline the essential function of human translators while presenting Machine Translation more as an assisting tool instead of a replacement one. The research looks at different translations that are made by many tools for varied types of texts, such as technical, literary and legal ones. It finds usual mistakes - wrong use of terms, changes in style consistency, differences in culture among others - and checks their effect on proper comprehension of specific content. The outcomes were then compared with known translation rules to show the continuing gaps found in translations done by AI-based systems. Through examining the disparity across platforms and recognizing the mistakes repeating themselves, this dissertation seeks to present a detailed view on the boundaries of Machine Translation. The results endorse suggestions for using Machine Translation as an addition tool, highlighting the necessity of human supervision to guarantee accuracy, exactness, and relevance in culture when working on translations."
@@ -158,8 +146,8 @@ color = "#00a0d7"
 [[events]]
 date = "2026-05-21"
 day = { de = "Donnerstag", en = "Thursday" }
-time = "10:45"
-end = "11:15"
+time = "10:40"
+end = "11:10"
 title = "Kodierte Keilschriftkurse: Eine Lern-App für Keilschriftzeichen"
 person = "Anna Fischer"
 description = "In diesem Vortrag möchte ich der Fragestellung nachgehen, wie eine Lern-App für sumerisch-akkadische Keilschrift aussehen kann. Diese Schrift ist eine logosyllabische, derer sich mehrere Völker bedient haben. Sie wurde im späten vierten Jahrtausend in Mesopotamien entwickelt und war von dort über 3000 Jahre in Gebrauch. Ziel meiner  App soll es sein, ein Mittel zu bieten, mit dem sich ihre Lesungen und Zeichenformen über verschiedene Epochen hinweg spielerisch lernen lassen.\n\nZusammensetzen wird die App sich aus zwei Komponenten: einer Sammlung an Zeichen mit ihren jeweiligen Entwicklungsstufen, Lautwerten und Logorammen, aus denen man sich Kartensätze zusammenstellen kann; und einer Reihe an Lernspielen, die das Verinnerlichen dieser Zeichen unterstützen. Ich verwende hierfür React Native, ein Framework für JavaScript. Als Datengrundlage dient die Oracc Sign List [1]. Die Anwendung umfasst bereits zwei Lernspiele: ein Verbindungs- und ein Lernspiel.\n\nBeginnen möchte ich den Vortrag mit einer kurzen Einführung in die Keilschrift, deren Besonderheiten und welche Vorteile aus einer speziell für sie entwickelte App gezogen werden können. Daraufhin werde ich den aktuellen Stand der Anwendung vorstellen. Abschließend beschäftigte ich mich damit, welche computerlinguistischen Methoden zur Lernunterstützung in der App eingebaut werden können.\n\n[1] https://oracc.museum.upenn.edu/osl/"
@@ -169,20 +157,9 @@ color = "#00a0d7"
 [[events]]
 date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
-time = "09:15"
+time = "09:00"
 end = "09:30"
-title = { de = "Kaffee am Freitag", en = "Friday Coffee" }
-person = ""
-description = { de = "Kleiner Kaffee-Start in den Freitag.", en = "A quick coffee to start Friday." }
-location = "Foyer"
-color = "#8B4513"
-
-[[events]]
-date = "2026-05-22"
-day = { de = "Freitag", en = "Friday" }
-time = "09:30"
-end = "09:45"
-title = { de = "Opening - Donnerstag", en = "Opening - Thursday" }
+title = { de = "Opening + Kaffee am Freitag", en = "Opening + Friday Coffee" }
 person = ""
 description = { de = "Kurzer Tagesauftakt und Überblick.", en = "Short kickoff and daily overview." }
 location = "Konferenzraum 5/104"
@@ -191,8 +168,8 @@ color = "#009999"
 [[events]]
 date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
-time = "09:45"
-end = "10:15"
+time = "09:40"
+end = "10:10"
 title = "Grokking Multilinguality: Ein mechanistischer Blick auf Cross-Lingual Generalization"
 person = "Frederick Riemenschneider"
 description = "Multilinguale Sprachmodelle teilen Wissen über Sprachgrenzen hinweg und scheinen dabei einen weitgehend sprachunabhängigen \"Konzept-Raum\" auszubilden, selbst wenn während des Trainings kein explizites cross-linguales Signal vorliegt.\nDoch unter welchen Bedingungen entsteht dieser Raum? Wann und wie vollzieht sich diese Generalisierung im Verlauf des Pre-Trainings? Wie lassen sich sprachspezifische und sprachagnostische Komponenten im Modell sauber voneinander trennen, und was sagt uns das über die Funktionsweise von Sprachmodellen?\nUm diesen Fragen nachzugehen, betrachten wir \"reale\" Sprachmodelle ebenso wie Toy-Modelle aus der Perspektive der Mechanistic Interpretability. Zunächst werfen wir einen Blick auf die Trainingsdynamik tatsächlicher Sprachmodelle, identifizieren \"multilinguale Bereiche\" und untersuchen, wann und wie sich diese im Training herausbilden. Anschließend wechseln wir in ein kontrolliertes Toy-Setup, das uns erlaubt, einzelne Mechanismen zu isolieren und gezielt zu untersuchen, um das minimale Setup zu finden, in dem cross-linguale Generalisierung überhaupt entsteht."
@@ -202,8 +179,8 @@ color = "#00a0d7"
 [[events]]
 date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
-time = "10:15"
-end = "10:45"
+time = "10:20"
+end = "10:50"
 short_title = "The Levenshteins: Transparent methods applied to language learning of German orthography"
 title = "The Levenshteins: A family of good ol' transparent methods applied to human language learning of German orthography"
 person = "Nicolas Arnold"
@@ -214,24 +191,14 @@ color = "#00a0d7"
 [[events]]
 date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
-time = "10:45"
-end = "11:00"
+time = "10:50"
+end = "11:10"
 title = { de = "Noch mehr Kaffee", en = "More Coffee" }
 person = ""
 description = { de = "Kurze Pause für Kaffee und Austausch.", en = "Quick break for coffee and conversation." }
 location = "Foyer"
 color = "#8B4513"
 
-[[events]]
-date = "2026-05-22"
-day = { de = "Freitag", en = "Friday" }
-time = "11:00"
-end = "11:15"
-title = "Lightning Talk"
-person = ""
-description = ""
-location = "Konferenzraum 5/104"
-color = "#00a0d7"
 
 [[events]]
 date = "2026-05-22"
@@ -247,7 +214,18 @@ color = "#5b2d90"
 [[events]]
 date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
-time = "12:15"
+time = "12:20"
+end = "12:30"
+title = "Lightning Talk"
+person = ""
+description = ""
+location = "Konferenzraum 5/104"
+color = "#00a0d7"
+
+[[events]]
+date = "2026-05-22"
+day = { de = "Freitag", en = "Friday" }
+time = "12:30"
 end = "13:45"
 title = { de = "Mittagspause", en = "Lunch Break" }
 person = ""
@@ -272,7 +250,7 @@ day = { de = "Freitag", en = "Friday" }
 time = "14:15"
 end = "14:30"
 title = "SAP"
-person = ""
+person = "Hannah Sperling; Matthias Huck"
 description = { de = "Die SAP stellt sich vor und zeigt, wie NLP in der Industrie angewandt wird", en = "SAP presents itself and shows how NLP is applied in industry." }
 location = "Konferenzraum 5/104"
 color = "#e67e22"
@@ -282,7 +260,7 @@ date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
 time = "14:30"
 end = "15:00"
-title = { de = "Kaffee mit SAP", en = "Coffee with SAP" }
+title = { de = "Kaffee mit der Industrie", en = "Industry Coffee" }
 person = ""
 description = { de = "Kaffeepause mit Gelegenheit zum Austausch.", en = "Coffee break with time to connect." }
 location = "Foyer"
@@ -293,9 +271,9 @@ date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
 time = "15:00"
 end = "16:00"
-title = "Academia vs. Industry"
-person = ""
-description = { de = "Austausch über Perspektiven aus Wissenschaft und Industrie.", en = "Discussion of perspectives from academia and industry." }
+title = { de = "Podiumsdiskussion: Coli und Karriere", en = "Panel discussion: Coli and Career" }
+person = "Hannah Sperling; Matthias Huck; Sophia Ackermann; Danny Rehl; Merit Wolfsteiner"
+description = { de = "Austausch über (Karriere-)perspektiven aus Wissenschaft und Industrie.", en = "Discussion of (career) perspectives in academia and industry." }
 location = "Konferenzraum 5/104"
 color = "#e67e22"
 
@@ -303,7 +281,7 @@ color = "#e67e22"
 date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
 time = "16:00"
-end = "16:15"
+end = "16:20"
 title = { de = "Der letzte Kaffee am Freitag", en = "Last Coffee on Friday" }
 person = ""
 description = { de = "Letzte Kaffeepause vor dem Endspurt.", en = "Final coffee break before the last sessions." }
@@ -313,12 +291,12 @@ color = "#8B4513"
 [[events]]
 date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
-time = "16:15"
-end = "17:15"
+time = "16:30"
+end = "17:30"
 title = "The cost of cutting corners"
 person = "Mariia Neguliaeva"
 description = "Real-life computational projects have a way of failing at the worst possible moment. This workshop stems from one such project on sign language translation, which sits at an intersection of linguistics, computer vision and accessibility technology - a real problem with real stakes, but most importantly a real appetite for computational resources. The gap between the project's ambitious beginning and considerably humbler reality is where the real work happens, as the value of defensive coding gradually replaces hopeful optimism. We'll explore that gap together through an interactive game (no spoilers!) and then discuss some tips on making large-scale computing bearable. What does it take to survive overnight crashes, while staying within budget? And how come we don't always do it? This session is for you, if you've ever been too scared to waste scarce resources or wondered why things go wrong when you seem to have done everything right. No prior experience with large-scale computing or sign language translation required. Curiosity and pent-up frustration welcome.\nNot validated by controlled studies, individual results may vary ;)"
-location = "Konferenzraum 5/104"
+location = "Seminarraum 10"
 color = "#008c3a"
 
 [[events]]
@@ -329,14 +307,14 @@ end = "23:45"
 title = "Karaoke"
 person = ""
 description = { de = "Offenes Karaoke-Event mit viel Spaß und Musik.", en = "Open karaoke night for fun and music." }
-location = "Konferenzraum 5/104"
+location = "Common Room"
 color = "#cc0368"
 
 [[events]]
 date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
-time = "09:45"
-end = "10:15"
+time = "09:40"
+end = "10:10"
 title = "«John dropped the apple — Which apple?» Investigating LLM Reasoning with Attention Scores"
 person = "Bohdana Ivakhnenko; Kim Lingemann; Raziye Sari; Asma Motmem"
 description = "With the continuous struggle to increase LLMs' reasoning performance, it has become apparent that true language understanding is a necessity, not a whim. Though, what does that look like exactly? The transformer attention mechanism is certainly central to it.  But does that alone suffice to equip models with real reasoning capabilities?\n\nBuilding on recent studies of chain-of-thought (CoT) reasoning, we are on a mission to analyse why models fail at trivial tasks. Raw neuron attribution scores guide us to “where John really is”. While searching for clear answers, we are not once, not twice, met by surprising discoveries…\n\nWe invite you to join us on this journey of revealing problems hidden in plain sight, clever design strategies to gauge the limits of Llama models, and astonishing observations of how the models outsmarted us—rarely expected but sure to become an apparent reality of today's LLMs.\n\nGet ready for proper research with standard deviation, deep analyses, and many visual examples."
@@ -346,8 +324,8 @@ color = "#00a0d7"
 [[events]]
 date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
-time = "10:15"
-end = "10:45"
+time = "10:20"
+end = "10:50"
 title = "Protein LLMs: Applying NLP Methods to Protein Sequence Modeling"
 person = "Elizaveta Dovedova, Artem Stetoi"
 description = "Have you heard of protein bars? Protein coffee? Protein nachos? How about protein LLMs?\nProteins are linear chains of amino acids that can be represented as sequences over a fixed alphabet. This makes them resemble natural language in a surprisingly useful way, and many NLP algorithms are directly applicable to modeling protein sequences. Capturing patterns in amino-acid sequences and linking those patterns to biological properties lets you predict protein behavior, infer their structure and function, and design them for specific applications—a computational task that would otherwise require extensive laboratory work. Starting with n-grams, the application of methods original to NLP in computational biology has been studied for many years, leading to the recent emergence of protein-specific large language models (Protein LLMs).\n\nWith my presentation, I would to introduce coli students with no biological background to how their knowledge of NLP concepts and techniques—such as embeddings, transformers or masked language modeling—can be applied in the biological field."
@@ -357,19 +335,19 @@ color = "#00a0d7"
 [[events]]
 date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
-time = "16:15"
-end = "16:45"
+time = "16:30"
+end = "17:00"
 title = "Social Impact of AI"
 person = "Maya Arseven, Polina Kuznetcova"
 description = "Are we, as computational linguists, doomed in the job market? Are we all going to be replaced by AI? Or, on the contrary, are we the luckiest generation of all?\n\nIn this talk, we will explore how AI impacts the balance between creating new jobs and replacing existing ones. From recruiting to AI usage in the workplace, we will discuss the pros and cons of integrating AI into our daily work lives. Finally, we will look at how AI replaceability is calculated and what metrics are used to measure how AI-proof a job is."
-location = "Seminarraum 10"
+location = "Konferenzraum 5/104"
 color = "#00a0d7"
 
 [[events]]
 date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
-time = "16:45"
-end = "17:15"
+time = "17:05"
+end = "17:35"
 title = "Is Computational Linguistics dead? - An exploratory survey on CL job market across China and Europe"
 person = "Ran Li"
 description = "This talk presents a small exploratory study of the current job market for computational linguistics and AI-related positions across China and Europe. Instead of focusing on a single company or sector, the project aims to collect and analyze publicly available job postings using web scraping methods. The goal is to gain a data-driven overview of where relevant positions are located, what skills are most frequently required, and how different roles are described.\n\nAfter collecting job descriptions from major recruitment platforms(LinkedIn, Boss， 51 Jobs), major AI companies(Open AI, Google, Tencent, ByteDance, Baidu, Alibaba) and traditional enterprises seeking digital transformation, the data will be cleaned and analyzed to identify patterns in required competencies, such as NLP techniques, machine learning frameworks, LLM-related tasks, and engineering skills. Positions will be roughly categorized into several types, including data-focused roles, model training and fine-tuning, evaluation and alignment, and product-oriented NLP applications. The results will be visualized as a map showing geographical distribution, along with charts summarizing skill demand and role characteristics.\n\nThis project is both a methodological exercise in simple large-scale text collection and analysis, and a practical attempt to better understand the landscape of career paths in computational linguistics. The talk will share preliminary findings and reflect on how job descriptions shape our understanding of the field."
@@ -379,8 +357,8 @@ color = "#00a0d7"
 [[events]]
 date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
-time = "09:45"
-end = "10:15"
+time = "09:40"
+end = "10:10"
 title = "Beyond Names: Tracing the Stylistic Influence of Canonical Texts in Fanfiction"
 person = "Carina Zander, Denise Binz"
 description = "This talk explores the extent to which canonical texts shape writing style in fanfiction. Drawing on a corpus of fanfictions from popular fandoms on Archive of Our Own, we investigate whether distinct stylistic traces persist beyond explicit references. To this end, we construct and compare two versions of the corpus: the original fanfiction texts as written by their authors, and a modified version in which fandom-specific proper names are removed using named entity recognition techniques.\n\nUsing machine learning classification, we assess how accurately texts can be attributed to their respective fandoms in both conditions. The comparison allows us to isolate the contribution of implicit stylistic features from that of overt lexical markers. The results provide insight into how deeply source material informs fanfiction writing, highlighting the extent to which fandom-specific style operates independently of identifiable names and entities."
@@ -390,8 +368,8 @@ color = "#00a0d7"
 [[events]]
 date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
-time = "10:15"
-end = "10:45"
+time = "10:20"
+end = "10:50"
 short_title = "Do AI Models Judge Like Humans?"
 title = "Do AI Models Judge Like Humans? Generalization in German Ditransitive Constructions Across Native Speakers, L2 Learners, and Large Language Models"
 person = "Xinyu Jing"
@@ -403,19 +381,8 @@ color = "#00a0d7"
 date = "2026-05-23"
 day = { de = "Samstag", en = "Saturday" }
 time = "09:15"
-end = "09:30"
-title = { de = "Samstagskaffee", en = "Saturday Coffee" }
-person = ""
-description = { de = "Kurzer Kaffee-Start in den Samstag.", en = "A quick coffee to start Saturday." }
-location = "Foyer"
-color = "#8B4513"
-
-[[events]]
-date = "2026-05-23"
-day = { de = "Samstag", en = "Saturday" }
-time = "09:30"
 end = "09:45"
-title = { de = "Opening - Freitag", en = "Opening - Friday" }
+title = { de = "Opening + Samstagskaffee", en = "Opening + Saturday Coffee" }
 person = ""
 description = { de = "Kurzer Tagesauftakt und Überblick.", en = "Short kickoff and daily overview." }
 location = "Mathematikon Hörsaal"
@@ -436,7 +403,7 @@ color = "#5b2d90"
 date = "2026-05-23"
 day = { de = "Samstag", en = "Saturday" }
 time = "10:45"
-end = "11:15"
+end = "11:10"
 title = { de = "Es gibt nie genug Kaffee", en = "There Is Never Enough Coffee" }
 person = ""
 description = { de = "Kaffeepause zum Durchatmen.", en = "Coffee break to recharge." }
@@ -448,9 +415,9 @@ date = "2026-05-23"
 day = { de = "Samstag", en = "Saturday" }
 time = "11:15"
 end = "12:15"
-title = "tba"
+title = "On the Sisyphean Task of Unbiased Language Modelling"
 person = "Schakob Juster"
-description = ""
+description = "Bias in language models is not a new problem and was well researched even before the current era of increasingly capable LLMs. Yet, when they were first released, these models performed worse on many bias benchmarks than their smaller predecessors. In this talk, we will discuss why bias researchers appear to keep unsuccessfully rolling their boulder up the hill: how language modelling under the current paradigm makes bias an unavoidable core feature that cannot be removed through careful pre- or post-training. Moreover, despite its history, bias remains a difficult issue to aptly measure, as we will illustrate through a case study about source preferences of language models. We close by making a case for a continuation of this fundamentally impossible and deceptively pointless exercise."
 location = "Mathematikon Hörsaal"
 color = "#5b2d90"
 
@@ -494,7 +461,7 @@ time = "16:00"
 end = "16:15"
 title = { de = "Nachfolge suchen", en = "Seeking Successors" }
 person = ""
-description = { de = "Kurzer Slot zur Suche nach neuen Orga-Mitgliedern.", en = "Short slot to find new organizers." }
+description = { de = "Wer wird die TaCoS nächstes Jahr ausrichten?", en = "Who will host next year's TaCoS?" }
 location = "Mathematikon Hörsaal"
 color = "#009999"
 
@@ -517,7 +484,7 @@ end = "23:45"
 title = { de = "Barabend", en = "Evening at the Bar" }
 person = ""
 description = { de = "Gemeinsamer Ausklang bei Getränken.", en = "Wind down together with drinks." }
-location = "Draußen"
+location = "Outside"
 color = "#cc0368"
 
 [[events]]
@@ -530,4 +497,3 @@ person = ""
 description = { de = "Gemütlicher Brunch zum Abschluss.", en = "Casual farewell brunch." }
 location = "tba"
 color = "#f39c12"
-
