@@ -254,7 +254,7 @@
 				{@const short = isShortEvent(event)}
 				<button
 					type="button"
-					class="event-item m-1 p-1 p-sm-2 rounded text-white small position-relative shadow-sm border-0 text-start d-flex flex-column"
+					class="event-item m-1 {short ? 'ps-sm-2' : 'p-1 p-sm-2'} rounded text-white small position-relative shadow-sm border-0 text-start d-flex flex-column"
 					class:current={isCurrent(event)}
 					onclick={() => (selectedEvent = event)}
 					data-bs-toggle="modal"
