@@ -9,7 +9,13 @@
 	import LinkButton from '$lib/components/LinkButton.svelte';
 
 	let color = getContext<{ color: string }>('color').color;
-	let registrationClosed = true;
+	type MainPageNoteState = 'registrationOpen' | 'registrationClosed' | 'showSchedule';
+	let mainPageNoteState: MainPageNoteState = 'showSchedule';
+	let icon = {
+		'registrationOpen': 'bi-fire',
+		'registrationClosed': 'bi-info-circle',
+		'showSchedule': 'bi-calendar-heart'
+	}
 </script>
 
 <svelte:head>
@@ -32,16 +38,24 @@
 					</span>
 
 					<div class="alert d-flex align-items-start mx-2 my-4 tacos-input-{color} border-0 rainbow-hover" role="alert">
-						<i class="bi {registrationClosed ? 'bi-info-circle' : 'bi-fire'} fs-4 me-3 flex-shrink-0"></i>
+						<i class="bi {icon[mainPageNoteState]}  fs-4 me-3 flex-shrink-0"></i>
 						<div class="d-flex flex-column">
-							{#if registrationClosed}
+							{#if mainPageNoteState === 'showSchedule'}
+								<p class="h5">{m.schedule_map_info_home()}</p>
+								<p>
+
+									{@html m.schedule_map_info_description_home()}
+								</p>
+								<LinkButton href="/schedule/" variant="link">{m.go_to_schedule_button()}</LinkButton>
+								<LinkButton href="/map/" variant="link">{m.go_to_map_button()}</LinkButton>
+							{:else if mainPageNoteState === 'registrationClosed'}
 								<p class="h5">{m.registration_closed_home()}</p>
 								<p>
 									{m.registration_closed_description_home()}
 								</p>
 								<LinkButton href="/attend/" variant="link">{m.go_to_payment_info()}</LinkButton>
 								<LinkButton href="/schedule/" variant="link">{m.contribute()}</LinkButton>
-							{:else}
+							{:else if mainPageNoteState === 'registrationOpen'}
 								<p class="h5">{m.registration_open()}</p>
 								<p>
 									{m.tacos_registration_started_description()}
