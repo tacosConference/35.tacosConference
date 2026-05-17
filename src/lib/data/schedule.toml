@@ -416,7 +416,7 @@ day = { de = "Samstag", en = "Saturday" }
 time = "11:15"
 end = "12:15"
 title = "On the Sisyphean Task of Unbiased Language Modelling"
-person = "Schakob Juster"
+person = "Jakob Schuster"
 description = "Bias in language models is not a new problem and was well researched even before the current era of increasingly capable LLMs. Yet, when they were first released, these models performed worse on many bias benchmarks than their smaller predecessors. In this talk, we will discuss why bias researchers appear to keep unsuccessfully rolling their boulder up the hill: how language modelling under the current paradigm makes bias an unavoidable core feature that cannot be removed through careful pre- or post-training. Moreover, despite its history, bias remains a difficult issue to aptly measure, as we will illustrate through a case study about source preferences of language models. We close by making a case for a continuation of this fundamentally impossible and deceptively pointless exercise."
 location = "Mathematikon Hörsaal"
 color = "#5b2d90"
