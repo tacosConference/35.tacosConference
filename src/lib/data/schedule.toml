@@ -271,7 +271,7 @@ date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
 time = "15:00"
 end = "16:00"
-title = { de = "Podiumsdiskussion: Coli und Karriere", en = "Panel discussion: Coli and Career" }
+title = { de = "Podiumsdiskussion: Coli and Career", en = "Panel discussion: Coli and Career" }
 person = "Hannah Sperling; Matthias Huck; Sophia Ackermann; Danny Rehl; Merit Wolfsteiner"
 description = { de = "Austausch über (Karriere-)perspektiven aus Wissenschaft und Industrie.", en = "Discussion of (career) perspectives in academia and industry." }
 location = "Konferenzraum 5/104"
