@@ -12,15 +12,21 @@
 	import gal from '$lib/assets/sponsors/gal.svg';
 	import psv from '$lib/assets/sponsors/python-software-verband.png';
 	import sap from '$lib/assets/sponsors/sap.svg';
+	import stura from '$lib/assets/sponsors/stura.png';
+	import gscl from '$lib/assets/sponsors/gscl.svg';
+	import coli_institute from '$lib/assets/sponsors/uni-heidelberg.svg';
 
 	const sponsors = [
+		{ src: stura, alt: 'StuRa der Uni Heidelberg', link: "https://stura.uni-heidelberg.de/" }, // 3000€
 		{ src: sap, alt: 'SAP SE', link: "https://sap.com/" }, // 1000€
 		{ src: psv, alt: 'Python Software Verband e.V.', link: "https://python-verband.org/" }, // 1000€
+		{ src: coli_institute, alt: 'Institut für Computerlinguistik der Uni Heidelberg', link: "https://cl.uni-heidelberg.de"}, // 600€
 		{ src: aristech, alt: 'Aristech GmbH', link: "https://www.aristech.de"}, //500€
 		{ src: blc, alt: 'berns language consulting GmbH', link: "https://berns-language-consulting.de"}, // 500€
 		{ src: eacl, alt: 'The European Chapter of the ACL', link: "https://eacl.org/" }, // 400 €
 		{ src: dgfs, alt: 'Deutsche Gesellschaft für Sprachwissenschaft', link: "https://dgfs.de"}, // 300€
 		{ src: gal, alt: 'Gesellschaft für Angewandte Linguistik e.V.', link: "https://gal-ev.de"}, // 250€
+		{ src: gscl, alt: 'Gesellschaft für Sprachtechnologie und Computerlinguistik', link: "https://gscl.org"}, // 250€
 		{ src: hwl, alt: 'HWL GmbH', link: "https://hwl.gmbh"}, // 100€
 	];
 </script>
