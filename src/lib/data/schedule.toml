@@ -313,6 +313,17 @@ color = "#cc0368"
 [[events]]
 date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
+time = "09:40"
+end = "10:10"
+title = "The Unbelievable Universe of Unicode"
+person = "Jakob Moser"
+description = "Whenever a computer needs to store or process text, it represents it as a sequence of numbers. But how does that work? \n\nThis is where Unicode comes in. Given a character, Unicode encodes it into a number. The Unicode Consortium has an ambitious goal: It wants to be able to represent any character or sign there is in any writing system, making Unicode a truly universal standard.\n\nBut with such universality also come a few seemingly unbelievable things:\n\n- Why is len('👨🏾‍💻') == 4?\n- Why is amazon.de not the same as аmаzon.de?\n- What is Tofu and why is it bad?\n- And why is 'á' != 'á'?\n\nThis talk is an assortment of Unicode-related trivia, which might help you during your next project, or at least help you to gain a deeper appreciation for the complexity behind the seemingly mundane."
+location = "Seminarraum 10"
+color = "#00a0d7"
+
+[[events]]
+date = "2026-05-22"
+day = { de = "Freitag", en = "Friday" }
 time = "10:20"
 end = "10:50"
 title = "Protein LLMs: Applying NLP Methods to Protein Sequence Modeling"
