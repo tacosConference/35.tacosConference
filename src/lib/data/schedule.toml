@@ -92,7 +92,7 @@ color = "#cc0368"
 date = "2026-05-21"
 day = { de = "Donnerstag", en = "Thursday" }
 time = "19:00"
-end = "23:45"
+end = "23:00"
 title = { de = "Spieleabend", en = "Game Night" }
 person = ""
 description = { de = "Gemeinsam spielen, lachen und den Tag ausklingen lassen.", en = "Play, relax, and end the day together." }
@@ -303,7 +303,7 @@ color = "#008c3a"
 date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
 time = "19:00"
-end = "23:45"
+end = "23:00"
 title = "Karaoke"
 person = ""
 description = { de = "Offenes Karaoke-Event mit viel Spaß und Musik.", en = "Open karaoke night for fun and music." }
@@ -480,7 +480,7 @@ color = "#009999"
 date = "2026-05-23"
 day = { de = "Samstag", en = "Saturday" }
 time = "19:00"
-end = "23:45"
+end = "23:00"
 title = { de = "Barabend", en = "Evening at the Bar" }
 person = ""
 description = { de = "Gemeinsamer Ausklang bei Getränken.", en = "Wind down together with drinks." }
