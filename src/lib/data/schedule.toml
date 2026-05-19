@@ -313,17 +313,6 @@ color = "#cc0368"
 [[events]]
 date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
-time = "09:40"
-end = "10:10"
-title = "«John dropped the apple — Which apple?» Investigating LLM Reasoning with Attention Scores"
-person = "Bohdana Ivakhnenko; Kim Lingemann; Raziye Sari; Asma Motmem"
-description = "With the continuous struggle to increase LLMs' reasoning performance, it has become apparent that true language understanding is a necessity, not a whim. Though, what does that look like exactly? The transformer attention mechanism is certainly central to it.  But does that alone suffice to equip models with real reasoning capabilities?\n\nBuilding on recent studies of chain-of-thought (CoT) reasoning, we are on a mission to analyse why models fail at trivial tasks. Raw neuron attribution scores guide us to “where John really is”. While searching for clear answers, we are not once, not twice, met by surprising discoveries…\n\nWe invite you to join us on this journey of revealing problems hidden in plain sight, clever design strategies to gauge the limits of Llama models, and astonishing observations of how the models outsmarted us—rarely expected but sure to become an apparent reality of today's LLMs.\n\nGet ready for proper research with standard deviation, deep analyses, and many visual examples."
-location = "Seminarraum 10"
-color = "#00a0d7"
-
-[[events]]
-date = "2026-05-22"
-day = { de = "Freitag", en = "Friday" }
 time = "10:20"
 end = "10:50"
 title = "Protein LLMs: Applying NLP Methods to Protein Sequence Modeling"
