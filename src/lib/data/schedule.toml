@@ -490,7 +490,7 @@ color = "#cc0368"
 [[events]]
 date = "2026-05-24"
 day = { de = "Sonntag", en = "Sunday" }
-time = "11:00"
+time = "12:00"
 end = "14:00"
 title = "Brunch"
 person = ""
