@@ -196,7 +196,7 @@ end = "11:10"
 title = { de = "Noch mehr Kaffee", en = "More Coffee" }
 person = ""
 description = { de = "Kurze Pause für Kaffee und Austausch.", en = "Quick break for coffee and conversation." }
-location = "Foyer"
+location = "tba"
 color = "#8B4513"
 
 
@@ -263,7 +263,7 @@ end = "15:00"
 title = { de = "Kaffee mit der Industrie", en = "Industry Coffee" }
 person = ""
 description = { de = "Kaffeepause mit Gelegenheit zum Austausch.", en = "Coffee break with time to connect." }
-location = "Foyer"
+location = "tba"
 color = "#8B4513"
 
 [[events]]
@@ -285,7 +285,7 @@ end = "16:20"
 title = { de = "Der letzte Kaffee am Freitag", en = "Last Coffee on Friday" }
 person = ""
 description = { de = "Letzte Kaffeepause vor dem Endspurt.", en = "Final coffee break before the last sessions." }
-location = "Foyer"
+location = "tba"
 color = "#8B4513"
 
 [[events]]
@@ -407,7 +407,7 @@ end = "11:10"
 title = { de = "Es gibt nie genug Kaffee", en = "There Is Never Enough Coffee" }
 person = ""
 description = { de = "Kaffeepause zum Durchatmen.", en = "Coffee break to recharge." }
-location = "Foyer"
+location = "tba"
 color = "#8B4513"
 
 [[events]]
@@ -451,7 +451,7 @@ end = "16:00"
 title = { de = "Der letzte Kaffee", en = "The Last Coffee" }
 person = ""
 description = { de = "Die letzte Kaffeepause dieser TaCoS.", en = "Last short coffee break of this TaCoS." }
-location = "Foyer"
+location = "tba"
 color = "#8B4513"
 
 [[events]]
