@@ -74,7 +74,7 @@ end = "23:00"
 title = { de = "Spieleabend", en = "Game Night" }
 person = ""
 description = { de = "Gemeinsam spielen, lachen und den Tag ausklingen lassen.", en = "Play, relax, and end the day together." }
-location = "Collegium Academicum, Mendelejewplatz 1, 69126 Heidelberg (Rohrbach)"
+location = "Aula, Collegium Academicum, Mendelejewplatz 1, 69126 Heidelberg (Rohrbach)"
 color = "#cc0368"
 
 [[events]]
