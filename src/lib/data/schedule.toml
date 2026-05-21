@@ -37,7 +37,7 @@ color = "#00a0d7"
 date = "2026-05-21"
 day = { de = "Donnerstag", en = "Thursday" }
 time = "11:50"
-end = "13:45"
+end = "13:30"
 title = { de = "Mittagspause", en = "Lunch Break" }
 person = ""
 description = { de = "Zeit zum Essen und für eine kleine Pause.", en = "Time for lunch and a short break." }
