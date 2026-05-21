@@ -36,17 +36,6 @@ color = "#00a0d7"
 [[events]]
 date = "2026-05-21"
 day = { de = "Donnerstag", en = "Thursday" }
-time = "10:40"
-end = "11:10"
-title = "Embedding Collapse in Two-Tower News Recommendation"
-person = "Martin Scheuermann"
-description = "News recommendation is characterized by rapidly evolving content and highly skewed interaction data, making it challenging to learn robust user and article representations. While two-tower models are widely used for scalable retrieval, we show that they exhibit a critical failure mode in this setting: embedding collapse.\nWe demonstrate that user and article embeddings quickly degenerate into a low-dimensional structure, limiting retrieval performance and leading to an overemphasis on popular content. This collapse emerges early during training and constrains downstream performance.\nTo mitigate this issue, we propose and analyze spectral regularization, which encourages a more balanced use of the embedding space by preventing variance from concentrating in a few dominant directions. This leads to more stable training and improved recommendation quality."
-location = "Konferenzraum 5/104"
-color = "#00a0d7"
-
-[[events]]
-date = "2026-05-21"
-day = { de = "Donnerstag", en = "Thursday" }
 time = "11:20"
 end = "12:20"
 title = "Is This a Moral Claim? Humans vs. LLMs on a Surprisingly Difficult Task"
