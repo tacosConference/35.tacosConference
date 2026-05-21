@@ -14,8 +14,8 @@ color = "#009999"
 [[events]]
 date = "2026-05-21"
 day = { de = "Donnerstag", en = "Thursday" }
-time = "09:15"
-end = "09:45"
+time = "09:30"
+end = "10:00"
 title = { de = "Opening - Begrüßung", en = "Opening - Welcome" }
 person = ""
 description = { de = "Wir heißen euch herzlich willkommen und erklären kurz den Ablauf der nächsten Tage.", en = "We welcome you and briefly explain the schedule for the coming days." }
