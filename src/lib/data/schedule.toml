@@ -91,8 +91,8 @@ color = "#00a0d7"
 [[events]]
 date = "2026-05-21"
 day = { de = "Donnerstag", en = "Thursday" }
-time = "10:40"
-end = "11:10"
+time = "11:20"
+end = "11:50"
 title = "Beyond Names: Tracing the Stylistic Influence of Canonical Texts in Fanfiction"
 person = "Carina Zander, Denise Binz"
 description = "This talk explores the extent to which canonical texts shape writing style in fanfiction. Drawing on a corpus of fanfictions from popular fandoms on Archive of Our Own, we investigate whether distinct stylistic traces persist beyond explicit references. To this end, we construct and compare two versions of the corpus: the original fanfiction texts as written by their authors, and a modified version in which fandom-specific proper names are removed using named entity recognition techniques.\n\nUsing machine learning classification, we assess how accurately texts can be attributed to their respective fandoms in both conditions. The comparison allows us to isolate the contribution of implicit stylistic features from that of overt lexical markers. The results provide insight into how deeply source material informs fanfiction writing, highlighting the extent to which fandom-specific style operates independently of identifiable names and entities."
