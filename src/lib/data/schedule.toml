@@ -58,12 +58,12 @@ color = "#008c3a"
 [[events]]
 date = "2026-05-21"
 day = { de = "Donnerstag", en = "Thursday" }
-time = "18:00"
+time = "17:00"
 end = "19:00"
-title = { de = "Spieleabend / Campustour", en = "Game Night / Campus Tour" }
+title = { de = "Campustour", en = "Campus Tour" }
 person = ""
-description = { de = "Lockerer Ausklang mit Spielen oder einer Tour über den Campus.", en = "Wind down with games or join a campus tour." }
-location = "Auf dem Campus (Treffpunkt: Foyer)"
+description = { de = "Wir zeigen euch den Campus und fahren dann gemeinsam mit euch nach Rohrbach zum Collegium Academicum, wo der Spieleabend stattfinden wird. Die Campus-Tour dauert nicht die ganzen zwei Stunden, es gibt also Zeit, sich unterwegs was zu essen zu beschaffen (das Orga-Team muss auch noch essen).", en = "We’ll show you around the campus and then drive with you to Rohrbach to the Collegium Academicum, where the game night will take place. The campus tour won’t take the full two hours, so there will be time to grab a bite to eat along the way (the organizing team needs to eat, too)." }
+location = "Mathematikon Entrance (in front of the Foyer)"
 color = "#cc0368"
 
 [[events]]
@@ -74,7 +74,7 @@ end = "23:00"
 title = { de = "Spieleabend", en = "Game Night" }
 person = ""
 description = { de = "Gemeinsam spielen, lachen und den Tag ausklingen lassen.", en = "Play, relax, and end the day together." }
-location = "tba."
+location = "Collegium Academicum, Mendelejewplatz 1, 69126 Heidelberg (Rohrbach)"
 color = "#cc0368"
 
 [[events]]
