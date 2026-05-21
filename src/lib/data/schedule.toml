@@ -36,17 +36,6 @@ color = "#00a0d7"
 [[events]]
 date = "2026-05-21"
 day = { de = "Donnerstag", en = "Thursday" }
-time = "11:20"
-end = "12:20"
-title = "Is This a Moral Claim? Humans vs. LLMs on a Surprisingly Difficult Task"
-person = "Maria Becker"
-description = "These days, almost everything seems to become a moral issue – from what we eat to how we travel, speak, or consume. In this talk, I focus on the role of moral values in public discourse, more specifically on their use in arguments about controversial issues. We refer to such arguments based on moral values as moralizations and examine how closely machines match human judgments in identifying them. Building on a theoretically grounded operationalization, we construct and annotate a diverse corpus of authentic texts to capture how moralization emerges in discourse. A key challenge is that identifying moralization is inherently subjective: even trained annotators do not always agree. This raises the question of whether large language models can learn such nuanced distinctions from data or from instructions alone. To address this, we compare different modeling strategies, including prompting and fine-tuning, and analyze how closely model predictions align with human judgments. Ultimately, the talk shows that identifying moralization is not just a technical challenge, but depends crucially on how we define, model, and interpret it."
-location = "Konferenzraum 5/104"
-color = "#5b2d90"
-
-[[events]]
-date = "2026-05-21"
-day = { de = "Donnerstag", en = "Thursday" }
 time = "12:20"
 end = "13:45"
 title = { de = "Mittagspause", en = "Lunch Break" }
