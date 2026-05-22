@@ -323,6 +323,7 @@ person = "Maya Arseven, Polina Kuznetcova"
 description = "Are we, as computational linguists, doomed in the job market? Are we all going to be replaced by AI? Or, on the contrary, are we the luckiest generation of all?\n\nIn this talk, we will explore how AI impacts the balance between creating new jobs and replacing existing ones. From recruiting to AI usage in the workplace, we will discuss the pros and cons of integrating AI into our daily work lives. Finally, we will look at how AI replaceability is calculated and what metrics are used to measure how AI-proof a job is."
 location = "Konferenzraum 5/104"
 color = "#00a0d7"
+link = "https://heibox.uni-heidelberg.de/d/77ab6eeafba648368aad/files/?p=%2F2026-05-22_Maya_Arseven_Polina_Kuznetcova_Social_Impact_of_AI.pdf"
 
 [[events]]
 date = "2026-05-22"
@@ -334,6 +335,7 @@ person = "Ran Li"
 description = "This talk presents a small exploratory study of the current job market for computational linguistics and AI-related positions across China and Europe. Instead of focusing on a single company or sector, the project aims to collect and analyze publicly available job postings using web scraping methods. The goal is to gain a data-driven overview of where relevant positions are located, what skills are most frequently required, and how different roles are described.\n\nAfter collecting job descriptions from major recruitment platforms(LinkedIn, Boss， 51 Jobs), major AI companies(Open AI, Google, Tencent, ByteDance, Baidu, Alibaba) and traditional enterprises seeking digital transformation, the data will be cleaned and analyzed to identify patterns in required competencies, such as NLP techniques, machine learning frameworks, LLM-related tasks, and engineering skills. Positions will be roughly categorized into several types, including data-focused roles, model training and fine-tuning, evaluation and alignment, and product-oriented NLP applications. The results will be visualized as a map showing geographical distribution, along with charts summarizing skill demand and role characteristics.\n\nThis project is both a methodological exercise in simple large-scale text collection and analysis, and a practical attempt to better understand the landscape of career paths in computational linguistics. The talk will share preliminary findings and reflect on how job descriptions shape our understanding of the field."
 location = "Konferenzraum 5/104"
 color = "#00a0d7"
+link = "https://heibox.uni-heidelberg.de/d/77ab6eeafba648368aad/files/?p=%2F2026-05-22_Ran_Li_Is_Computational_Linguistics_dead_v0.0.1.pdf"
 
 [[events]]
 date = "2026-05-22"
