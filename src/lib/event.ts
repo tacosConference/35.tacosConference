@@ -9,4 +9,5 @@ export interface Event {
 	description: string;
 	location: string;
 	color: string;
+	link: string;
 }

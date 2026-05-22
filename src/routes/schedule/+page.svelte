@@ -27,7 +27,8 @@
 			short_title: resolveLocalized(raw.short_title),
 			person: resolveLocalized(raw.person),
 			description: resolveLocalized(raw.description),
-			location: resolveLocalized(raw.location)
+			location: resolveLocalized(raw.location),
+			link: String(raw.link ?? '')
 		}))
 	);
 </script>

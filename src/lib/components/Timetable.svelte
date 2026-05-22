@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount, getContext } from 'svelte';
+	import { m } from '$lib/paraglide/messages';
 	import type { Event } from '$lib/event';
 
 	let { events }: { events: Event[] } = $props<{ events: Event[] }>();
@@ -242,10 +243,10 @@
 			<!-- Background Grid Lines -->
 			{#each slots as _, r}
 				{#if r % stepSizeRatio === 0}
-				<div
-					class="border-end border-bottom bg-white"
-					style="grid-row: {r + 2} / {r + 2 + stepSizeRatio}; grid-column: 2 / span {maxCols};"
-				></div>
+					<div
+						class="border-end border-bottom bg-white"
+						style="grid-row: {r + 2} / {r + 2 + stepSizeRatio}; grid-column: 2 / span {maxCols};"
+					></div>
 				{/if}
 			{/each}
 
@@ -382,8 +383,13 @@
 					<hr class="my-3 opacity-10" />
 					<p class="text-justify mb-0">{selectedEvent.description}</p>
 				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+				<div class="modal-footer justify-content-between">
+					{#if selectedEvent.link !== ''}
+						<a type="button" class="btn btn-secondary" href={selectedEvent.link} target="_blank" rel="noopener noreferrer"
+						        >{m.schedule_button_download_slides()}</a>
+					{/if}
+					<span></span>
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{m.close()}</button>
 				</div>
 			{/if}
 		</div>
