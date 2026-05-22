@@ -31,6 +31,7 @@ title = "Graph Language Models"
 person = "Moritz Plenz"
 description = "While Language Models (LMs) are the workhorses of NLP, their interplay with structured knowledge graphs (KGs) is still actively researched. Current methods for encoding such graphs typically either (i) linearize them for embedding with LMs – which underutilize structural information, or (ii) use Graph Neural Networks (GNNs) to preserve the graph structure – but GNNs cannot represent text features as well as pretrained LMs. In our work we introduce a novel LM type, the Graph Language Model (GLM), that integrates the strengths of both approaches and mitigates their weaknesses. The GLM parameters are initialized from a pretrained LM to enhance understanding of individual graph concepts and triplets. Simultaneously, we design the GLM’s architecture to incorporate graph biases, thereby promoting effective knowledge distribution within the graph. This enables GLMs to process graphs, texts, and interleaved inputs of both. Empirical evaluations on relation classification tasks show that GLM embeddings surpass both LM- and GNN-based baselines in supervised and zero-shot setting, demonstrating their versatility."
 location = "Konferenzraum 5/104"
+link = "https://heibox.uni-heidelberg.de/d/77ab6eeafba648368aad/files/?p=%2F2026-05-21_Moritz_Plenz_Graph_Language_Models.pdf"
 color = "#00a0d7"
 
 [[events]]
@@ -298,6 +299,7 @@ person = "Jakob Moser"
 description = "Whenever a computer needs to store or process text, it represents it as a sequence of numbers. But how does that work? \n\nThis is where Unicode comes in. Given a character, Unicode encodes it into a number. The Unicode Consortium has an ambitious goal: It wants to be able to represent any character or sign there is in any writing system, making Unicode a truly universal standard.\n\nBut with such universality also come a few seemingly unbelievable things:\n\n- Why is len('👨🏾‍💻') == 4?\n- Why is amazon.de not the same as аmаzon.de?\n- What is Tofu and why is it bad?\n- And why is 'á' != 'á'?\n\nThis talk is an assortment of Unicode-related trivia, which might help you during your next project, or at least help you to gain a deeper appreciation for the complexity behind the seemingly mundane."
 location = "Seminarraum 10"
 color = "#00a0d7"
+link = "https://heibox.uni-heidelberg.de/lib/f1f978f5-5173-4048-9e42-1307ce7a5c8a/file/Public/2026-05-22_Jakob_Moser_The_Unbelievable_Universe_of_Unicode_v1.0.0.pdf"
 
 [[events]]
 date = "2026-05-22"
@@ -342,6 +344,7 @@ person = "Souvik Banerjee"
 description = "What makes a sequence of sentences feel coherent rather than disjointed? At the local level, psycholinguistic and computational evidence points to two distinct mechanisms operating simultaneously. Relational coherence tracks how adjacent sentences are logically connected: whether one explains, contrasts, or elaborates on the other. Entity coherence tracks which referents are in focus and how attention shifts between them. These two tracks are not independent: the type of relation between sentences shapes which entities stay in focus, and the entity configuration constrains which relations are plausible.  Despite decades of work on each track in isolation, we lack a unified formal account of how they interact.\n\nWe develop an information-theoretic framework that models both tracks jointly. At each word in a text, a reader maintains and updates beliefs about the discourse relation currently being constructed.  We validate this model against human reading times. We then ask whether LLMs implement a similar dual-track structure internally using targeted interventions on model activations. We test whether relational and entity coherence are encoded in separable regions of the model's representation space, and whether they interact in the ways our theory predicts. This lets us ask: do LLMs solve discourse coherence the same way humans do, or do they find a fundamentally different solution?"
 location = "Seminarraum 11"
 color = "#00a0d7"
+link = "https://heibox.uni-heidelberg.de/d/77ab6eeafba648368aad/files/?p=%2F2026-05-22_Souvik_Banerjee_Discourse_Coherence_in_Humans_and_Language_Models.pdf"
 
 [[events]]
 date = "2026-05-22"
