@@ -289,6 +289,10 @@
 							<span class="fw-semibold text-truncate me-1">
 								{event.time} - {event.end}<span class="text-white-50">&nbsp;•&nbsp;</span>{event.location}
 							</span>
+							{#if event.link !== ''}
+								&nbsp;•&nbsp;
+								<span class="bi-download ms-1"></span>
+							{/if}
 						{/if}
 						</span>
 					</span>
@@ -347,9 +351,17 @@
 				<small class="text-muted"><i class="bi bi-geo-alt"></i> {event.location}</small>
 			</span>
 			<span class="card-title d-block mb-3 fw-bold fs-5" style="line-height: 1.15">{event.title}</span>
-			{#if event.person}
-				<span class="card-subtitle d-block mb-1 text-muted fw-bold small">{event.person}</span>
-			{/if}
+			<span class="d-flex mb-1">
+				{#if event.person}
+					<span class="card-subtitle align-self-center d-block text-muted fw-bold small me-2">{event.person}</span>
+				{/if}
+				{#if event.link !== ''}
+					<span class="badge rounded-pill text-dark" style="background-color: {event.color}44">
+						<span class="bi-download"></span>
+					</span>
+				{/if}
+				</span>
+
 		</span>
 	</button>
 {/snippet}
@@ -385,8 +397,9 @@
 				</div>
 				<div class="modal-footer justify-content-between">
 					{#if selectedEvent.link !== ''}
-						<a type="button" class="btn btn-secondary" href={selectedEvent.link} target="_blank" rel="noopener noreferrer"
-						        >{m.schedule_button_download_slides()}</a>
+						<a type="button" class="btn btn-secondary" href={selectedEvent.link} target="_blank"
+						   rel="noopener noreferrer"
+						>{m.schedule_button_download_slides()}</a>
 					{/if}
 					<span></span>
 					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{m.close()}</button>
