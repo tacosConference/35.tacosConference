@@ -237,8 +237,8 @@ color = "#e67e22"
 [[events]]
 date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
-time = "14:30"
-end = "15:00"
+time = "15:00"
+end = "15:20"
 title = { de = "Kaffee mit der Industrie", en = "Industry Coffee" }
 person = ""
 description = { de = "Kaffeepause mit Gelegenheit zum Austausch.", en = "Coffee break with time to connect." }
@@ -248,8 +248,8 @@ color = "#8B4513"
 [[events]]
 date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
-time = "15:00"
-end = "16:00"
+time = "15:30"
+end = "16:15"
 title = { de = "Podiumsdiskussion: Coli and Career", en = "Panel discussion: Coli and Career" }
 person = "Hannah Sperling; Matthias Huck; Sophia Ackermann; Merit Wolfsteiner"
 description = { de = "Austausch über (Karriere-)perspektiven aus Wissenschaft und Industrie.", en = "Discussion of (career) perspectives in academia and industry." }
@@ -259,8 +259,8 @@ color = "#e67e22"
 [[events]]
 date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
-time = "16:00"
-end = "16:20"
+time = "16:20"
+end = "16:35"
 title = { de = "Der letzte Kaffee am Freitag", en = "Last Coffee on Friday" }
 person = ""
 description = { de = "Letzte Kaffeepause vor dem Endspurt.", en = "Final coffee break before the last sessions." }
@@ -270,8 +270,8 @@ color = "#8B4513"
 [[events]]
 date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
-time = "16:30"
-end = "17:30"
+time = "16:40"
+end = "17:40"
 title = "The cost of cutting corners"
 person = "Mariia Neguliaeva"
 description = "Real-life computational projects have a way of failing at the worst possible moment. This workshop stems from one such project on sign language translation, which sits at an intersection of linguistics, computer vision and accessibility technology - a real problem with real stakes, but most importantly a real appetite for computational resources. The gap between the project's ambitious beginning and considerably humbler reality is where the real work happens, as the value of defensive coding gradually replaces hopeful optimism. We'll explore that gap together through an interactive game (no spoilers!) and then discuss some tips on making large-scale computing bearable. What does it take to survive overnight crashes, while staying within budget? And how come we don't always do it? This session is for you, if you've ever been too scared to waste scarce resources or wondered why things go wrong when you seem to have done everything right. No prior experience with large-scale computing or sign language translation required. Curiosity and pent-up frustration welcome.\nNot validated by controlled studies, individual results may vary ;)"
@@ -315,8 +315,8 @@ color = "#00a0d7"
 [[events]]
 date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
-time = "16:30"
-end = "17:00"
+time = "16:40"
+end = "17:10"
 title = "Social Impact of AI"
 person = "Maya Arseven, Polina Kuznetcova"
 description = "Are we, as computational linguists, doomed in the job market? Are we all going to be replaced by AI? Or, on the contrary, are we the luckiest generation of all?\n\nIn this talk, we will explore how AI impacts the balance between creating new jobs and replacing existing ones. From recruiting to AI usage in the workplace, we will discuss the pros and cons of integrating AI into our daily work lives. Finally, we will look at how AI replaceability is calculated and what metrics are used to measure how AI-proof a job is."
@@ -326,8 +326,8 @@ color = "#00a0d7"
 [[events]]
 date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
-time = "17:05"
-end = "17:35"
+time = "17:15"
+end = "17:45"
 title = "Is Computational Linguistics dead? - An exploratory survey on CL job market across China and Europe"
 person = "Ran Li"
 description = "This talk presents a small exploratory study of the current job market for computational linguistics and AI-related positions across China and Europe. Instead of focusing on a single company or sector, the project aims to collect and analyze publicly available job postings using web scraping methods. The goal is to gain a data-driven overview of where relevant positions are located, what skills are most frequently required, and how different roles are described.\n\nAfter collecting job descriptions from major recruitment platforms(LinkedIn, Boss， 51 Jobs), major AI companies(Open AI, Google, Tencent, ByteDance, Baidu, Alibaba) and traditional enterprises seeking digital transformation, the data will be cleaned and analyzed to identify patterns in required competencies, such as NLP techniques, machine learning frameworks, LLM-related tasks, and engineering skills. Positions will be roughly categorized into several types, including data-focused roles, model training and fine-tuning, evaluation and alignment, and product-oriented NLP applications. The results will be visualized as a map showing geographical distribution, along with charts summarizing skill demand and role characteristics.\n\nThis project is both a methodological exercise in simple large-scale text collection and analysis, and a practical attempt to better understand the landscape of career paths in computational linguistics. The talk will share preliminary findings and reflect on how job descriptions shape our understanding of the field."
