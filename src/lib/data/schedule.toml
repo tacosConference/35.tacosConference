@@ -299,7 +299,7 @@ person = "Jakob Moser"
 description = "Whenever a computer needs to store or process text, it represents it as a sequence of numbers. But how does that work? \n\nThis is where Unicode comes in. Given a character, Unicode encodes it into a number. The Unicode Consortium has an ambitious goal: It wants to be able to represent any character or sign there is in any writing system, making Unicode a truly universal standard.\n\nBut with such universality also come a few seemingly unbelievable things:\n\n- Why is len('👨🏾‍💻') == 4?\n- Why is amazon.de not the same as аmаzon.de?\n- What is Tofu and why is it bad?\n- And why is 'á' != 'á'?\n\nThis talk is an assortment of Unicode-related trivia, which might help you during your next project, or at least help you to gain a deeper appreciation for the complexity behind the seemingly mundane."
 location = "Seminarraum 10"
 color = "#00a0d7"
-link = "https://heibox.uni-heidelberg.de/lib/f1f978f5-5173-4048-9e42-1307ce7a5c8a/file/Public/2026-05-22_Jakob_Moser_The_Unbelievable_Universe_of_Unicode_v1.0.0.pdf"
+link = "https://heibox.uni-heidelberg.de/d/77ab6eeafba648368aad/files/?p=%2F2026-05-22_Jakob_Moser_The_Unbelievable_Universe_of_Unicode_v1.0.0.pdf"
 
 [[events]]
 date = "2026-05-22"
