@@ -282,7 +282,7 @@ color = "#008c3a"
 [[events]]
 date = "2026-05-22"
 day = { de = "Freitag", en = "Friday" }
-time = "19:00"
+time = "19:30"
 end = "23:00"
 title = "Karaoke"
 person = ""
