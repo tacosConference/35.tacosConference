@@ -463,12 +463,12 @@ color = "#009999"
 [[events]]
 date = "2026-05-23"
 day = { de = "Samstag", en = "Saturday" }
-time = "19:00"
+time = "19:30"
 end = "23:00"
-title = { de = "Barabend", en = "Evening at the Bar" }
+title = { de = "Pubquiz", en = "Pub Quiz" }
 person = ""
-description = { de = "Gemeinsamer Ausklang bei Getränken.", en = "Wind down together with drinks." }
-location = "Outside"
+description = { de = "", en = "" }
+location = "Common Room"
 color = "#cc0368"
 
 [[events]]
