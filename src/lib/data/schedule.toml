@@ -419,8 +419,8 @@ color = "#f39c12"
 [[events]]
 date = "2026-05-23"
 day = { de = "Samstag", en = "Saturday" }
-time = "14:15"
-end = "15:30"
+time = "14:45"
+end = "16:00"
 title = "Lightning Talks"
 person = ""
 description = { de = "Kurze Vorträge im schnellen Wechsel.", en = "Short talks in quick succession." }
@@ -430,8 +430,8 @@ color = "#00a0d7"
 [[events]]
 date = "2026-05-23"
 day = { de = "Samstag", en = "Saturday" }
-time = "15:30"
-end = "16:00"
+time = "16:00"
+end = "16:30"
 title = { de = "Der letzte Kaffee", en = "The Last Coffee" }
 person = ""
 description = { de = "Die letzte Kaffeepause dieser TaCoS.", en = "Last short coffee break of this TaCoS." }
@@ -441,8 +441,8 @@ color = "#8B4513"
 [[events]]
 date = "2026-05-23"
 day = { de = "Samstag", en = "Saturday" }
-time = "16:00"
-end = "16:15"
+time = "16:30"
+end = "16:45"
 title = { de = "Nachfolge suchen", en = "Seeking Successors" }
 person = ""
 description = { de = "Wer wird die TaCoS nächstes Jahr ausrichten?", en = "Who will host next year's TaCoS?" }
@@ -452,8 +452,8 @@ color = "#009999"
 [[events]]
 date = "2026-05-23"
 day = { de = "Samstag", en = "Saturday" }
-time = "16:15"
-end = "17:00"
+time = "16:45"
+end = "17:30"
 title = "Closing"
 person = ""
 description = { de = "Abschluss und kurzer Ausblick.", en = "Closing remarks and a brief outlook." }
