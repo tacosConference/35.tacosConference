@@ -369,7 +369,7 @@ end = "09:45"
 title = { de = "Opening + Samstagskaffee", en = "Opening + Saturday Coffee" }
 person = ""
 description = { de = "Kurzer Tagesauftakt und Überblick.", en = "Short kickoff and daily overview." }
-location = "Mathematikon Hörsaal"
+location = "Konferenzraum 5/104"
 color = "#009999"
 
 [[events]]
@@ -380,7 +380,7 @@ end = "10:45"
 title = "Scaling the Right Things: Data, Grounding, and Knowing When Not to Answer"
 person = "Letiția Pârcălăbescu"
 description = "We frame trustworthy LLMs as a problem of provenance and grounding: before training, we must ask where a model’s knowledge comes from, and at inference time, whether its answers are actually supported by evidence. This talk follows two research threads across the model lifecycle. First, in Aleph Alpha GermanWeb, I explore how to train strong German-language models from scratch by treating data as design material and not merely as fuel—something to filter, shape, and increasingly synthesize—because data is the source code of model behavior. Second, in Merlin–Arthur RAG, we focus on post-training when models train to answer using retrieved context: a helpful prover provides evidence while an adversarial one tries to mislead, pushing the model to either ground its answer or admit that the evidence is not enough. Looking forward, these threads point to a shift in the field: from static datasets to evolving data synthesis pipelines, and from passive evaluation to training with adversaries that stress-test reasoning itself. Scaling alone is not enough—the future of language models lies in systems that actively curate what they learn, withstand manipulation, and admit when they do not know."
-location = "Mathematikon Hörsaal"
+location = "Konferenzraum 5/104"
 color = "#5b2d90"
 
 [[events]]
@@ -402,7 +402,7 @@ end = "12:15"
 title = "On the Sisyphean Task of Unbiased Language Modelling"
 person = "Jakob Schuster"
 description = "Bias in language models is not a new problem and was well researched even before the current era of increasingly capable LLMs. Yet, when they were first released, these models performed worse on many bias benchmarks than their smaller predecessors. In this talk, we will discuss why bias researchers appear to keep unsuccessfully rolling their boulder up the hill: how language modelling under the current paradigm makes bias an unavoidable core feature that cannot be removed through careful pre- or post-training. Moreover, despite its history, bias remains a difficult issue to aptly measure, as we will illustrate through a case study about source preferences of language models. We close by making a case for a continuation of this fundamentally impossible and deceptively pointless exercise."
-location = "Mathematikon Hörsaal"
+location = "Konferenzraum 5/104"
 color = "#5b2d90"
 
 [[events]]
@@ -424,7 +424,7 @@ end = "15:30"
 title = "Lightning Talks"
 person = ""
 description = { de = "Kurze Vorträge im schnellen Wechsel.", en = "Short talks in quick succession." }
-location = "Mathematikon Hörsaal"
+location = "Konferenzraum 5/104"
 color = "#00a0d7"
 
 [[events]]
@@ -446,7 +446,7 @@ end = "16:15"
 title = { de = "Nachfolge suchen", en = "Seeking Successors" }
 person = ""
 description = { de = "Wer wird die TaCoS nächstes Jahr ausrichten?", en = "Who will host next year's TaCoS?" }
-location = "Mathematikon Hörsaal"
+location = "Konferenzraum 5/104"
 color = "#009999"
 
 [[events]]
@@ -457,7 +457,7 @@ end = "17:00"
 title = "Closing"
 person = ""
 description = { de = "Abschluss und kurzer Ausblick.", en = "Closing remarks and a brief outlook." }
-location = "Mathematikon Hörsaal"
+location = "Konferenzraum 5/104"
 color = "#009999"
 
 [[events]]
