@@ -223,6 +223,7 @@ person = "Sophia Ackermann"
 description = "Was machen Computerlinguist:innen eigentlich außerhalb der Forschung? Dieser Vortrag bietet Einblicke in den Arbeitsalltag bei berns language consulting, einem Düsseldorfer Expertenunternehmen für Sprachprozesse und -technologie. Aus erster Hand berichtet eine Computerlinguistin, wie vielfältig der Beruf im Unternehmenskontext ist: von der Analyse und Aufbereitung von Sprachdaten über die Evaluierung und Einführung von Tools bis hin zur Beratung von Kunden und der Implementierung maßgeschneiderter Lösungen. Anhand anonymisierter Beispiele aus realen Industrieprojekten wird veranschaulicht, wie Computerlinguistik konkret eingesetzt wird und welchen Mehrwert sie in unterschiedlichen Anwendungsfeldern schafft. Gleichzeitig werden aktuelle Entwicklungen und Herausforderungen im Markt aufgezeigt, insbesondere rund um KI, Large Language Models und die wachsende Bedeutung hochwertiger Sprachdaten.\nDer Vortrag richtet sich an Studierende, die sich für praxisnahe Einblicke und berufliche Perspektiven in der Computerlinguistik interessieren."
 location = "Konferenzraum 5/104"
 color = "#e67e22"
+link = "https://heibox.uni-heidelberg.de/lib/f1f978f5-5173-4048-9e42-1307ce7a5c8a/file/Public/2026-05-22_Sophia_Ackermann_Zwischen_KI_und_Kundenprojekten_Computerlinguistik_in_der_Praxis.pdf"
 
 [[events]]
 date = "2026-05-22"
