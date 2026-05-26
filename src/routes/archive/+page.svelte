@@ -29,7 +29,22 @@
 						<li><Link external href="https://newsletter.fachschaft.cl.uni-heidelberg.de/archive/nmc_GQL5WVpk" text="Frohes neues Jahr! // Happy new year!" /></li>
 						<li><Link external href="https://newsletter.fachschaft.cl.uni-heidelberg.de/archive/nmc_G4LyxgjB" text="Anmeldung zur 35. TaCoS 2026 geöffnet // Registration for 35th TaCoS 2026 open"/></li>
 						<li><Link external href="https://newsletter.fachschaft.cl.uni-heidelberg.de/archive/nmc_E3Lp4Ln6" text="35. TaCoS 2026: Call for Participation" /></li>
+						<li><Link external href="https://newsletter.fachschaft.cl.uni-heidelberg.de/archive/nmc_9xLeJrBv" text="35. TaCoS 2026: Anmeldung und Call for Participation" /> (an Fachschaften)</li>
+						<li><Link external href="https://newsletter.fachschaft.cl.uni-heidelberg.de/archive/nmc_EvVXpVBD" text="35. TaCoS 2026: Anmeldung bestätigt. Wir brauchen deinen Vortrag! // Registration confirmed. We need your talk!" /></li>
+						<li><Link external href="https://newsletter.fachschaft.cl.uni-heidelberg.de/archive/nmc_pyrzyLMx" text="35. TaCoS 2026: Teilnahmebestätigung und weitere Details. // Participation confirmation and more details." /></li>
+						<li><Link external href="https://newsletter.fachschaft.cl.uni-heidelberg.de/archive/nmc_bdLxogkG" text="35. TaCoS 2026: Kostenlose Übernachtungsplätze zu verlosen // Raffle for free accommodation spots" /></li>
+						<li><Link external href="https://newsletter.fachschaft.cl.uni-heidelberg.de/archive/nmc_j7r42g5N" text="35. TaCoS 2026: Vorläufiges Programm, Brunch // Preliminary Schedule and Brunch" /></li>
+						<li><Link external href="https://newsletter.fachschaft.cl.uni-heidelberg.de/archive/nmc_vmLAxgZ5" text="TaCoS in T-3 Tagen – freust du dich euch auch schon so? // TaCoS in T-3 days – are you as excited as we are?" /></li>
 					</ol>
+
+					<p>
+						{m.newsletter_transactional()}
+					</p>
+
+					<ul>
+						<li><Link external href="https://newsletter.fachschaft.cl.uni-heidelberg.de/archive/nmc_WdLQmLR3" text="35. TaCoS 2026: Du hast noch nicht bezahlt. // You haven't paid yet."/></li>
+						<li><Link external href="https://newsletter.fachschaft.cl.uni-heidelberg.de/archive/nmc_PBrk6LGY" text="35. TaCoS 2026: Deine Anmeldung wurde storniert. // You're registration has been cancelled."/></li>
+					</ul>
 
 					<p class="mb-4">
 						{m.archive_description()}
