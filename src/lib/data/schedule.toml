@@ -112,6 +112,7 @@ person = "Isabell Furkert"
 description = "Parliamentary debates are a good resource for studying political discourse - but analysing thousands of speeches by hand is impossible. This workshop serves as a hands-on introduction to NoSketchEngine, a free web-based corpus analysis platform provided by CLARIN, and a look into the ParlaMint dataset, a large, metadata-rich collection of parliamentary proceedings from 29 European parliaments. Together, these tools enable new possibilities for empirical, reproducible research into political language.\n\nParticipants will receive a guided walthrough of NoSketchEngine's core features - subcorpus creation and keyword analysis - illustrated with concrete examples.\n\nNo prior experience with corpus linguistics or programming required."
 location = "Seminarraum 10"
 color = "#008c3a"
+link = "https://heibox.uni-heidelberg.de/d/77ab6eeafba648368aad/files/?p=%2F2026-05-21_Isabell_Furkert_Uncovering_Political_Rhetoric_with_Corpus_Tools.pdf"
 
 [[events]]
 date = "2026-05-21"
@@ -123,6 +124,7 @@ person = "Cristina Gutiérrez Alcalá"
 description = "This research examines if machine translations, even with notable progress recently, can provide the same level of exactness and correctness as human translators. AI tools like Google Translate, DeepL or ChatGPT are appreciated for their quickness and convenience, but they usually do not perform well in important aspects such as context related adaptation, cultural integration and style adjustment. This work suggests that these flaws underline the essential function of human translators while presenting Machine Translation more as an assisting tool instead of a replacement one. The research looks at different translations that are made by many tools for varied types of texts, such as technical, literary and legal ones. It finds usual mistakes - wrong use of terms, changes in style consistency, differences in culture among others - and checks their effect on proper comprehension of specific content. The outcomes were then compared with known translation rules to show the continuing gaps found in translations done by AI-based systems. Through examining the disparity across platforms and recognizing the mistakes repeating themselves, this dissertation seeks to present a detailed view on the boundaries of Machine Translation. The results endorse suggestions for using Machine Translation as an addition tool, highlighting the necessity of human supervision to guarantee accuracy, exactness, and relevance in culture when working on translations."
 location = "Seminarraum 11"
 color = "#00a0d7"
+link = "https://heibox.uni-heidelberg.de/d/77ab6eeafba648368aad/files/?p=%2F2026-05-21_Cristina_Guti%C3%A9rrez_Alcal%C3%A1_Translation_errors_in_machine_translations.pdf"
 
 [[events]]
 date = "2026-05-21"
