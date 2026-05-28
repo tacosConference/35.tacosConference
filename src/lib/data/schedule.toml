@@ -317,6 +317,7 @@ person = "Elizaveta Dovedova, Artem Stetoi"
 description = "Have you heard of protein bars? Protein coffee? Protein nachos? How about protein LLMs?\nProteins are linear chains of amino acids that can be represented as sequences over a fixed alphabet. This makes them resemble natural language in a surprisingly useful way, and many NLP algorithms are directly applicable to modeling protein sequences. Capturing patterns in amino-acid sequences and linking those patterns to biological properties lets you predict protein behavior, infer their structure and function, and design them for specific applications—a computational task that would otherwise require extensive laboratory work. Starting with n-grams, the application of methods original to NLP in computational biology has been studied for many years, leading to the recent emergence of protein-specific large language models (Protein LLMs).\n\nWith my presentation, I would to introduce coli students with no biological background to how their knowledge of NLP concepts and techniques—such as embeddings, transformers or masked language modeling—can be applied in the biological field."
 location = "Seminarraum 10"
 color = "#00a0d7"
+link = "https://heibox.uni-heidelberg.de/d/09c46473489e465a832f/files/?p=%2F2026-05-22_Elizaveta_Dovedova_Artem_Stetoi_Protein_LLMs.pdf"
 
 [[events]]
 date = "2026-05-22"
