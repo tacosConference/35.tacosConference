@@ -204,6 +204,7 @@ person = ""
 description = ""
 location = "Konferenzraum 5/104"
 color = "#00a0d7"
+link = "https://heibox.uni-heidelberg.de/d/77ab6eeafba648368aad/?p=%2FLightning_Talks&mode=list"
 
 [[events]]
 date = "2026-05-22"
@@ -433,6 +434,7 @@ person = ""
 description = { de = "Kurze Vorträge im schnellen Wechsel.", en = "Short talks in quick succession." }
 location = "Konferenzraum 5/104"
 color = "#00a0d7"
+link = "https://heibox.uni-heidelberg.de/d/77ab6eeafba648368aad/?p=%2FLightning_Talks&mode=list"
 
 [[events]]
 date = "2026-05-23"
