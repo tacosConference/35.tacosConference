@@ -101,6 +101,7 @@ person = "Carina Zander, Denise Binz"
 description = "This talk explores the extent to which canonical texts shape writing style in fanfiction. Drawing on a corpus of fanfictions from popular fandoms on Archive of Our Own, we investigate whether distinct stylistic traces persist beyond explicit references. To this end, we construct and compare two versions of the corpus: the original fanfiction texts as written by their authors, and a modified version in which fandom-specific proper names are removed using named entity recognition techniques.\n\nUsing machine learning classification, we assess how accurately texts can be attributed to their respective fandoms in both conditions. The comparison allows us to isolate the contribution of implicit stylistic features from that of overt lexical markers. The results provide insight into how deeply source material informs fanfiction writing, highlighting the extent to which fandom-specific style operates independently of identifiable names and entities."
 location = "Konferenzraum 5/104"
 color = "#00a0d7"
+link = "https://heibox.uni-heidelberg.de/d/09c46473489e465a832f/files/?p=%2F2026-05-21_Carina_Zander_Denise_Binz_Stylistic_Influence_of_Canonical_Texts_in_Fanfiction.pdf"
 
 [[events]]
 date = "2026-05-21"
