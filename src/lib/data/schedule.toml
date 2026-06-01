@@ -228,7 +228,7 @@ person = "Sophia Ackermann"
 description = "Was machen Computerlinguist:innen eigentlich außerhalb der Forschung? Dieser Vortrag bietet Einblicke in den Arbeitsalltag bei berns language consulting, einem Düsseldorfer Expertenunternehmen für Sprachprozesse und -technologie. Aus erster Hand berichtet eine Computerlinguistin, wie vielfältig der Beruf im Unternehmenskontext ist: von der Analyse und Aufbereitung von Sprachdaten über die Evaluierung und Einführung von Tools bis hin zur Beratung von Kunden und der Implementierung maßgeschneiderter Lösungen. Anhand anonymisierter Beispiele aus realen Industrieprojekten wird veranschaulicht, wie Computerlinguistik konkret eingesetzt wird und welchen Mehrwert sie in unterschiedlichen Anwendungsfeldern schafft. Gleichzeitig werden aktuelle Entwicklungen und Herausforderungen im Markt aufgezeigt, insbesondere rund um KI, Large Language Models und die wachsende Bedeutung hochwertiger Sprachdaten.\nDer Vortrag richtet sich an Studierende, die sich für praxisnahe Einblicke und berufliche Perspektiven in der Computerlinguistik interessieren."
 location = "Konferenzraum 5/104"
 color = "#e67e22"
-link = "https://heibox.uni-heidelberg.de/lib/f1f978f5-5173-4048-9e42-1307ce7a5c8a/file/Public/2026-05-22_Sophia_Ackermann_Zwischen_KI_und_Kundenprojekten_Computerlinguistik_in_der_Praxis.pdf"
+link = "https://heibox.uni-heidelberg.de/d/77ab6eeafba648368aad/files/?p=%2F2026-05-22_Sophia_Ackermann_Zwischen_KI_und_Kundenprojekten_Computerlinguistik_in_der_Praxis.pdf"
 
 [[events]]
 date = "2026-05-22"
@@ -284,7 +284,7 @@ person = "Mariia Neguliaeva"
 description = "Real-life computational projects have a way of failing at the worst possible moment. This workshop stems from one such project on sign language translation, which sits at an intersection of linguistics, computer vision and accessibility technology - a real problem with real stakes, but most importantly a real appetite for computational resources. The gap between the project's ambitious beginning and considerably humbler reality is where the real work happens, as the value of defensive coding gradually replaces hopeful optimism. We'll explore that gap together through an interactive game (no spoilers!) and then discuss some tips on making large-scale computing bearable. What does it take to survive overnight crashes, while staying within budget? And how come we don't always do it? This session is for you, if you've ever been too scared to waste scarce resources or wondered why things go wrong when you seem to have done everything right. No prior experience with large-scale computing or sign language translation required. Curiosity and pent-up frustration welcome.\nNot validated by controlled studies, individual results may vary ;)"
 location = "Seminarraum 10"
 color = "#008c3a"
-link = "https://heibox.uni-heidelberg.de/lib/f1f978f5-5173-4048-9e42-1307ce7a5c8a/file/Public/2026-05-22_Mariia_Neguliaeva_The_cost_of_cutting_corners.pdf"
+link = "https://heibox.uni-heidelberg.de/d/77ab6eeafba648368aad/files/?p=%2F2026-05-22_Mariia_Neguliaeva_The_cost_of_cutting_corners.pdf"
 
 [[events]]
 date = "2026-05-22"
