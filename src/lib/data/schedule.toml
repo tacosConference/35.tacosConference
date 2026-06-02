@@ -159,6 +159,7 @@ person = "Frederick Riemenschneider"
 description = "Multilinguale Sprachmodelle teilen Wissen über Sprachgrenzen hinweg und scheinen dabei einen weitgehend sprachunabhängigen \"Konzept-Raum\" auszubilden, selbst wenn während des Trainings kein explizites cross-linguales Signal vorliegt.\nDoch unter welchen Bedingungen entsteht dieser Raum? Wann und wie vollzieht sich diese Generalisierung im Verlauf des Pre-Trainings? Wie lassen sich sprachspezifische und sprachagnostische Komponenten im Modell sauber voneinander trennen, und was sagt uns das über die Funktionsweise von Sprachmodellen?\nUm diesen Fragen nachzugehen, betrachten wir \"reale\" Sprachmodelle ebenso wie Toy-Modelle aus der Perspektive der Mechanistic Interpretability. Zunächst werfen wir einen Blick auf die Trainingsdynamik tatsächlicher Sprachmodelle, identifizieren \"multilinguale Bereiche\" und untersuchen, wann und wie sich diese im Training herausbilden. Anschließend wechseln wir in ein kontrolliertes Toy-Setup, das uns erlaubt, einzelne Mechanismen zu isolieren und gezielt zu untersuchen, um das minimale Setup zu finden, in dem cross-linguale Generalisierung überhaupt entsteht."
 location = "Konferenzraum 5/104"
 color = "#00a0d7"
+link = "https://heibox.uni-heidelberg.de/d/09c46473489e465a832f/files/?p=%2F2026-05-22_Frederick_Riemenschneider_Grokking_Multilinguality.pdf"
 
 [[events]]
 date = "2026-05-22"
