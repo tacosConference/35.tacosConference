@@ -195,6 +195,7 @@ person = "Prof. Dr. Artur Andrzejak"
 description = "Transformer-based language models are everywhere, but what are they actually doing inside? Mechanistic Interpretability is the discipline trying to answer this rigorously, by decomposing model computations into human-understandable components: circuits, features, and subspaces. This talk tours the field from core methods and tools, through the regularity of documented transformer circuits, to formal frameworks for reasoning about what transformers can and cannot compute. Along the way we'll mention open challenges and discuss what self-directed study in this space looks like. We'll also touch on recent training-free interpretability work using SVD decompositions of MLP weight matrices — an approach that sidesteps costly proxy models while preserving weight fidelity. Accessible to anyone familiar with neural language models, the talk aims to give you with a map of the landscape and concrete starting points for further exploration."
 location = "Konferenzraum 5/104"
 color = "#5b2d90"
+link = "https://heibox.uni-heidelberg.de/d/09c46473489e465a832f/files/?p=%2F2026-05-22_Artur_Andrzejak_A_Practical_Guide_to_Mechanistic_Interpretability.pdf"
 
 [[events]]
 date = "2026-05-22"
