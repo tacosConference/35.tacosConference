@@ -91,6 +91,13 @@
 				<li class="nav-item mx-1">
 					<a
 						class="nav-link"
+						class:active={page.route.id === '/gallery'}
+						href={resolve('/gallery')}>{m.gallery()}</a
+					>
+				</li>
+				<li class="nav-item mx-1">
+					<a
+						class="nav-link"
 						class:active={page.route.id === '/archive'}
 						href={resolve('/archive')}>{m.archive()}</a
 					>

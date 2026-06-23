@@ -188,6 +188,15 @@ $tacos-colors: (
 
 // Generate the CSS classes for each color
 @each $color-name, $color-variants in $tacos-colors {
+
+	.tacos-hover-outline-#{"" + $color-name} {
+		outline: 2px solid transparent;
+		transition: outline 0.25s;
+		&:hover {
+			outline: 2px solid var(--tacos-#{"" + $color-name}-main);
+		}
+	}
+
 	// Background classes
 	.tacos-bg-#{"" + $color-name} {
 		background-color: var(--tacos-#{"" + $color-name}-main) !important;
